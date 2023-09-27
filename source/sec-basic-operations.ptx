@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-basic-operations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Related to basic operations</title>
+
+  <p> We denote by <m>0_n</m> the <m>n\times n</m> matrix with all its entries zero. We call <m>0_n</m> the zero matrix. We denote by <m>I_n</m> the <m>n\times n</m> matrix with all its diagonal entries <m>1</m>, and all other non-diagonal entries zero. We call <m>I_n</m> the identity matrix.</p>
+    <ol>
+      <li>
+        <p>
+          Show that for any matrix <m>A\in M_{n\times n}(\mathbb{R})</m> the following is true. <me>A+0_n=0_n+A=A\quad\text{and}\quad A\, I_n=I_n\, A=A</me>
+        </p>
+      </li>
+      <li>
+        <p>
+          Let <m>A=\left(\begin{smallmatrix}1\amp 3\\0\amp 4\end{smallmatrix}\right)\in M_{2\times 2}(\mathbb{R})</m>. Find <m>B\in M_{2\times 2}(\mathbb{R})</m> such that <m>A+B=\left(\begin{smallmatrix}1\amp 0\\1\amp 0\end{smallmatrix}\right).</m> 
+        </p>
+      </li>
+    </ol>  
+
+
+</section>
