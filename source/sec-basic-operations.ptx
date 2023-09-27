@@ -49,7 +49,7 @@
               <p>
                 <m>A=\begin{pmatrix}1\amp 2\amp -3\\-1\amp 0\amp 4\end{pmatrix}</m> and <m>B=\begin{pmatrix}1\amp 2\amp 3\amp 0\\0\amp 0\amp 1\amp -1\\-1\amp 0\amp -2\amp -1\end{pmatrix}</m>
               </p>
-              <answer>
+              <!--<answer>
                 <p>
                    <sage>
                     <input>
@@ -57,13 +57,12 @@
                       sage: B=Matrix[[1,2,3,0],[0,0,1,-1],[-1,0,-2,-1]]
                       sage: print A*B
                     </input>
-                    <!--<output>
+                    <output>
                       (for static output)
-                    </output>-->
+                    </output>
                    </sage>
-                   
                 </p>
-              </answer>
+              </answer>-->
             </li>
             <li>
               <p>
