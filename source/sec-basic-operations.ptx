@@ -3,7 +3,14 @@
 <section xml:id="sec-basic-operations" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Questions related to basic matrix operations</title>
 
-  <p> We denote by <m>0_n</m> the <m>n\times n</m> matrix with all its entries zero. We call <m>0_n</m> the zero matrix. We denote by <m>I_n</m> the <m>n\times n</m> matrix with all its diagonal entries <m>1</m>, and all other (non-diagonal) entries zero. We call <m>I_n</m> the identity matrix. We denote the set of all <m>n\times n</m> matrices over <m>\mathbb{R}</m> by <m>M_n(\mathbb{R})</m>. So <m>M_{n\times n}(\mathbb{R})=M_n(\mathbb{R})</m>. For any matrix <m>A\in M_{m\times n}(\mathbb{R})</m> and <m>\alpha\in\mathbb{R}</m> we denote by <m>\alpha A\in M_{m\times n}</m> the matrix obtained by multiplying every entry of the matrix <m>A</m> by <m>\alpha</m>.</p>
+  <p> We denote by <m>0_n</m> the <m>n\times n</m> matrix with all its entries zero. We call <m>0_n</m> the zero matrix. We denote by <m>I_n</m> the <m>n\times n</m> matrix with all its diagonal entries <m>1</m>, and all other (non-diagonal) entries zero. We call <m>I_n</m> the identity matrix. We denote the set of all <m>n\times n</m> matrices over <m>\mathbb{R}</m> by <m>M_n(\mathbb{R})</m>. So <m>M_{n\times n}(\mathbb{R})=M_n(\mathbb{R})</m>. For any matrix <m>A\in M_{m\times n}(\mathbb{R})</m> and <m>\alpha\in\mathbb{R}</m> we denote by <m>\alpha A\in M_{m\times n}(\mathbb{R})</m> the matrix obtained by multiplying every entry of the matrix <m>A</m> by <m>\alpha</m>.</p>
+  <p>
+    Suppose that <m>A\in M_{m\times n}(\mathbb{R})</m> and <m>B\in M_{n\times\ell}(\mathbb{R})</m>. We denote the <m>(i,j)</m>-th entry, i.e., entry in the <m>i</m>-th row and <m>j</m>-th column of the matrix <m>A</m> (respectively, <m>B</m>) by <m>a_{ij}</m> (respectively, <m>b_{ij}</m>). The <m>(i,j)</m>-th entry of the matrix multiplication <m>AB</m> is given by the following formula.
+    <me>
+      \sum_{k=1}^{n}a_{ik}b_{kj},\quad\text{where}\quad 1\leq i\leq m\quad\text{and}\quad 1\leq j\leq\ell
+    </me>
+    
+  </p>
     <ol>
       <li>
         <p>
@@ -42,6 +49,21 @@
               <p>
                 <m>A=\begin{pmatrix}1\amp 2\amp -3\\-1\amp 0\amp 4\end{pmatrix}</m> and <m>B=\begin{pmatrix}1\amp 2\amp 3\amp 0\\0\amp 0\amp 1\amp -1\\-1\amp 0\amp -2\amp -1\end{pmatrix}</m>
               </p>
+              <answer>
+                <p>
+                   <sage>
+                    <input>
+                      sage: A=Matrix[[1,2,-3],[-1,0,4]]
+                      sage: B=Matrix[[1,2,3,0],[0,0,1,-1],[-1,0,-2,-1]]
+                      sage: print A*B
+                    </input>
+                    <!--<output>
+                      (for static output)
+                    </output>-->
+                   </sage>
+                   
+                </p>
+              </answer>
             </li>
             <li>
               <p>
