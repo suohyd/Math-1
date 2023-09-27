@@ -10,6 +10,15 @@ var ptx_lunr_docs = [
   "body": "  My website   copyright  "
 },
 {
+  "id": "preface-1",
+  "level": "1",
+  "url": "preface-1.html",
+  "type": "Preface",
+  "number": "",
+  "title": "Preface",
+  "body": " We refer to following books.    Algebra by M. Artin     Calculus and analytic geometry by Thomas and Finney     Calculus for Biology and Medicine by Neuhauser and Roper     All questions\/exercises mentioned in these notes are standard, and can be found in all standard books on the subject. No originality is claimed.  This is a work in progress, and may contain certain discrepancies or typographic errors. Comments and suggestions are welcome.  "
+},
+{
   "id": "sec-basic-operations",
   "level": "1",
   "url": "sec-basic-operations.html",
