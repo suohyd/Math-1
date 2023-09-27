@@ -49,30 +49,61 @@
               <p>
                 <m>A=\begin{pmatrix}1\amp 2\amp -3\\-1\amp 0\amp 4\end{pmatrix}</m> and <m>B=\begin{pmatrix}1\amp 2\amp 3\amp 0\\0\amp 0\amp 1\amp -1\\-1\amp 0\amp -2\amp -1\end{pmatrix}</m>
               </p>
-              <!--<answer>
+              <!--  <p>
+                  We use <q>SageMath</q>, computer algebra system, to calculate the matrix multiplication. Please verify your answers by clicking on <q>Evaluate (Sage)</q> button.
+                </p>
                 <p>
-                   <sage>
+                  <sage>
                     <input>
-                      sage: A=Matrix[[1,2,-3],[-1,0,4]]
-                      sage: B=Matrix[[1,2,3,0],[0,0,1,-1],[-1,0,-2,-1]]
-                      sage: print A*B
+                      sage: A=Matrix([[1,2,-3],[-1,0,4]])
+                      sage: B=Matrix([[1,2,3,0],[0,0,1,-1],[-1,0,-2,-1]])
+                      sage: print (A*B)
                     </input>
                     <output>
-                      (for static output)
+                      
                     </output>
-                   </sage>
-                </p>
-              </answer>-->
+                  </sage>  
+                </p>-->
             </li>
             <li>
               <p>
                 <m>A=\begin{pmatrix}-2\amp -4\amp 0\amp -2\\-5\amp -2\amp -11\amp 7\end{pmatrix}</m> and <m>B=\begin{pmatrix}1\\-1\\1\\-1\end{pmatrix}</m>
               </p>
+              <!--<p>
+                 We use <q>SageMath</q>, a computer algebra system, to calculate the matrix multiplication. Please verify your answers by clicking on <q>Evaluate (Sage)</q> button.
+              </p>
+              <p>
+                <sage>
+                  <input>
+                    sage: A=Matrix([[-2,-4,0,-2],[-5,-2,-11,7]])
+                    sage: B=Matrix([[1],[-1],[1],[-1]])
+                    sage: print (A*B)
+                  </input>
+                  <output>
+                    
+                  </output>
+                </sage>  
+              </p>-->
             </li>
             <li>
               <p>
                 <m>A=B=\begin{pmatrix}1\amp -1\\0\amp 0\end{pmatrix}</m>
               </p>
+            <!--  <p>
+                We use <q>SageMath</q>, a computer algebra system, to calculate the matrix multiplication. Please verify your answers by clicking on <q>Evaluate (Sage)</q> button.
+              </p>
+              <p>
+                <sage>
+                  <input>
+                    sage: A=Matrix([[1,-1],[0,0]])
+                    sage: B=Matrix([[1,-1],[0,0]])
+                    sage: print (A*B)
+                  </input>
+                  <output>
+                    
+                  </output>
+                </sage>  
+              </p>-->
             </li>
             <li>
               <p>
@@ -81,6 +112,21 @@
                   In this case, consider the matrix <m>A</m> as the point <m>P_A=(1,2,-2)</m> of the space and matrix <m>B</m> as the point <m>P_B=(-2,1,0)</m>. Plot the line segment <m>OP_A</m> joining the origin of <m>\mathbb{R}^3</m> and <m>P_A</m> as well as the line segment <m>OP_B</m> joining the origin of <m>\mathbb{R}^3</m> and <m>P_B</m>. Check whether <m>OP_A</m> is perpendicular to <m>OP_B</m>.
                 </p>
               </p>
+              <!--<p>
+                We use <q>SageMath</q>, a computer a algebra system, to calculate the matrix multiplication. Please verify your answers by clicking on <q>Evaluate (Sage)</q> button.
+              </p>
+              <p>
+                <sage>
+                  <input>
+                    sage: A=Matrix([[1,2,-2]])
+                    sage: B=Matrix([[-2],[1],[0]])
+                    sage: print (A*B)
+                  </input>
+                  <output>
+                    
+                  </output>
+                </sage>  
+              </p>-->
             </li>
             <li>
               <p>
@@ -89,6 +135,21 @@
               <p>
                 In this case, consider the matrix <m>A</m> as the point <m>P_A=(-1,-1,-1)</m> of the space and matrix <m>B</m> as the point <m>P_B=(-1,0,0)</m>. Plot the line segment <m>OP_A</m> joining the origin of <m>\mathbb{R}^3</m> and <m>P_A</m> as well as the line segment <m>OP_B</m> joining the origin of <m>\mathbb{R}^3</m> and <m>P_B</m>. Check whether <m>OP_A</m> is perpendicular to <m>OP_B</m>.
               </p>
+              <!--<p>
+                We use <q>SageMath</q>, a computer algebra system, to calculate the matrix multiplication. Please verify your answers by clicking on <q>Evaluate (Sage)</q> button.
+              </p>
+              <p>
+                <sage>
+                  <input>
+                    sage: A=Matrix([[1,-1,-1]])
+                    sage: B=Matrix([[-1],[0],[0]])
+                    sage: print (A*B)
+                  </input>
+                  <output>
+                    
+                  </output>
+                </sage>  
+              </p>-->
             </li>
           </ol>
         </p>
@@ -102,8 +163,19 @@
           <me>
             \begin{pmatrix}1\amp 6\\0\amp 1\end{pmatrix}^3;\quad\begin{pmatrix}0\amp -1\\1\amp 0\end{pmatrix}^4;\quad\begin{pmatrix}1\amp -1\amp 0\\0\amp 1\amp -1\\0\amp 0\amp 1\end{pmatrix}^2;\quad\begin{pmatrix}0\amp 1\amp 1\\0\amp 0\amp -1\\0\amp 0\amp 0\end{pmatrix}^3
           </me>
-          
-        </p>
+        </p>  
+          <!--<p>
+            <sage>
+              <input>
+                sage: A=Matrix([[1,6],[0,1]])
+                sage: print(A^3)
+              </input>
+              <output>
+                (for static output)
+              </output>
+            </sage>
+            
+          </p>-->
       </li>
       <li>
         <p>
