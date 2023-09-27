@@ -6,7 +6,7 @@
 
   <book xml:id="Math-1">
     <title>Questions for Math-1</title>
-    <subtitle></subtitle>
+    <subtitle>A course for Biology and Applied Geology students</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />

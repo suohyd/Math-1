@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-basic-operations" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Related to basic operations</title>
+  <title>Questions related to basic matrix operations</title>
 
   <p> We denote by <m>0_n</m> the <m>n\times n</m> matrix with all its entries zero. We call <m>0_n</m> the zero matrix. We denote by <m>I_n</m> the <m>n\times n</m> matrix with all its diagonal entries <m>1</m>, and all other (non-diagonal) entries zero. We call <m>I_n</m> the identity matrix. We denote the set of all <m>n\times n</m> matrices over <m>\mathbb{R}</m> by <m>M_n(\mathbb{R})</m>. So <m>M_{n\times n}(\mathbb{R})=M_n(\mathbb{R})</m>. For any matrix <m>A\in M_{m\times n}(\mathbb{R})</m> and <m>\alpha\in\mathbb{R}</m> we denote by <m>\alpha A\in M_{m\times n}</m> the matrix obtained by multiplying every entry of the matrix <m>A</m> by <m>\alpha</m>.</p>
     <ol>
