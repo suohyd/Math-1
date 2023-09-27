@@ -28,5 +28,33 @@
       </shortlicense>
     </copyright>
   </colophon>
+  <preface>
+    <p>
+      We refer to following books.
+      <ol>
+        <li>
+          <p>
+            <q>Algebra</q> by M. Artin
+          </p>
+        </li>
+        <li>
+          <p>
+            <q>Calculus and analytic geometry</q> by Thomas and Finney
+          </p>
+        </li>
+        <li>
+          <p>
+            <q>Calculus for Biology and Medicine</q> by Neuhauser and Roper
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      All questions/exercises mentioned in these notes are standard, and can be found in all standard books on the subject. No originality is claimed.
+    </p>
+    <p>
+      This is a work in progress, and may contain certain discrepancies or typographic errors. Comments and suggestions are welcome.
+    </p>
+  </preface>
 </frontmatter>
 
