@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Basic matrix operations",
-  "body": " Basic matrix operations   (Zero matrix)   We denote by the matrix with all its entries zero. We call the zero matrix.     (Identity matrix)   We denote by the matrix with all its diagonal entries , and all other (non-diagonal) entries zero. We call the identity matrix.     We denote the set of all matrices over by . So . For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .    Suppose that and . We denote the -th entry, i.e., entry in the -th row and -th column of the matrix (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .    (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is    "
+  "body": " Basic matrix operations   (Zero matrix)   We denote by the matrix with all its entries zero. We call the zero matrix.     (Identity matrix)   We denote by the matrix with all its diagonal entries , and all other (non-diagonal) entries zero. We call the identity matrix.     The -th entry of a matrix  is the entry at the intersection -th row and -th column of .    We denote the set of all matrices over by . So . A matrix in is called a square matrix and is called the size of a matrix .    For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .    Matrices are equal or same if every -th entry of is equal to (same as) the -th entry of for every and for every . That is if then,     Suppose that and . We denote the -th entry, i.e., entry in the -th row and -th column of the matrix (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .    (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is     (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by .     (Coefficient matrix of the system of linear equations and homogeneous system of linear equations) Consider the system of linear equations with for every and .  We may write the system of linear equations given above in a matrix form.   If we put and , and then, the above system of linear equations can be written as The matrix is called the coefficient matrix of the system.  If all then the system is said to be homogeneous .   "
 },
 {
   "id": "def-zero-matrix",
@@ -52,14 +52,41 @@ var ptx_lunr_docs = [
   "type": "Convention",
   "number": "1.1.3",
   "title": "",
-  "body": " We denote the set of all matrices over by . So . For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .  "
+  "body": " The -th entry of a matrix  is the entry at the intersection -th row and -th column of .  "
+},
+{
+  "id": "convention-2",
+  "level": "2",
+  "url": "sec-basic-operations.html#convention-2",
+  "type": "Convention",
+  "number": "1.1.4",
+  "title": "",
+  "body": " We denote the set of all matrices over by . So . A matrix in is called a square matrix and is called the size of a matrix .  "
+},
+{
+  "id": "convention-3",
+  "level": "2",
+  "url": "sec-basic-operations.html#convention-3",
+  "type": "Convention",
+  "number": "1.1.5",
+  "title": "",
+  "body": " For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .  "
+},
+{
+  "id": "convention-4",
+  "level": "2",
+  "url": "sec-basic-operations.html#convention-4",
+  "type": "Convention",
+  "number": "1.1.6",
+  "title": "",
+  "body": " Matrices are equal or same if every -th entry of is equal to (same as) the -th entry of for every and for every . That is if then,   "
 },
 {
   "id": "ij-th-entry",
   "level": "2",
   "url": "sec-basic-operations.html#ij-th-entry",
   "type": "Observation",
-  "number": "1.1.4",
+  "number": "1.1.7",
   "title": "",
   "body": " Suppose that and . We denote the -th entry, i.e., entry in the -th row and -th column of the matrix (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .  "
 },
@@ -68,9 +95,27 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-basic-operations.html#transpose",
   "type": "Definition",
-  "number": "1.1.5",
+  "number": "1.1.8",
   "title": "(Transpose of a matrix).",
   "body": " (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is   "
+},
+{
+  "id": "def-inverse-of-matrix",
+  "level": "2",
+  "url": "sec-basic-operations.html#def-inverse-of-matrix",
+  "type": "Definition",
+  "number": "1.1.9",
+  "title": "(Inverse of a matrix).",
+  "body": " (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by .   "
+},
+{
+  "id": "homogeneous-system",
+  "level": "2",
+  "url": "sec-basic-operations.html#homogeneous-system",
+  "type": "Definition",
+  "number": "1.1.10",
+  "title": "(Coefficient matrix of the system of linear equations and homogeneous system of linear equations).",
+  "body": " (Coefficient matrix of the system of linear equations and homogeneous system of linear equations) Consider the system of linear equations with for every and .  We may write the system of linear equations given above in a matrix form.   If we put and , and then, the above system of linear equations can be written as The matrix is called the coefficient matrix of the system.  If all then the system is said to be homogeneous .  "
 },
 {
   "id": "practice-basic-operations",
@@ -79,7 +124,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "1.2",
   "title": "Exercises",
-  "body": "  A few exercises related to basic matrix operations are listed below.   Consider the following matrices in . Find .   Let . Find such that .    Show that for any matrix the following is true.     Show that for any matrices the following is true.     Let . Show that and that .    Compute the matrix multiplication .    and       and             and  In this case, consider the matrix as the point of the space and matrix as the point . Plot the line segment joining the origin of and as well as the line segment joining the origin of and . Check whether is perpendicular to .       and   In this case, consider the matrix as the point of the space and matrix as the point . Plot the line segment joining the origin of and as well as the line segment joining the origin of and . Check whether is perpendicular to .        For a matrix and a natural number we write In particular, and .  Find the following powers of the given matrices.     Write the augmented matrix corresponding to the given system of equations.                In the following, given compute its transpose and also compute and .     , where      , where                    Find a condition on such that the matrix will be equal to its transpose.    Consider a matrix . Find a condition on such that and .      Check whether is a function or not. Also check whether is injective (one-one) or surjective (onto).     Multiplication is defined when and .    For any two matrices , .   For any , .       The following system of linear equations has infinitely many solutions.     For the following matrix we have .    "
+  "body": "  A few exercises related to basic matrix operations are listed below.   Consider the following matrices in . Find .   Let . Find such that .    Show that for any matrix the following is true.     Show that for any matrices the following is true.     Let . Show that and that .    Compute the matrix multiplication .    and       and             and  In this case, consider the matrix as the point of the space and matrix as the point . Plot the line segment joining the origin of and as well as the line segment joining the origin of and . Check whether is perpendicular to .       and   In this case, consider the matrix as the point of the space and matrix as the point . Plot the line segment joining the origin of and as well as the line segment joining the origin of and . Check whether is perpendicular to .        For a matrix and a natural number we write In particular, and .  Find the following powers of the given matrices.     Write the augmented matrix corresponding to the given system of equations.                In the following, given compute its transpose and also compute and .     , where      , where                    Find a condition on such that the matrix will be equal to its transpose.    Consider a matrix . Find a condition on such that and .      Check whether is a function or not. Also check whether is injective (one-one) or surjective (onto).     Multiplication is defined when and .    For any two matrices , .   For any , .   The following system of linear equations has infinitely many solutions.     For the following matrix we have .     Every matrix in has an inverse.   "
 },
 {
   "id": "exercise-1",
@@ -205,7 +250,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.2.14",
   "title": "",
-  "body": "   "
+  "body": " The following system of linear equations has infinitely many solutions.   "
 },
 {
   "id": "exercise-15",
@@ -214,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.2.15",
   "title": "",
-  "body": " The following system of linear equations has infinitely many solutions.   "
+  "body": " For the following matrix we have .   "
 },
 {
   "id": "exercise-16",
@@ -223,7 +268,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.2.16",
   "title": "",
-  "body": " For the following matrix we have .   "
+  "body": " Every matrix in has an inverse.  "
 },
 {
   "id": "sec-row-echelon-form",
@@ -259,7 +304,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "1.4",
   "title": "Exercises",
-  "body": "  A few exercises are related to row reduced echelon form of a matrix are listed below.   Find the row-reduced echelon form of the following matrices. .  How many pivots are there in one row? How many pivot positions are there in one column?  In a matrix what is the largest possible number of pivots?  Write the row-reduced echelon matrix whose every row has a pivot.  Consider the following augmented matrices. In each case conssider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                   "
+  "body": "  A few exercises related to the row reduced echelon form of a matrix are listed below.   Find the row-reduced echelon form of the following matrices. .  How many pivots are there in one row? How many pivots are there in one column?  In a matrix what is the largest possible number of pivots?  Write the row-reduced echelon matrix whose every row has a pivot.  Consider the following augmented matrices. In each case consider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                   "
 },
 {
   "id": "exercise-17",
@@ -277,7 +322,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.4.2",
   "title": "",
-  "body": "How many pivots are there in one row? How many pivot positions are there in one column? "
+  "body": "How many pivots are there in one row? How many pivots are there in one column? "
 },
 {
   "id": "exercise-19",
@@ -304,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.4.5",
   "title": "",
-  "body": "Consider the following augmented matrices. In each case conssider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                  "
+  "body": "Consider the following augmented matrices. In each case consider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                  "
 },
 {
   "id": "colophon-2",
