@@ -1,0 +1,59 @@
+<exercises xml:id="practice-basic-operations">
+    <introduction>
+        <p>
+            A few interactive practice exercises are listed below.
+        </p>
+    </introduction>
+    <exercise>
+        <statement correct="yes">
+            <p>
+                Multiplication <m>AB</m> is defined when <m>A\in M_{3\times 55}(\mathbb{R})</m> and <m>B\in M_{55\times 1}(\mathbb{R})</m>.
+            </p>
+        </statement>
+        <!--<solution>
+            Matrix multiplication is defined whenever the number of columns of <m>A</m> is the same as the number of rows of <m>B</m>. Hence, the given statement is true.
+        </solution>-->
+    </exercise>
+    <exercise>
+        <statement correct="no">
+            <p>
+                For any two matrices <m>A,B\in M_{6}(\mathbb{R})</m>, <m>AB=BA</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement correct="yes">
+            For any <m>a\in\mathbb{R}</m>, <m>\left(\begin{smallmatrix}0\amp a\\0\amp 0\end{smallmatrix}\right)^2=\left(\begin{smallmatrix}0\amp 0\\0\amp 0\end{smallmatrix}\right)\in M_2(\mathbb{R})</m>.
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement correct="yes">
+            <p>
+                The following system of linear equations has infinitely many solutions.
+                <me>
+                    \begin{alignedat}{2}
+                    x\amp +{}\amp y +\amp {}\amp 0\cdot z \amp = 2\\
+                    0\cdot x\amp+{}\amp 0\cdot y\amp{}+\amp z \amp = 0
+                    \end{alignedat}
+                   </me>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement correct="no">
+            <p>
+                For the following matrix <m>A\in M_3(\mathbb{R})</m> we have <m>A=-A^t</m>.
+                <me>
+                    A=\begin{pmatrix}0\amp 1\amp 1\\-1\amp 0\amp 0\\-1\amp -1\amp 1\end{pmatrix}\in M_3(\mathbb{R})
+                </me>
+            </p>
+        </statement>
+    </exercise>
+</exercises>
