@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-row-echelon-form" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Questions related to row reduced echelon form of a matrix</title>
+  <definition xml:id="def-elementary-row-operations">
+    <title>(Elementary row operations)</title>    
+    <statement>
+        <p>
+            Let <m>A\in M_{m\times n}(\mathbb{R})</m>. Denote by <m>R_i</m> (for <m>1\leq i\leq m</m>) the <m>i</m>-th row of <m>A</m>. Following are elementary row operations.
+            <ol>
+              <li>
+                <p>
+                  Interchanging <m>i</m>-th row with <m>j</m>-th row. This operation is usually denoted by <m>R_i\leftrightarrow R_j</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Multiplying  <m>i</m>-th row by a nonzero <m>\alpha\in\mathbb{R}</m>. This operation is usually denoted by <m>R_i\mapsto \alpha R_i</m>.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Adding a constant multiple of <m>j</m>-th row to <m>i</m>-th row. This operation is usually denoted by <m>R_i\mapsto R_i+\alpha R_j</m>.
+                </p>
+              </li>
+            </ol>
+        </p>
+    </statement>
+  </definition>
+  <note xml:id="row-reduced-echelon-form-procedure">
+    <title>Procedure to obtain a row reduced echelon form of a matrix</title>
+		Recall that given a matrix <m>A\in M_{m\times n}(\mathbb{R})</m>, by applying a sequence of elementary row operations, can be reduced to a <term>row-reduced echelon form <m>E_A</m> of <m>A</m></term>. The matrix <m>E_A</m> has the following properties.
+		<ol>
+            <li>All zero rows occurs at the bottom of <m>E_A</m>.</li>
+			<li>If a row of <m>E_A</m> is nonzero then the first nonzero entry is <m>1</m>, it is called <term>pivot</term>.</li>
+			<li>In any two successive nonzero rows of <m>E_A</m>, the pivot in the lower row occurs to the right of the pivot in the higher row.</li>
+			<li>Each column of <m>E_A</m> that contains the pivot has zero everywhere else.</li>
+		</ol>
+  </note>
+  <p>
+  </p>  
+  <p>
+    <ol>
+      <li>
+        <p>
+          Find the row-reduced echelon form of the following matrices.
+          <me>\begin{pmatrix}1\amp 2\amp -1\amp 2\\0\amp 0\amp 0\amp 0\\3\amp 1\amp -2\amp 0\end{pmatrix};\quad\begin{pmatrix}0\amp 1\amp -1\\0\amp -4\amp -1\\3\amp 3\amp 3\\-1\amp -1\amp -1\\2\amp 2\amp 2\end{pmatrix};\quad\begin{pmatrix}0\amp 1\\0\amp 0\end{pmatrix}
+          </me>.
+        </p>  
+      </li>
+      <li>
+        <p>
+          How many pivots are there in one row? How many pivot positions are there in one column?
+        </p>
+      </li>
+      <li>
+        <p>
+          In a <m>3\times 10</m> matrix what is the largest possible number of pivots?
+        </p>
+      </li>
+      <li>
+        <p>
+          Write the row-reduced echelon matrix whose every row has a pivot.
+        </p>
+      </li>
+      <li>
+        <p>
+          Consider the following augmented matrices. In each case conssider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.
+          <ol>
+            <li>
+              <p>
+                <me>
+                  \left(
+                    \begin{matrix}1\amp 0\amp 0\\0\amp 1\amp 0\\0\amp 0\amp 1\end{matrix}\left|\,\begin{matrix}4\\-1\\2\end{matrix}\right.
+                  \right)
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                <me>\left(
+                    \begin{matrix}1\amp 0\amp 1\\0\amp 1\amp 1\\0\amp 0\amp 0\end{matrix}\left|\,\begin{matrix}-2\\4\\0\end{matrix}\right.
+                  \right)
+                </me>  
+              </p>
+            </li>
+            <li>
+              <p>
+                <me>
+                  \left(
+                    \begin{matrix}1\amp 8\amp 1\\0\amp 1\amp 1\\0\amp 0\amp 0\end{matrix}\left|\,\begin{matrix}-2\\4\\1\end{matrix}\right.
+                  \right)
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </li>
+    </ol>
+  </p> 
+</section>
