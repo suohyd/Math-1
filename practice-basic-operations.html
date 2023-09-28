@@ -156,9 +156,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Related to matrices</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-basic-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Questions related to basic matrix operations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-basic-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Basic matrix operations</span></a></div></li>
 <li class="toc-item toc-exercises active"><div class="toc-title-box"><a href="practice-basic-operations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-row-echelon-form.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Questions related to row reduced echelon form of a matrix</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-row-echelon-form.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Row reduced echelon form of a matrix</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-row-echelon-form.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
@@ -166,31 +167,138 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="exercises" id="practice-basic-operations"><h2 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Exercises</span>
 </h2>
-<section class="introduction" id="introduction-2"><div class="para" id="p-39">A few interactive practice exercises are listed below.</div></section><article class="exercise exercise-like" id="exercise-1"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>
+<section class="introduction" id="introduction-2"><div class="para" id="p-12">A few exercises related to basic matrix operations are listed below.</div></section><article class="exercise exercise-like" id="exercise-1"><h3 class="heading"><span class="codenumber">1<span class="period">.</span></span></h3>Consider the following matrices in <span class="process-math">\(M_{3\times 2}(\mathbb{R})\text{.}\)</span><div class="displaymath process-math">
+\begin{equation*}
+A=\begin{pmatrix}1\amp 9\\\tfrac{-1}{2}\amp -1\\2\amp -2\end{pmatrix},\quad B=\begin{pmatrix}1\amp 9\\\tfrac{-1}{2}\amp -1\\\tfrac{1}{9}\amp \tfrac{-1}{2}\end{pmatrix},\quad\text{and}\quad C=\begin{pmatrix}0\amp -5\\\tfrac{-1}{10}\amp 10\\2\amp -2\end{pmatrix}
+\end{equation*}
+</div>Find <span class="process-math">\(2A+2B-5C\text{.}\)</span></article><article class="exercise exercise-like" id="exercise-2"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+<div class="para" id="p-13">Let <span class="process-math">\(A=\left(\begin{smallmatrix}1\amp 3\\0\amp 4\end{smallmatrix}\right)\in M_{2}(\mathbb{R})\text{.}\)</span> Find <span class="process-math">\(B\in M_{2}(\mathbb{R})\)</span> such that <span class="process-math">\(A+100B=\left(\begin{smallmatrix}1\amp 0\\1\amp 0\end{smallmatrix}\right)\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-3"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+<div class="para logical" id="p-14">
+<div class="para">Show that for any matrix <span class="process-math">\(A\in M_{n}(\mathbb{R})\)</span> the following is true.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A+0_n=0_n+A=A\quad\text{and}\quad A\, I_n=I_n\, A=A,\quad\text{and}\quad A\,0_n=0_n\,A=0_n
+\end{equation*}
+</div>
+</div></article><article class="exercise exercise-like" id="exercise-4"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
+<div class="para logical" id="p-15">
+<div class="para">Show that for any matrices <span class="process-math">\(A,B,C\in M_{5\times 7}(\mathbb{R})\)</span> the following is true.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(A+B)+C=A+(B+C)
+\end{equation*}
+</div>
+</div></article><article class="exercise exercise-like" id="exercise-5"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
+<div class="para" id="p-16">Let <span class="process-math">\(A,B,C\in M_4(\mathbb{R})\text{.}\)</span> Show that <span class="process-math">\(A(B+C)=AB+AC\)</span> and that <span class="process-math">\((A+B)C=AC+BC\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-6"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
+<div class="para logical" id="p-17">
+<div class="para">Compute the matrix multiplication <span class="process-math">\(AB\text{.}\)</span>
+</div>
+<ol class="lower-alpha">
+<li id="li-4"><div class="para" id="p-18">
+<span class="process-math">\(A=\begin{pmatrix}1\amp 2\amp -3\\-1\amp 0\amp 4\end{pmatrix}\)</span> and <span class="process-math">\(B=\begin{pmatrix}1\amp 2\amp 3\amp 0\\0\amp 0\amp 1\amp -1\\-1\amp 0\amp -2\amp -1\end{pmatrix}\)</span>
+</div></li>
+<li id="li-5"><div class="para" id="p-19">
+<span class="process-math">\(A=\begin{pmatrix}-2\amp -4\amp 0\amp -2\\-5\amp -2\amp -11\amp 7\end{pmatrix}\)</span> and <span class="process-math">\(B=\begin{pmatrix}1\\-1\\1\\-1\end{pmatrix}\)</span>
+</div></li>
+<li id="li-6"><div class="para" id="p-20"><span class="process-math">\(\displaystyle A=B=\begin{pmatrix}1\amp -1\\0\amp 0\end{pmatrix}\)</span></div></li>
+<li id="li-7"><div class="para" id="p-21">
+<span class="process-math">\(A=\begin{pmatrix}1\amp 2\amp -2\end{pmatrix}\)</span> and <span class="process-math">\(B=\begin{pmatrix}-2\\1\\0\end{pmatrix}\)</span> <div class="para" id="p-22">In this case, consider the matrix <span class="process-math">\(A\)</span> as the point <span class="process-math">\(P_A=(1,2,-2)\)</span> of the space and matrix <span class="process-math">\(B\)</span> as the point <span class="process-math">\(P_B=(-2,1,0)\text{.}\)</span> Plot the line segment <span class="process-math">\(OP_A\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_A\)</span> as well as the line segment <span class="process-math">\(OP_B\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_B\text{.}\)</span> Check whether <span class="process-math">\(OP_A\)</span> is perpendicular to <span class="process-math">\(OP_B\text{.}\)</span>
+</div>
+</div></li>
+<li id="li-8">
+<div class="para" id="p-23">
+<span class="process-math">\(A=\begin{pmatrix}-1\amp -1\amp -1\end{pmatrix}\)</span> and <span class="process-math">\(B=\begin{pmatrix}-1\\0\\0\end{pmatrix}\)</span>
+</div>
+<div class="para" id="p-24">In this case, consider the matrix <span class="process-math">\(A\)</span> as the point <span class="process-math">\(P_A=(-1,-1,-1)\)</span> of the space and matrix <span class="process-math">\(B\)</span> as the point <span class="process-math">\(P_B=(-1,0,0)\text{.}\)</span> Plot the line segment <span class="process-math">\(OP_A\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_A\)</span> as well as the line segment <span class="process-math">\(OP_B\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_B\text{.}\)</span> Check whether <span class="process-math">\(OP_A\)</span> is perpendicular to <span class="process-math">\(OP_B\text{.}\)</span>
+</div>
+</li>
+</ol>
+</div></article><article class="exercise exercise-like" id="exercise-7"><h3 class="heading"><span class="codenumber">7<span class="period">.</span></span></h3>
+<div class="para logical" id="p-25">
+<div class="para">For a matrix <span class="process-math">\(A\in M_n(\mathbb{R})\)</span> and a natural number <span class="process-math">\(k\)</span> we write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A^k=\underbrace{AAA\cdots A}_{k\text{-times}}.
+\end{equation*}
+</div>
+<div class="para">In particular, <span class="process-math">\(A^1=A\)</span> and <span class="process-math">\(A^2=A\,A\text{.}\)</span>
+</div>
+</div> <div class="para logical" id="p-26">
+<div class="para">Find the following powers of the given matrices.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{pmatrix}1\amp 6\\0\amp 1\end{pmatrix}^3;\quad\begin{pmatrix}0\amp -1\\1\amp 0\end{pmatrix}^4;\quad\begin{pmatrix}1\amp -1\amp 0\\0\amp 1\amp -1\\0\amp 0\amp 1\end{pmatrix}^2;\quad\begin{pmatrix}0\amp 1\amp 1\\0\amp 0\amp -1\\0\amp 0\amp 0\end{pmatrix}^3
+\end{equation*}
+</div>
+</div></article><article class="exercise exercise-like" id="exercise-8"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
+<div class="para" id="p-27">Write the augmented matrix corresponding to the given system of equations.</div> <ol class="lower-alpha">
+<li id="li-9"><div class="para logical" id="p-28"><div class="displaymath process-math">
+\begin{equation*}
+\begin{alignedat}{2}
+2x\amp +{}\amp y \amp +{}\amp -z \amp = 2\\
+x\amp +{}\amp y \amp +{}\amp z \amp = 0
+\end{alignedat}
+\end{equation*}
+</div></div></li>
+<li id="li-10"><div class="para logical" id="p-29"><div class="displaymath process-math">
+\begin{equation*}
+\begin{alignedat}{3}
+-x\amp +{}\amp 3y \amp +{}\amp z \amp = -2\\
+x\amp +{}\amp y \amp +{}\amp 9z \amp = 0\\
+2x\amp +{}\amp 8y\amp {}\amp {}\amp=30
+\end{alignedat}
+\end{equation*}
+</div></div></li>
+</ol></article><article class="exercise exercise-like" id="exercise-9"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
+<div class="para" id="p-30">In the following, given <span class="process-math">\(A\)</span> compute its transpose and also compute <span class="process-math">\(A\,A^t\)</span> and <span class="process-math">\(A^t\, A\text{.}\)</span>
+</div> <ol class="lower-alpha">
+<li id="li-11"><div class="para" id="p-31">
+<span class="process-math">\(A=\begin{pmatrix}a\amp b\amp c\end{pmatrix}\in M_{1\times 3}(\mathbb{R})\text{,}\)</span> where <span class="process-math">\(a,b,c\in\mathbb{R}\)</span>
+</div></li>
+<li id="li-12"><div class="para" id="p-32">
+<span class="process-math">\(A=\begin{pmatrix}a\\b\\c\\d\\e\end{pmatrix}\in M_{5\times 1}(\mathbb{R})\text{,}\)</span> where <span class="process-math">\(a,b,c,d,e\in\mathbb{R}\)</span>
+</div></li>
+<li id="li-13"><div class="para" id="p-33"><span class="process-math">\(\displaystyle A=\begin{pmatrix}1\amp 2\amp 3\\-1\amp -2\amp -3\\0\amp 0\amp 0\end{pmatrix}\in M_3(\mathbb{R})\)</span></div></li>
+<li id="li-14"><div class="para" id="p-34"><span class="process-math">\(\displaystyle A=\begin{pmatrix}0\amp 1\amp 0\\1\amp 0\amp 0\\0\amp 0\amp 1\end{pmatrix}\in M_3(\mathbb{R})\)</span></div></li>
+<li id="li-15"><div class="para" id="p-35"><span class="process-math">\(\displaystyle A=\begin{pmatrix}-1\amp 0\amp 0\amp 0\\0\amp 0\amp 0\amp -1\\0\amp -1\amp 0\amp 0\\0\amp 0\amp -1\amp 0\end{pmatrix}\in M_4(\mathbb{R})\)</span></div></li>
+<li id="li-16"><div class="para" id="p-36">Find a condition on <span class="process-math">\(a,b,c,d\in\mathbb{R}\)</span> such that the matrix <span class="process-math">\(A=\begin{pmatrix}a\amp b\\c\amp d\end{pmatrix}\)</span> will be equal to its transpose.</div></li>
+<li id="li-17"><div class="para" id="p-37">Consider a matrix <span class="process-math">\(A=\begin{pmatrix}a\amp b\\c\amp d\end{pmatrix}\text{.}\)</span> Find a condition on <span class="process-math">\(a,b,c,d\in\mathbb{R}\)</span> such that  <span class="process-math">\(A\,A^t=I_2\)</span> and <span class="process-math">\(A^t\,A=I_2\text{.}\)</span>
+</div></li>
+</ol></article><article class="exercise exercise-like" id="exercise-10"><h3 class="heading"><span class="codenumber">10<span class="period">.</span></span></h3>
+<div class="para logical" id="p-38">
+<div class="para">Check whether <span class="process-math">\(f\)</span> is a function or not. Also check whether <span class="process-math">\(f\)</span> is injective (one-one) or surjective (onto).</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f\colon M_2(\mathbb{R})\to\mathbb{R}\quad\text{given by}\quad\begin{pmatrix}a\amp b\\c\amp d\end{pmatrix}\mapsto ad-bc.
+\end{equation*}
+</div>
+</div></article><article class="exercise exercise-like" id="exercise-11"><h3 class="heading"><span class="codenumber">11<span class="period">.</span></span></h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="">
-<div class="para" id="p-40">Multiplication <span class="process-math">\(AB\)</span> is defined when <span class="process-math">\(A\in M_{3\times 55}(\mathbb{R})\)</span> and <span class="process-math">\(B\in M_{55\times 1}(\mathbb{R})\text{.}\)</span>
+<div class="para" id="p-39">Multiplication <span class="process-math">\(AB\)</span> is defined when <span class="process-math">\(A\in M_{3\times 55}(\mathbb{R})\)</span> and <span class="process-math">\(B\in M_{55\times 1}(\mathbb{R})\text{.}\)</span>
 </div>
 <li data-component="answer" id="_opt_t" data-correct=""><p>True.</p></li>
 <li data-component="feedback" id="_opt_t">
 <li data-component="answer" id="_opt_f"><p>False.</p></li>
 <li data-component="feedback" id="_opt_f">
-</ul></div></div></article><article class="exercise exercise-like" id="exercise-2"><h3 class="heading"><span class="codenumber">2<span class="period">.</span></span></h3>
+</ul></div></div></article><article class="exercise exercise-like" id="exercise-12"><h3 class="heading"><span class="codenumber">12<span class="period">.</span></span></h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="">
-<div class="para" id="p-41">For any two matrices <span class="process-math">\(A,B\in M_{6}(\mathbb{R})\text{,}\)</span> <span class="process-math">\(AB=BA\text{.}\)</span>
+<div class="para" id="p-40">For any two matrices <span class="process-math">\(A,B\in M_{6}(\mathbb{R})\text{,}\)</span> <span class="process-math">\(AB=BA\text{.}\)</span>
 </div>
 <li data-component="answer" id="_opt_t"><p>True.</p></li>
 <li data-component="feedback" id="_opt_t">
 <li data-component="answer" id="_opt_f" data-correct=""><p>False.</p></li>
 <li data-component="feedback" id="_opt_f">
-</ul></div></div></article><article class="exercise exercise-like" id="exercise-3"><h3 class="heading"><span class="codenumber">3<span class="period">.</span></span></h3>
+</ul></div></div></article><article class="exercise exercise-like" id="exercise-13"><h3 class="heading"><span class="codenumber">13<span class="period">.</span></span></h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="">For any <span class="process-math">\(a\in\mathbb{R}\text{,}\)</span> <span class="process-math">\(\left(\begin{smallmatrix}0\amp a\\0\amp 0\end{smallmatrix}\right)^2=\left(\begin{smallmatrix}0\amp 0\\0\amp 0\end{smallmatrix}\right)\in M_2(\mathbb{R})\text{.}\)</span><li data-component="answer" id="_opt_t" data-correct=""><p>True.</p></li>
 <li data-component="feedback" id="_opt_t">
 <li data-component="answer" id="_opt_f"><p>False.</p></li>
 <li data-component="feedback" id="_opt_f">
-</ul></div></div></article><article class="exercise exercise-like" id="exercise-4"><h3 class="heading"><span class="codenumber">4<span class="period">.</span></span></h3>
-<div class="para" id="p-42"></div></article><article class="exercise exercise-like" id="exercise-5"><h3 class="heading"><span class="codenumber">5<span class="period">.</span></span></h3>
+</ul></div></div></article><article class="exercise exercise-like" id="exercise-14"><h3 class="heading"><span class="codenumber">14<span class="period">.</span></span></h3>
+<div class="para" id="p-41"></div></article><article class="exercise exercise-like" id="exercise-15"><h3 class="heading"><span class="codenumber">15<span class="period">.</span></span></h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="">
-<div class="para logical" id="p-43">
+<div class="para logical" id="p-42">
 <div class="para">The following system of linear equations has infinitely many solutions.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -205,9 +313,9 @@ x\amp +{}\amp y +\amp {}\amp 0\cdot z \amp = 2\\
 <li data-component="feedback" id="_opt_t">
 <li data-component="answer" id="_opt_f"><p>False.</p></li>
 <li data-component="feedback" id="_opt_f">
-</ul></div></div></article><article class="exercise exercise-like" id="exercise-6"><h3 class="heading"><span class="codenumber">6<span class="period">.</span></span></h3>
+</ul></div></div></article><article class="exercise exercise-like" id="exercise-16"><h3 class="heading"><span class="codenumber">16<span class="period">.</span></span></h3>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="">
-<div class="para logical" id="p-44">
+<div class="para logical" id="p-43">
 <div class="para">For the following matrix <span class="process-math">\(A\in M_3(\mathbb{R})\)</span> we have <span class="process-math">\(A=-A^t\text{.}\)</span>
 </div>
 <div class="displaymath process-math">

@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Questions related to row reduced echelon form of a matrix</title>
+<title>Row reduced echelon form of a matrix</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="practice-basic-operations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrices.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="practice-basic-operations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrices.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="practice-row-echelon-form.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -156,78 +156,40 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Related to matrices</span></a></div>
 <ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-basic-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Questions related to basic matrix operations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-basic-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Basic matrix operations</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-basic-operations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-row-echelon-form.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Questions related to row reduced echelon form of a matrix</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-row-echelon-form.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Row reduced echelon form of a matrix</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-row-echelon-form.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-row-echelon-form"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3</span><span class="space"> </span><span class="title">Questions related to row reduced echelon form of a matrix</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3</span><span class="space"> </span><span class="title">Row reduced echelon form of a matrix</span>
 </h2>
 <article class="definition definition-like" id="def-elementary-row-operations"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">(Elementary row operations).</span>
-</h3> <div class="para logical" id="p-45">
+</h3> <div class="para logical" id="p-44">
 <div class="para">Let <span class="process-math">\(A\in M_{m\times n}(\mathbb{R})\text{.}\)</span> Denote by <span class="process-math">\(R_i\)</span> (for <span class="process-math">\(1\leq i\leq m\)</span>) the <span class="process-math">\(i\)</span>-th row of <span class="process-math">\(A\text{.}\)</span> Following are elementary row operations.</div>
 <ol class="decimal">
-<li id="li-28"><div class="para" id="p-46">Interchanging <span class="process-math">\(i\)</span>-th row with <span class="process-math">\(j\)</span>-th row. This operation is usually denoted by <span class="process-math">\(R_i\leftrightarrow R_j\text{.}\)</span>
+<li id="li-18"><div class="para" id="p-45">Interchanging <span class="process-math">\(i\)</span>-th row with <span class="process-math">\(j\)</span>-th row. This operation is usually denoted by <span class="process-math">\(R_i\leftrightarrow R_j\text{.}\)</span>
 </div></li>
-<li id="li-29"><div class="para" id="p-47">Multiplying  <span class="process-math">\(i\)</span>-th row by a nonzero <span class="process-math">\(\alpha\in\mathbb{R}\text{.}\)</span> This operation is usually denoted by <span class="process-math">\(R_i\mapsto \alpha R_i\text{.}\)</span>
+<li id="li-19"><div class="para" id="p-46">Multiplying  <span class="process-math">\(i\)</span>-th row by a nonzero <span class="process-math">\(\alpha\in\mathbb{R}\text{.}\)</span> This operation is usually denoted by <span class="process-math">\(R_i\mapsto \alpha R_i\text{.}\)</span>
 </div></li>
-<li id="li-30"><div class="para" id="p-48">Adding a constant multiple of <span class="process-math">\(j\)</span>-th row to <span class="process-math">\(i\)</span>-th row. This operation is usually denoted by <span class="process-math">\(R_i\mapsto R_i+\alpha R_j\text{.}\)</span>
+<li id="li-20"><div class="para" id="p-47">Adding a constant multiple of <span class="process-math">\(j\)</span>-th row to <span class="process-math">\(i\)</span>-th row. This operation is usually denoted by <span class="process-math">\(R_i\mapsto R_i+\alpha R_j\text{.}\)</span>
 </div></li>
 </ol>
 </div></article><article class="note remark-like" id="row-reduced-echelon-form-procedure"><h3 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Procedure to obtain a row reduced echelon form of a matrix.</span>
 </h3> Recall that given a matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{R})\text{,}\)</span> by applying a sequence of elementary row operations, can be reduced to a <dfn class="terminology">row-reduced echelon form <span class="process-math">\(E_A\)</span> of <span class="process-math">\(A\)</span></dfn>. The matrix <span class="process-math">\(E_A\)</span> has the following properties. <ol class="decimal">
-<li id="li-31"><div class="para" id="p-derived-li-31">All zero rows occurs at the bottom of <span class="process-math">\(E_A\text{.}\)</span>
+<li id="li-21"><div class="para" id="p-derived-li-21">All zero rows occurs at the bottom of <span class="process-math">\(E_A\text{.}\)</span>
 </div></li>
-<li id="li-32"><div class="para" id="p-derived-li-32">If a row of <span class="process-math">\(E_A\)</span> is nonzero then the first nonzero entry is <span class="process-math">\(1\text{,}\)</span> it is called <dfn class="terminology">pivot</dfn>.</div></li>
-<li id="li-33"><div class="para" id="p-derived-li-33">In any two successive nonzero rows of <span class="process-math">\(E_A\text{,}\)</span> the pivot in the lower row occurs to the right of the pivot in the higher row.</div></li>
-<li id="li-34"><div class="para" id="p-derived-li-34">Each column of <span class="process-math">\(E_A\)</span> that contains the pivot has zero everywhere else.</div></li>
-</ol></article><div class="para" id="p-49"></div>
-<div class="para logical" id="p-50"><ol class="decimal">
-<li id="li-35"><div class="para logical" id="p-51">
-<div class="para">Find the row-reduced echelon form of the following matrices.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{pmatrix}1\amp 2\amp -1\amp 2\\0\amp 0\amp 0\amp 0\\3\amp 1\amp -2\amp 0\end{pmatrix};\quad\begin{pmatrix}0\amp 1\amp -1\\0\amp -4\amp -1\\3\amp 3\amp 3\\-1\amp -1\amp -1\\2\amp 2\amp 2\end{pmatrix};\quad\begin{pmatrix}0\amp 1\\0\amp 0\end{pmatrix}\text{.}
-\end{equation*}
-</div>
-</div></li>
-<li id="li-36"><div class="para" id="p-52">How many pivots are there in one row? How many pivot positions are there in one column?</div></li>
-<li id="li-37"><div class="para" id="p-53">In a <span class="process-math">\(3\times 10\)</span> matrix what is the largest possible number of pivots?</div></li>
-<li id="li-38"><div class="para" id="p-54">Write the row-reduced echelon matrix whose every row has a pivot.</div></li>
-<li id="li-39"><div class="para logical" id="p-55">
-<div class="para">Consider the following augmented matrices. In each case conssider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.</div>
-<ol class="lower-alpha">
-<li id="li-40"><div class="para logical" id="p-56"><div class="displaymath process-math">
-\begin{equation*}
-\left(
-\begin{matrix}1\amp 0\amp 0\\0\amp 1\amp 0\\0\amp 0\amp 1\end{matrix}\left|\,\begin{matrix}4\\-1\\2\end{matrix}\right.
-\right)
-\end{equation*}
-</div></div></li>
-<li id="li-41"><div class="para logical" id="p-57"><div class="displaymath process-math">
-\begin{equation*}
-\left(
-\begin{matrix}1\amp 0\amp 1\\0\amp 1\amp 1\\0\amp 0\amp 0\end{matrix}\left|\,\begin{matrix}-2\\4\\0\end{matrix}\right.
-\right)
-\end{equation*}
-</div></div></li>
-<li id="li-42"><div class="para logical" id="p-58"><div class="displaymath process-math">
-\begin{equation*}
-\left(
-\begin{matrix}1\amp 8\amp 1\\0\amp 1\amp 1\\0\amp 0\amp 0\end{matrix}\left|\,\begin{matrix}-2\\4\\1\end{matrix}\right.
-\right)
-\end{equation*}
-</div></div></li>
-</ol>
-</div></li>
-</ol></div></section></div>
+<li id="li-22"><div class="para" id="p-derived-li-22">If a row of <span class="process-math">\(E_A\)</span> is nonzero then the first nonzero entry is <span class="process-math">\(1\text{,}\)</span> it is called <dfn class="terminology">pivot</dfn>.</div></li>
+<li id="li-23"><div class="para" id="p-derived-li-23">In any two successive nonzero rows of <span class="process-math">\(E_A\text{,}\)</span> the pivot in the lower row occurs to the right of the pivot in the higher row.</div></li>
+<li id="li-24"><div class="para" id="p-derived-li-24">Each column of <span class="process-math">\(E_A\)</span> that contains the pivot has zero everywhere else.</div></li>
+</ol></article></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="practice-basic-operations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="practice-basic-operations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="practice-row-echelon-form.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
