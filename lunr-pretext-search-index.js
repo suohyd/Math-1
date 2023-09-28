@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Questions related to basic matrix operations",
-  "body": " Questions related to basic matrix operations   (Zero matrix)   We denote by the matrix with all its entries zero. We call the zero matrix.     (Identity matrix)   We denote by the matrix with all its diagonal entries , and all other (non-diagonal) entries zero. We call the identity matrix.     We denote the set of all matrices over by . So . For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .    Suppose that and . We denote the -th entry, i.e., entry in the -th row and -th column of the matrix (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .     Consider the following matrices in . Find .    Let . Find such that     Show that for any matrix the following is true.     Show that for any matrices the following is true.     Let . Show that and that .    Compute the matrix multiplication .    and       and             and  In this case, consider the matrix as the point of the space and matrix as the point . Plot the line segment joining the origin of and as well as the line segment joining the origin of and . Check whether is perpendicular to .       and   In this case, consider the matrix as the point of the space and matrix as the point . Plot the line segment joining the origin of and as well as the line segment joining the origin of and . Check whether is perpendicular to .        For a matrix and a natural number we write In particular, and .  Find the following powers of the given matrices.      Write the augmented matrix corresponding to the given system of equations.                For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is In the following, given compute its transpose and also compute and .     , where      , where                    Find a condition on such that the matrix will be equal to its transpose.    Consider a matrix . Find a condition on such that and .      Check whether is a function or not. Also check whether is injective (one-one) or surjective (onto).     "
+  "body": " Questions related to basic matrix operations   (Zero matrix)   We denote by the matrix with all its entries zero. We call the zero matrix.     (Identity matrix)   We denote by the matrix with all its diagonal entries , and all other (non-diagonal) entries zero. We call the identity matrix.     We denote the set of all matrices over by . So . For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .    Suppose that and . We denote the -th entry, i.e., entry in the -th row and -th column of the matrix (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .     Consider the following matrices in . Find .    Let . Find such that     Show that for any matrix the following is true.     Show that for any matrices the following is true.     Let . Show that and that .    Compute the matrix multiplication .    and       and             and  In this case, consider the matrix as the point of the space and matrix as the point . Plot the line segment joining the origin of and as well as the line segment joining the origin of and . Check whether is perpendicular to .       and   In this case, consider the matrix as the point of the space and matrix as the point . Plot the line segment joining the origin of and as well as the line segment joining the origin of and . Check whether is perpendicular to .        For a matrix and a natural number we write In particular, and .  Find the following powers of the given matrices.      Write the augmented matrix corresponding to the given system of equations.                 (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is    In the following, given compute its transpose and also compute and .     , where      , where                    Find a condition on such that the matrix will be equal to its transpose.    Consider a matrix . Find a condition on such that and .      Check whether is a function or not. Also check whether is injective (one-one) or surjective (onto).     "
 },
 {
   "id": "def-zero-matrix",
@@ -62,6 +62,15 @@ var ptx_lunr_docs = [
   "number": "1.1.4",
   "title": "",
   "body": " Suppose that and . We denote the -th entry, i.e., entry in the -th row and -th column of the matrix (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .  "
+},
+{
+  "id": "transpose",
+  "level": "2",
+  "url": "sec-basic-operations.html#transpose",
+  "type": "Definition",
+  "number": "1.1.5",
+  "title": "(Transpose of a matrix).",
+  "body": " (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is   "
 },
 {
   "id": "practice-basic-operations",
@@ -125,6 +134,33 @@ var ptx_lunr_docs = [
   "number": "1.2.6",
   "title": "",
   "body": " For the following matrix we have .   "
+},
+{
+  "id": "sec-row-echelon-form",
+  "level": "1",
+  "url": "sec-row-echelon-form.html",
+  "type": "Section",
+  "number": "1.3",
+  "title": "Questions related to row reduced echelon form of a matrix",
+  "body": " Questions related to row reduced echelon form of a matrix   (Elementary row operations)   Let . Denote by (for ) the -th row of . Following are elementary row operations.   Interchanging -th row with -th row. This operation is usually denoted by .    Multiplying -th row by a nonzero . This operation is usually denoted by .    Adding a constant multiple of -th row to -th row. This operation is usually denoted by .        Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row-reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.         Find the row-reduced echelon form of the following matrices. .    How many pivots are there in one row? How many pivot positions are there in one column?    In a matrix what is the largest possible number of pivots?    Write the row-reduced echelon matrix whose every row has a pivot.    Consider the following augmented matrices. In each case conssider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                      "
+},
+{
+  "id": "def-elementary-row-operations",
+  "level": "2",
+  "url": "sec-row-echelon-form.html#def-elementary-row-operations",
+  "type": "Definition",
+  "number": "1.3.1",
+  "title": "(Elementary row operations).",
+  "body": " (Elementary row operations)   Let . Denote by (for ) the -th row of . Following are elementary row operations.   Interchanging -th row with -th row. This operation is usually denoted by .    Multiplying -th row by a nonzero . This operation is usually denoted by .    Adding a constant multiple of -th row to -th row. This operation is usually denoted by .      "
+},
+{
+  "id": "row-reduced-echelon-form-procedure",
+  "level": "2",
+  "url": "sec-row-echelon-form.html#row-reduced-echelon-form-procedure",
+  "type": "Note",
+  "number": "1.3.2",
+  "title": "Procedure to obtain a row reduced echelon form of a matrix.",
+  "body": " Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row-reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.   "
 },
 {
   "id": "colophon-2",

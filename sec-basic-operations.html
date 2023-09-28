@@ -158,6 +158,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-basic-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Questions related to basic matrix operations</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-basic-operations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-row-echelon-form.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Questions related to row reduced echelon form of a matrix</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
@@ -284,21 +285,17 @@ x\amp +{}\amp y \amp +{}\amp 9z \amp = 0\\
 </ol>
 </li>
 <li id="li-19">
-<div class="para logical" id="p-30">
-<div class="para">For a matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{R})\text{,}\)</span> the transpose of <span class="process-math">\(A\text{,}\)</span> denoted by <span class="process-math">\(A^t\text{,}\)</span> is an <span class="process-math">\(n\times m\)</span> matrix obtained by writing columns of <span class="process-math">\(A\)</span> as rows of <span class="process-math">\(A^t\text{.}\)</span> Thus if</div>
-<div class="displaymath process-math">
+<article class="definition definition-like" id="transpose"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">(Transpose of a matrix).</span>
+</h3> For a matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{R})\text{,}\)</span> the transpose of <span class="process-math">\(A\text{,}\)</span> denoted by <span class="process-math">\(A^t\text{,}\)</span> is an <span class="process-math">\(n\times m\)</span> matrix obtained by writing columns of <span class="process-math">\(A\)</span> as rows of <span class="process-math">\(A^t\text{.}\)</span> Thus if<div class="displaymath process-math">
 \begin{equation*}
 A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}\in M_{m\times n}(\mathbb{R})
 \end{equation*}
-</div>
-<div class="para">then the transpose of <span class="process-math">\(A\)</span> is</div>
-<div class="displaymath process-math">
+</div>then the transpose of <span class="process-math">\(A\)</span> is<div class="displaymath process-math">
 \begin{equation*}
 A^t=\begin{pmatrix}a_{11}\amp a_{21}\amp\cdots\amp a_{n1}\\a_{12}\amp a_{22}\amp\cdots\amp a_{n2}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{1n}\amp a_{2n}\amp\cdots\amp a_{nn}\end{pmatrix}\in M_{n\times m}(\mathbb{R})
 \end{equation*}
-</div>
-<div class="para">In the following, given <span class="process-math">\(A\)</span> compute its transpose and also compute <span class="process-math">\(A\,A^t\)</span> and <span class="process-math">\(A^t\, A\text{.}\)</span>
-</div>
+</div></article><div class="para" id="p-30">In the following, given <span class="process-math">\(A\)</span> compute its transpose and also compute <span class="process-math">\(A\,A^t\)</span> and <span class="process-math">\(A^t\, A\text{.}\)</span>
 </div>
 <ol class="lower-alpha">
 <li id="li-20"><div class="para" id="p-31">
