@@ -88,6 +88,37 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.81/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.81/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.81/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.1.6';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.6/prefix-runtime.d1c90f59ed8885b2.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.6/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.1.6/prefix-runestone.4370653ffa4ec93a.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.6/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.1.6/prefix-runestone.cec40a61180efd41.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -106,7 +137,7 @@ window.MathJax = {
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-matrices.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrices.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-matrices.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrices.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="practice-basic-operations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -124,25 +155,36 @@ window.MathJax = {
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Related to matrices</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-basic-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Questions related to basic matrix operations</span></a></div></li></ul>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-basic-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Questions related to basic matrix operations</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-basic-operations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-basic-operations"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Questions related to basic matrix operations</span>
 </h2>
-<div class="para" id="p-8">We denote by <span class="process-math">\(0_n\)</span> the <span class="process-math">\(n\times n\)</span> matrix with all its entries zero. We call <span class="process-math">\(0_n\)</span> the zero matrix. We denote by <span class="process-math">\(I_n\)</span> the <span class="process-math">\(n\times n\)</span> matrix with all its diagonal entries <span class="process-math">\(1\text{,}\)</span> and all other (non-diagonal) entries zero. We call <span class="process-math">\(I_n\)</span> the identity matrix. We denote the set of all <span class="process-math">\(n\times n\)</span> matrices over <span class="process-math">\(\mathbb{R}\)</span> by <span class="process-math">\(M_n(\mathbb{R})\text{.}\)</span> So <span class="process-math">\(M_{n\times n}(\mathbb{R})=M_n(\mathbb{R})\text{.}\)</span> For any matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{R})\)</span> and <span class="process-math">\(\alpha\in\mathbb{R}\)</span> we denote by <span class="process-math">\(\alpha A\in M_{m\times n}(\mathbb{R})\)</span> the matrix obtained by multiplying every entry of the matrix <span class="process-math">\(A\)</span> by <span class="process-math">\(\alpha\text{.}\)</span>
-</div>
-<div class="para logical" id="p-9">
+<article class="definition definition-like" id="def-zero-matrix"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">(Zero matrix).</span>
+</h3> <div class="para" id="p-8">We denote by <span class="process-math">\(0_n\)</span> the <span class="process-math">\(n\times n\)</span> matrix with all its entries zero. We call <span class="process-math">\(0_n\)</span> the zero matrix.</div></article><article class="definition definition-like" id="def-identity-matrix"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">(Identity matrix).</span>
+</h3> <div class="para" id="p-9">We denote by <span class="process-math">\(I_n\)</span> the <span class="process-math">\(n\times n\)</span> matrix with all its diagonal entries <span class="process-math">\(1\text{,}\)</span> and all other (non-diagonal) entries zero. We call <span class="process-math">\(I_n\)</span> the identity matrix.</div></article><article class="convention remark-like" id="convention-1"><h3 class="heading">
+<span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-10">We denote the set of all <span class="process-math">\(n\times n\)</span> matrices over <span class="process-math">\(\mathbb{R}\)</span> by <span class="process-math">\(M_n(\mathbb{R})\text{.}\)</span> So <span class="process-math">\(M_{n\times n}(\mathbb{R})=M_n(\mathbb{R})\text{.}\)</span> For any matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{R})\)</span> and <span class="process-math">\(\alpha\in\mathbb{R}\)</span> we denote by <span class="process-math">\(\alpha A\in M_{m\times n}(\mathbb{R})\)</span> the matrix obtained by multiplying every entry of the matrix <span class="process-math">\(A\)</span> by <span class="process-math">\(\alpha\text{.}\)</span>
+</div></article><article class="observation remark-like" id="ij-th-entry"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-11">
 <div class="para">Suppose that <span class="process-math">\(A\in M_{m\times n}(\mathbb{R})\)</span> and <span class="process-math">\(B\in M_{n\times\ell}(\mathbb{R})\text{.}\)</span> We denote the <span class="process-math">\((i,j)\)</span>-th entry, i.e., entry in the <span class="process-math">\(i\)</span>-th row and <span class="process-math">\(j\)</span>-th column of the matrix <span class="process-math">\(A\)</span> (respectively, <span class="process-math">\(B\)</span>) by <span class="process-math">\(a_{ij}\)</span> (respectively, <span class="process-math">\(b_{ij}\)</span>). The <span class="process-math">\((i,j)\)</span>-th entry of the matrix multiplication <span class="process-math">\(AB\)</span> is given by the following formula.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sum_{k=1}^{n}a_{ik}b_{kj},\quad\text{where}\quad 1\leq i\leq m\quad\text{and}\quad 1\leq j\leq\ell
 \end{equation*}
 </div>
-</div>
-<ol class="decimal">
-<li id="li-4"><div class="para logical" id="p-10">
+</div></article><ol class="decimal">
+<li id="li-4"><div class="para logical" id="p-12">
 <div class="para">Consider the following matrices in <span class="process-math">\(M_{3\times 2}(\mathbb{R})\text{.}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -153,9 +195,9 @@ A=\begin{pmatrix}1\amp 9\\\tfrac{-1}{2}\amp -1\\2\amp -2\end{pmatrix},\quad B=\b
 <div class="para">Find <span class="process-math">\(2A+2B-5C\text{.}\)</span>
 </div>
 </div></li>
-<li id="li-5"><div class="para" id="p-11">Let <span class="process-math">\(A=\left(\begin{smallmatrix}1\amp 3\\0\amp 4\end{smallmatrix}\right)\in M_{2}(\mathbb{R})\text{.}\)</span> Find <span class="process-math">\(B\in M_{2}(\mathbb{R})\)</span> such that <span class="process-math">\(A+100B=\left(\begin{smallmatrix}1\amp 0\\1\amp 0\end{smallmatrix}\right).\)</span>
+<li id="li-5"><div class="para" id="p-13">Let <span class="process-math">\(A=\left(\begin{smallmatrix}1\amp 3\\0\amp 4\end{smallmatrix}\right)\in M_{2}(\mathbb{R})\text{.}\)</span> Find <span class="process-math">\(B\in M_{2}(\mathbb{R})\)</span> such that <span class="process-math">\(A+100B=\left(\begin{smallmatrix}1\amp 0\\1\amp 0\end{smallmatrix}\right).\)</span>
 </div></li>
-<li id="li-6"><div class="para logical" id="p-12">
+<li id="li-6"><div class="para logical" id="p-14">
 <div class="para">Show that for any matrix <span class="process-math">\(A\in M_{n}(\mathbb{R})\)</span> the following is true.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -163,7 +205,7 @@ A+0_n=0_n+A=A\quad\text{and}\quad A\, I_n=I_n\, A=A,\quad\text{and}\quad A\,0_n=
 \end{equation*}
 </div>
 </div></li>
-<li id="li-7"><div class="para logical" id="p-13">
+<li id="li-7"><div class="para logical" id="p-15">
 <div class="para">Show that for any matrices <span class="process-math">\(A,B,C\in M_{5\times 7}(\mathbb{R})\)</span> the following is true.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -171,42 +213,44 @@ A+0_n=0_n+A=A\quad\text{and}\quad A\, I_n=I_n\, A=A,\quad\text{and}\quad A\,0_n=
 \end{equation*}
 </div>
 </div></li>
-<li id="li-8"><div class="para" id="p-14">Let <span class="process-math">\(A,B,C\in M_4(\mathbb{R})\text{.}\)</span> Show that <span class="process-math">\(A(B+C)=AB+AC\)</span> and that <span class="process-math">\((A+B)C=AC+BC\text{.}\)</span>
+<li id="li-8"><div class="para" id="p-16">Let <span class="process-math">\(A,B,C\in M_4(\mathbb{R})\text{.}\)</span> Show that <span class="process-math">\(A(B+C)=AB+AC\)</span> and that <span class="process-math">\((A+B)C=AC+BC\text{.}\)</span>
 </div></li>
-<li id="li-9"><div class="para logical" id="p-15">
+<li id="li-9"><div class="para logical" id="p-17">
 <div class="para">Compute the matrix multiplication <span class="process-math">\(AB\text{.}\)</span>
 </div>
 <ol class="lower-alpha">
-<li id="li-10"><div class="para" id="p-16">
+<li id="li-10"><div class="para" id="p-18">
 <span class="process-math">\(A=\begin{pmatrix}1\amp 2\amp -3\\-1\amp 0\amp 4\end{pmatrix}\)</span> and <span class="process-math">\(B=\begin{pmatrix}1\amp 2\amp 3\amp 0\\0\amp 0\amp 1\amp -1\\-1\amp 0\amp -2\amp -1\end{pmatrix}\)</span>
 </div></li>
-<li id="li-11"><div class="para" id="p-17">
+<li id="li-11"><div class="para" id="p-19">
 <span class="process-math">\(A=\begin{pmatrix}-2\amp -4\amp 0\amp -2\\-5\amp -2\amp -11\amp 7\end{pmatrix}\)</span> and <span class="process-math">\(B=\begin{pmatrix}1\\-1\\1\\-1\end{pmatrix}\)</span>
 </div></li>
-<li id="li-12"><div class="para" id="p-18"><span class="process-math">\(\displaystyle A=B=\begin{pmatrix}1\amp -1\\0\amp 0\end{pmatrix}\)</span></div></li>
-<li id="li-13"><div class="para" id="p-19">
-<span class="process-math">\(A=\begin{pmatrix}1\amp 2\amp -2\end{pmatrix}\)</span> and <span class="process-math">\(B=\begin{pmatrix}-2\\1\\0\end{pmatrix}\)</span> <div class="para" id="p-20">In this case, consider the matrix <span class="process-math">\(A\)</span> as the point <span class="process-math">\(P_A=(1,2,-2)\)</span> of the space and matrix <span class="process-math">\(B\)</span> as the point <span class="process-math">\(P_B=(-2,1,0)\text{.}\)</span> Plot the line segment <span class="process-math">\(OP_A\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_A\)</span> as well as the line segment <span class="process-math">\(OP_B\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_B\text{.}\)</span> Check whether <span class="process-math">\(OP_A\)</span> is perpendicular to <span class="process-math">\(OP_B\text{.}\)</span>
+<li id="li-12"><div class="para" id="p-20"><span class="process-math">\(\displaystyle A=B=\begin{pmatrix}1\amp -1\\0\amp 0\end{pmatrix}\)</span></div></li>
+<li id="li-13"><div class="para" id="p-21">
+<span class="process-math">\(A=\begin{pmatrix}1\amp 2\amp -2\end{pmatrix}\)</span> and <span class="process-math">\(B=\begin{pmatrix}-2\\1\\0\end{pmatrix}\)</span> <div class="para" id="p-22">In this case, consider the matrix <span class="process-math">\(A\)</span> as the point <span class="process-math">\(P_A=(1,2,-2)\)</span> of the space and matrix <span class="process-math">\(B\)</span> as the point <span class="process-math">\(P_B=(-2,1,0)\text{.}\)</span> Plot the line segment <span class="process-math">\(OP_A\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_A\)</span> as well as the line segment <span class="process-math">\(OP_B\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_B\text{.}\)</span> Check whether <span class="process-math">\(OP_A\)</span> is perpendicular to <span class="process-math">\(OP_B\text{.}\)</span>
 </div>
 </div></li>
 <li id="li-14">
-<div class="para" id="p-21">
+<div class="para" id="p-23">
 <span class="process-math">\(A=\begin{pmatrix}-1\amp -1\amp -1\end{pmatrix}\)</span> and <span class="process-math">\(B=\begin{pmatrix}-1\\0\\0\end{pmatrix}\)</span>
 </div>
-<div class="para" id="p-22">In this case, consider the matrix <span class="process-math">\(A\)</span> as the point <span class="process-math">\(P_A=(-1,-1,-1)\)</span> of the space and matrix <span class="process-math">\(B\)</span> as the point <span class="process-math">\(P_B=(-1,0,0)\text{.}\)</span> Plot the line segment <span class="process-math">\(OP_A\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_A\)</span> as well as the line segment <span class="process-math">\(OP_B\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_B\text{.}\)</span> Check whether <span class="process-math">\(OP_A\)</span> is perpendicular to <span class="process-math">\(OP_B\text{.}\)</span>
+<div class="para" id="p-24">In this case, consider the matrix <span class="process-math">\(A\)</span> as the point <span class="process-math">\(P_A=(-1,-1,-1)\)</span> of the space and matrix <span class="process-math">\(B\)</span> as the point <span class="process-math">\(P_B=(-1,0,0)\text{.}\)</span> Plot the line segment <span class="process-math">\(OP_A\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_A\)</span> as well as the line segment <span class="process-math">\(OP_B\)</span> joining the origin of <span class="process-math">\(\mathbb{R}^3\)</span> and <span class="process-math">\(P_B\text{.}\)</span> Check whether <span class="process-math">\(OP_A\)</span> is perpendicular to <span class="process-math">\(OP_B\text{.}\)</span>
 </div>
 </li>
 </ol>
 </div></li>
 <li id="li-15">
-<div class="para logical" id="p-23">
+<div class="para logical" id="p-25">
 <div class="para">For a matrix <span class="process-math">\(A\in M_n(\mathbb{R})\)</span> and a natural number <span class="process-math">\(k\)</span> we write</div>
 <div class="displaymath process-math">
 \begin{equation*}
 A^k=\underbrace{AAA\cdots A}_{k\text{-times}}.
 \end{equation*}
 </div>
+<div class="para">In particular, <span class="process-math">\(A^1=A\)</span> and <span class="process-math">\(A^2=A\,A\text{.}\)</span>
 </div>
-<div class="para logical" id="p-24">
+</div>
+<div class="para logical" id="p-26">
 <div class="para">Find the following powers of the given matrices.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -216,9 +260,9 @@ A^k=\underbrace{AAA\cdots A}_{k\text{-times}}.
 </div>
 </li>
 <li id="li-16">
-<div class="para" id="p-25">Write the augmented matrix corresponding to the given system of equations.</div>
+<div class="para" id="p-27">Write the augmented matrix corresponding to the given system of equations.</div>
 <ol class="lower-alpha">
-<li id="li-17"><div class="para logical" id="p-26"><div class="displaymath process-math">
+<li id="li-17"><div class="para logical" id="p-28"><div class="displaymath process-math">
 \begin{equation*}
 \begin{alignedat}{2}
 2x\amp +{}\amp y \amp +{}\amp -z \amp = 2\\
@@ -226,7 +270,7 @@ x\amp +{}\amp y \amp +{}\amp z \amp = 0
 \end{alignedat}
 \end{equation*}
 </div></div></li>
-<li id="li-18"><div class="para logical" id="p-27"><div class="displaymath process-math">
+<li id="li-18"><div class="para logical" id="p-29"><div class="displaymath process-math">
 \begin{equation*}
 \begin{alignedat}{3}
 -x\amp +{}\amp 3y \amp +{}\amp z \amp = -2\\
@@ -238,7 +282,7 @@ x\amp +{}\amp y \amp +{}\amp 9z \amp = 0\\
 </ol>
 </li>
 <li id="li-19">
-<div class="para logical" id="p-28">
+<div class="para logical" id="p-30">
 <div class="para">For a matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{R})\text{,}\)</span> the transpose of <span class="process-math">\(A\text{,}\)</span> denoted by <span class="process-math">\(A^t\text{,}\)</span> is an <span class="process-math">\(n\times m\)</span> matrix obtained by writing columns of <span class="process-math">\(A\)</span> as rows of <span class="process-math">\(A^t\text{.}\)</span> Thus if</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -255,21 +299,21 @@ A^t=\begin{pmatrix}a_{11}\amp a_{21}\amp\cdots\amp a_{n1}\\a_{12}\amp a_{22}\amp
 </div>
 </div>
 <ol class="lower-alpha">
-<li id="li-20"><div class="para" id="p-29">
+<li id="li-20"><div class="para" id="p-31">
 <span class="process-math">\(A=\begin{pmatrix}a\amp b\amp c\end{pmatrix}\in M_{1\times 3}(\mathbb{R})\text{,}\)</span> where <span class="process-math">\(a,b,c\in\mathbb{R}\)</span>
 </div></li>
-<li id="li-21"><div class="para" id="p-30">
+<li id="li-21"><div class="para" id="p-32">
 <span class="process-math">\(A=\begin{pmatrix}a\\b\\c\\d\\e\end{pmatrix}\in M_{5\times 1}(\mathbb{R})\text{,}\)</span> where <span class="process-math">\(a,b,c,d,e\in\mathbb{R}\)</span>
 </div></li>
-<li id="li-22"><div class="para" id="p-31"><span class="process-math">\(\displaystyle A=\begin{pmatrix}1\amp 2\amp 3\\-1\amp -2\amp -3\\0\amp 0\amp 0\end{pmatrix}\in M_3(\mathbb{R})\)</span></div></li>
-<li id="li-23"><div class="para" id="p-32"><span class="process-math">\(\displaystyle A=\begin{pmatrix}0\amp 1\amp 0\\1\amp 0\amp 0\\0\amp 0\amp 1\end{pmatrix}\in M_3(\mathbb{R})\)</span></div></li>
-<li id="li-24"><div class="para" id="p-33"><span class="process-math">\(\displaystyle A=\begin{pmatrix}-1\amp 0\amp 0\amp 0\\0\amp 0\amp 0\amp -1\\0\amp -1\amp 0\amp 0\\0\amp 0\amp -1\amp 0\end{pmatrix}\in M_4(\mathbb{R})\)</span></div></li>
-<li id="li-25"><div class="para" id="p-34">Find a condition on <span class="process-math">\(a,b,c,d\in\mathbb{R}\)</span> such that the matrix <span class="process-math">\(A=\begin{pmatrix}a\amp b\\c\amp d\end{pmatrix}\)</span> will be equal to its transpose.</div></li>
-<li id="li-26"><div class="para" id="p-35">Consider a matrix <span class="process-math">\(A=\begin{pmatrix}a\amp b\\c\amp d\end{pmatrix}\text{.}\)</span> Find a condition on <span class="process-math">\(a,b,c,d\in\mathbb{R}\)</span> such that  <span class="process-math">\(A\,A^t=I_2\)</span> and <span class="process-math">\(A^t\,A=I_2\text{.}\)</span>
+<li id="li-22"><div class="para" id="p-33"><span class="process-math">\(\displaystyle A=\begin{pmatrix}1\amp 2\amp 3\\-1\amp -2\amp -3\\0\amp 0\amp 0\end{pmatrix}\in M_3(\mathbb{R})\)</span></div></li>
+<li id="li-23"><div class="para" id="p-34"><span class="process-math">\(\displaystyle A=\begin{pmatrix}0\amp 1\amp 0\\1\amp 0\amp 0\\0\amp 0\amp 1\end{pmatrix}\in M_3(\mathbb{R})\)</span></div></li>
+<li id="li-24"><div class="para" id="p-35"><span class="process-math">\(\displaystyle A=\begin{pmatrix}-1\amp 0\amp 0\amp 0\\0\amp 0\amp 0\amp -1\\0\amp -1\amp 0\amp 0\\0\amp 0\amp -1\amp 0\end{pmatrix}\in M_4(\mathbb{R})\)</span></div></li>
+<li id="li-25"><div class="para" id="p-36">Find a condition on <span class="process-math">\(a,b,c,d\in\mathbb{R}\)</span> such that the matrix <span class="process-math">\(A=\begin{pmatrix}a\amp b\\c\amp d\end{pmatrix}\)</span> will be equal to its transpose.</div></li>
+<li id="li-26"><div class="para" id="p-37">Consider a matrix <span class="process-math">\(A=\begin{pmatrix}a\amp b\\c\amp d\end{pmatrix}\text{.}\)</span> Find a condition on <span class="process-math">\(a,b,c,d\in\mathbb{R}\)</span> such that  <span class="process-math">\(A\,A^t=I_2\)</span> and <span class="process-math">\(A^t\,A=I_2\text{.}\)</span>
 </div></li>
 </ol>
 </li>
-<li id="li-27"><div class="para logical" id="p-36">
+<li id="li-27"><div class="para logical" id="p-38">
 <div class="para">Check whether <span class="process-math">\(f\)</span> is a function or not. Also check whether <span class="process-math">\(f\)</span> is injective (one-one) or surjective (onto).</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -279,7 +323,7 @@ f\colon M_2(\mathbb{R})\to\mathbb{R}\quad\text{given by}\quad\begin{pmatrix}a\am
 </div></li>
 </ol></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ch-matrices.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-matrices.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="practice-basic-operations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
