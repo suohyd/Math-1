@@ -19,9 +19,9 @@
       </p>
     </statement>
   </definition>
-  <convention>
+  <convention xml:id="ij-entry-of-matrix">
     <p>
-      The <term><m>(i,j)</m>-th entry of a matrix</term> <m>A\in M_{m\times n}(\mathbb{R})</m> is the entry at the intersection <m>i</m>-th row and <m>j</m>-th column of <m>A</m>.
+      The <term><m>(i,j)</m>-th entry of a matrix</term> <m>A\in M_{m\times n}(\mathbb{R})</m> is the entry at the intersection of <m>i</m>-th row and <m>j</m>-th column of <m>A</m>.
     </p>
   </convention>
   <convention>
@@ -48,9 +48,9 @@
       
     </p>
   </convention>
-  <observation xml:id="ij-th-entry">
+  <observation xml:id="ij-entry-of-product">
     <p>
-      Suppose that <m>A\in M_{m\times n}(\mathbb{R})</m> and <m>B\in M_{n\times\ell}(\mathbb{R})</m>. We denote the <m>(i,j)</m>-th entry, i.e., entry in the <m>i</m>-th row and <m>j</m>-th column of the matrix <m>A</m> (respectively, <m>B</m>) by <m>a_{ij}</m> (respectively, <m>b_{ij}</m>). The <m>(i,j)</m>-th entry of the matrix multiplication <m>AB</m> is given by the following formula.
+      Suppose that <m>A\in M_{m\times n}(\mathbb{R})</m> and <m>B\in M_{n\times\ell}(\mathbb{R})</m>. We denote the <m>(i,j)</m>-th entry (<xref ref="ij-entry-of-matrix"/>) <m>A</m> (respectively, <m>B</m>) by <m>a_{ij}</m> (respectively, <m>b_{ij}</m>). The <m>(i,j)</m>-th entry of the matrix multiplication <m>AB</m> is given by the following formula.
       <me>
         \sum_{k=1}^{n}a_{ik}b_{kj}
       </me>
@@ -66,7 +66,7 @@
           </me>
             then the transpose of <m>A</m> is
           <me>
-              A^t=\begin{pmatrix}a_{11}\amp a_{21}\amp\cdots\amp a_{n1}\\a_{12}\amp a_{22}\amp\cdots\amp a_{n2}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{1n}\amp a_{2n}\amp\cdots\amp a_{nn}\end{pmatrix}\in M_{n\times m}(\mathbb{R})
+              A^t=\begin{pmatrix}a_{11}\amp a_{21}\amp\cdots\amp a_{n1}\\a_{12}\amp a_{22}\amp\cdots\amp a_{n2}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{1n}\amp a_{2n}\amp\cdots\amp a_{nn}\end{pmatrix}\in M_{n\times m}(\mathbb{R}).
           </me>
         </statement>  
     </definition>
@@ -83,8 +83,8 @@
       </statement>
     </definition>
     <definition xml:id="homogeneous-system">
-      <title>(Coefficient matrix of the system of linear equations and homogeneous system of linear equations)</title>
-      Consider the system of linear equations with <m>a_{ij},b_i\in\mathbb{R}</m> for every <m>1\leq i\leq m</m> and <m>1\leq j\leq n</m>.
+      <title>(Coefficient matrix of a system of linear equations and homogeneous system of linear equations)</title>
+      Consider a system of linear equations with <m>a_{ij},b_i\in\mathbb{R}</m> for every <m>1\leq i\leq m</m> and <m>1\leq j\leq n</m>.
       <me>
         \begin{alignedat}{4}
         a_{11}x_1\amp +{}\amp a_{12}x_2 \amp +{}\amp \cdots \amp +{} \amp a_{1n}x_n\amp= b_1\\
@@ -105,10 +105,10 @@
         <me>
           AX=B.
         </me>
-        The matrix <m>A</m> is called the <term>coefficient matrix</term> of the system.
+        The matrix <m>A</m> is called the <term>coefficient matrix</term> of the above system.
        </p>
        <p>
-        If all <m>b_1=b_2=\cdots=b_n=0</m> then the system is said to be <term>homogeneous</term>.
+        If all <m>b_1=b_2=\cdots=b_n=0</m> then the above system of linear equations is said to be <term>homogeneous</term>.
        </p>
       </definition>
 </section>

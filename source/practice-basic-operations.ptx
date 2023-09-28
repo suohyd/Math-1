@@ -255,6 +255,68 @@
         </statement>
     </exercise>
     <exercise>
+      <statement>
+        <p>
+          Find the inverse of the given matrix.
+          <ol>
+            <li>
+              <p>
+                <m>\begin{pmatrix}1\amp 0\\0\amp 1\end{pmatrix}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\begin{pmatrix}1\amp 1\\0\amp 1\end{pmatrix}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\begin{pmatrix}0\amp 1\\-1\amp 0\end{pmatrix}</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>\begin{pmatrix}a\amp 0\\0\amp b\end{pmatrix}</m>, where <m>a</m> and <m>b</m> are nonzero real numbers.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          In each of the following system <m>AX=B</m>, the matrices <m>A,B</m> are given. Find the matrix <m>X</m>.
+        </p>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <me>A=\begin{pmatrix}-1\amp 0\\-1\amp 1\end{pmatrix}\quad \text{and}\quad B=\begin{pmatrix}0\\1\end{pmatrix}</me>. Find <m>X=\begin{pmatrix}x_1\\x_2\end{pmatrix}</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                <me>A=\begin{pmatrix}5\amp 2\\-2\amp 0\end{pmatrix}\quad \text{and}\quad B=\begin{pmatrix}7\\5\end{pmatrix}</me>. Find <m>X=\begin{pmatrix}x_1\\x_2\end{pmatrix}</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Show that if the inverse of a matrix <m>A\in M_n(\mathbb{R})</m> exists then it is unique, i.e., if <m>B\in M_n(\mathbb{R})</m> and <m>C\in M_n(\mathbb{R})</m> are such that <m>AB=I_n=BA</m> and <m>AC=I_n=CA</m>, then <m>B=C</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Multiply each side of the equation <m>AB=I_n</m> on the left by <m>C</m>.
+        </p>
+      </hint>
+    </exercise>
+    <exercise>
         <statement correct="yes">
             <p>
                 Multiplication <m>AB</m> is defined when <m>A\in M_{3\times 55}(\mathbb{R})</m> and <m>B\in M_{55\times 1}(\mathbb{R})</m>.
@@ -303,6 +365,16 @@
       <statement correct="no">
         <p>
           Every matrix in <m>M_3(\mathbb{R})</m> has an inverse.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement correct="yes">
+        <p>
+          Let <m>A,B\in M_n(\mathbb{R})</m>. The inverse of <m>AB</m> is <m>B^{-1}A^{-1}</m>, i.e.,
+          <me>
+            \left(AB\right)^{-1}=B^{-1}A^{-1}.
+          </me>
         </p>
       </statement>
     </exercise>
