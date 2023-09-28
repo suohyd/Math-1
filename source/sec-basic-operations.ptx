@@ -97,7 +97,7 @@
         We may write the system of linear equations given above in a matrix form.
        </p>
        <me>
-        \begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}\begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}=\begin{pmatrix}b_1\\b_2\\\vdots\\b_n\end{pmatrix}.
+        \begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}\begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}=\begin{pmatrix}b_1\\b_2\\\vdots\\b_n\end{pmatrix}
        </me>
        <p>
         If we put <me>A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}</me> and <me>X=\begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}</me>, and <me>B=\begin{pmatrix}b_1\\b_2\\\vdots\\b_n\end{pmatrix}</me>
