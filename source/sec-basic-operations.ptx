@@ -229,7 +229,9 @@
         </ol>
       </li>
       <li>
-          <p>
+        <definition xml:id="transpose">
+          <title>(Transpose of a matrix)</title>          
+          <statement>
             For a matrix <m>A\in M_{m\times n}(\mathbb{R})</m>, the transpose of <m>A</m>, denoted by <m>A^t</m>, is an <m>n\times m</m> matrix obtained by writing columns of <m>A</m> as rows of <m>A^t</m>. Thus if 
             <me>
               A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}\in M_{m\times n}(\mathbb{R})
@@ -238,8 +240,11 @@
             <me>
               A^t=\begin{pmatrix}a_{11}\amp a_{21}\amp\cdots\amp a_{n1}\\a_{12}\amp a_{22}\amp\cdots\amp a_{n2}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{1n}\amp a_{2n}\amp\cdots\amp a_{nn}\end{pmatrix}\in M_{n\times m}(\mathbb{R})
             </me>
+          </statement>  
+          </definition>  
+        <p>  
             In the following, given <m>A</m> compute its transpose and also compute <m>A\,A^t</m> and <m>A^t\, A</m>.         
-          </p>
+        </p>
           <ol>
             <li>
               <p>
