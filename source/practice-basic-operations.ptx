@@ -299,4 +299,11 @@
             </p>
         </statement>
     </exercise>
+    <exercise>
+      <statement correct="no">
+        <p>
+          Every matrix in <m>M_3(\mathbb{R})</m> has an inverse.
+        </p>
+      </statement>
+    </exercise>
 </exercises>
