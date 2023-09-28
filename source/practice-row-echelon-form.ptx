@@ -1,7 +1,7 @@
 <exercises xml:id="practice-row-echelon-form">
     <introduction>
         <p>
-            A few exercises are related to row reduced echelon form of a matrix are listed below.
+            A few exercises related to the row reduced echelon form of a matrix are listed below.
         </p>
     </introduction>
     <exercise>
@@ -13,7 +13,7 @@
     </exercise>
     <exercise>
         <p>
-            How many pivots are there in one row? How many pivot positions are there in one column?
+            How many pivots are there in one row? How many pivots are there in one column?
           </p>
     </exercise>
     <exercise>
@@ -28,7 +28,7 @@
     </exercise>
     <exercise>
         <p>
-            Consider the following augmented matrices. In each case conssider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.
+            Consider the following augmented matrices. In each case consider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.
             <ol>
               <li>
                 <p>
