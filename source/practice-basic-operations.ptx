@@ -1,9 +1,259 @@
 <exercises xml:id="practice-basic-operations">
     <introduction>
         <p>
-            A few interactive practice exercises are listed below.
+            A few exercises related to basic matrix operations are listed below.
         </p>
     </introduction>
+    <exercise>
+        <statement>
+            Consider the following matrices in <m>M_{3\times 2}(\mathbb{R})</m>.
+          <me>
+            A=\begin{pmatrix}1\amp 9\\\tfrac{-1}{2}\amp -1\\2\amp -2\end{pmatrix},\quad B=\begin{pmatrix}1\amp 9\\\tfrac{-1}{2}\amp -1\\\tfrac{1}{9}\amp \tfrac{-1}{2}\end{pmatrix},\quad\text{and}\quad C=\begin{pmatrix}0\amp -5\\\tfrac{-1}{10}\amp 10\\2\amp -2\end{pmatrix}
+          </me>
+          Find <m>2A+2B-5C</m>.
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Let <m>A=\left(\begin{smallmatrix}1\amp 3\\0\amp 4\end{smallmatrix}\right)\in M_{2}(\mathbb{R})</m>. Find <m>B\in M_{2}(\mathbb{R})</m> such that <m>A+100B=\left(\begin{smallmatrix}1\amp 0\\1\amp 0\end{smallmatrix}\right)</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Show that for any matrix <m>A\in M_{n}(\mathbb{R})</m> the following is true. <me>A+0_n=0_n+A=A\quad\text{and}\quad A\, I_n=I_n\, A=A,\quad\text{and}\quad A\,0_n=0_n\,A=0_n</me>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Show that for any matrices <m>A,B,C\in M_{5\times 7}(\mathbb{R})</m> the following is true. <me>(A+B)+C=A+(B+C)</me>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Let <m>A,B,C\in M_4(\mathbb{R})</m>. Show that <m>A(B+C)=AB+AC</m> and that <m>(A+B)C=AC+BC</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Compute the matrix multiplication <m>AB</m>.
+          <ol>
+            <li>
+              <p>
+                <m>A=\begin{pmatrix}1\amp 2\amp -3\\-1\amp 0\amp 4\end{pmatrix}</m> and <m>B=\begin{pmatrix}1\amp 2\amp 3\amp 0\\0\amp 0\amp 1\amp -1\\-1\amp 0\amp -2\amp -1\end{pmatrix}</m>
+              </p>
+              <!--  <p>
+                  We use <q>SageMath</q>, computer algebra system, to calculate the matrix multiplication. Please verify your answers by clicking on <q>Evaluate (Sage)</q> button.
+                </p>
+                <p>
+                  <sage>
+                    <input>
+                      sage: A=Matrix([[1,2,-3],[-1,0,4]])
+                      sage: B=Matrix([[1,2,3,0],[0,0,1,-1],[-1,0,-2,-1]])
+                      sage: print (A*B)
+                    </input>
+                    <output>
+                      
+                    </output>
+                  </sage>  
+                </p>-->
+            </li>
+            <li>
+              <p>
+                <m>A=\begin{pmatrix}-2\amp -4\amp 0\amp -2\\-5\amp -2\amp -11\amp 7\end{pmatrix}</m> and <m>B=\begin{pmatrix}1\\-1\\1\\-1\end{pmatrix}</m>
+              </p>
+              <!--<p>
+                 We use <q>SageMath</q>, a computer algebra system, to calculate the matrix multiplication. Please verify your answers by clicking on <q>Evaluate (Sage)</q> button.
+              </p>
+              <p>
+                <sage>
+                  <input>
+                    sage: A=Matrix([[-2,-4,0,-2],[-5,-2,-11,7]])
+                    sage: B=Matrix([[1],[-1],[1],[-1]])
+                    sage: print (A*B)
+                  </input>
+                  <output>
+                    
+                  </output>
+                </sage>  
+              </p>-->
+            </li>
+            <li>
+              <p>
+                <m>A=B=\begin{pmatrix}1\amp -1\\0\amp 0\end{pmatrix}</m>
+              </p>
+            <!--  <p>
+                We use <q>SageMath</q>, a computer algebra system, to calculate the matrix multiplication. Please verify your answers by clicking on <q>Evaluate (Sage)</q> button.
+              </p>
+              <p>
+                <sage>
+                  <input>
+                    sage: A=Matrix([[1,-1],[0,0]])
+                    sage: B=Matrix([[1,-1],[0,0]])
+                    sage: print (A*B)
+                  </input>
+                  <output>
+                    
+                  </output>
+                </sage>  
+              </p>-->
+            </li>
+            <li>
+              <p>
+                <m>A=\begin{pmatrix}1\amp 2\amp -2\end{pmatrix}</m> and <m>B=\begin{pmatrix}-2\\1\\0\end{pmatrix}</m>
+                <p>
+                  In this case, consider the matrix <m>A</m> as the point <m>P_A=(1,2,-2)</m> of the space and matrix <m>B</m> as the point <m>P_B=(-2,1,0)</m>. Plot the line segment <m>OP_A</m> joining the origin of <m>\mathbb{R}^3</m> and <m>P_A</m> as well as the line segment <m>OP_B</m> joining the origin of <m>\mathbb{R}^3</m> and <m>P_B</m>. Check whether <m>OP_A</m> is perpendicular to <m>OP_B</m>.
+                </p>
+              </p>
+              <!--<p>
+                We use <q>SageMath</q>, a computer a algebra system, to calculate the matrix multiplication. Please verify your answers by clicking on <q>Evaluate (Sage)</q> button.
+              </p>
+              <p>
+                <sage>
+                  <input>
+                    sage: A=Matrix([[1,2,-2]])
+                    sage: B=Matrix([[-2],[1],[0]])
+                    sage: print (A*B)
+                  </input>
+                  <output>
+                    
+                  </output>
+                </sage>  
+              </p>-->
+            </li>
+            <li>
+              <p>
+                <m>A=\begin{pmatrix}-1\amp -1\amp -1\end{pmatrix}</m> and <m>B=\begin{pmatrix}-1\\0\\0\end{pmatrix}</m>
+              </p>
+              <p>
+                In this case, consider the matrix <m>A</m> as the point <m>P_A=(-1,-1,-1)</m> of the space and matrix <m>B</m> as the point <m>P_B=(-1,0,0)</m>. Plot the line segment <m>OP_A</m> joining the origin of <m>\mathbb{R}^3</m> and <m>P_A</m> as well as the line segment <m>OP_B</m> joining the origin of <m>\mathbb{R}^3</m> and <m>P_B</m>. Check whether <m>OP_A</m> is perpendicular to <m>OP_B</m>.
+              </p>
+              <!--<p>
+                We use <q>SageMath</q>, a computer algebra system, to calculate the matrix multiplication. Please verify your answers by clicking on <q>Evaluate (Sage)</q> button.
+              </p>
+              <p>
+                <sage>
+                  <input>
+                    sage: A=Matrix([[1,-1,-1]])
+                    sage: B=Matrix([[-1],[0],[0]])
+                    sage: print (A*B)
+                  </input>
+                  <output>
+                    
+                  </output>
+                </sage>  
+              </p>-->
+            </li>
+          </ol>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                For a matrix <m>A\in M_n(\mathbb{R})</m> and a natural number <m>k</m> we write <me>A^k=\underbrace{AAA\cdots A}_{k\text{-times}}.</me>
+                In particular, <m>A^1=A</m> and <m>A^2=A\,A</m>.
+              </p>
+              <p>
+                Find the following powers of the given matrices. 
+                <me>
+                  \begin{pmatrix}1\amp 6\\0\amp 1\end{pmatrix}^3;\quad\begin{pmatrix}0\amp -1\\1\amp 0\end{pmatrix}^4;\quad\begin{pmatrix}1\amp -1\amp 0\\0\amp 1\amp -1\\0\amp 0\amp 1\end{pmatrix}^2;\quad\begin{pmatrix}0\amp 1\amp 1\\0\amp 0\amp -1\\0\amp 0\amp 0\end{pmatrix}^3
+                </me>
+              </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Write the augmented matrix corresponding to the given system of equations.
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    <me>
+                    \begin{alignedat}{2}
+                    2x\amp +{}\amp y \amp +{}\amp -z \amp = 2\\
+                    x\amp +{}\amp y \amp +{}\amp z \amp = 0
+                    \end{alignedat}
+                   </me>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <me>
+                      \begin{alignedat}{3}
+                      -x\amp +{}\amp 3y \amp +{}\amp z \amp = -2\\
+                      x\amp +{}\amp y \amp +{}\amp 9z \amp = 0\\
+                      2x\amp +{}\amp 8y\amp {}\amp {}\amp=30
+                      \end{alignedat}
+                    </me>  
+                  </p>
+                </li>
+              </ol>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>  
+                In the following, given <m>A</m> compute its transpose and also compute <m>A\,A^t</m> and <m>A^t\, A</m>.         
+            </p>
+              <ol>
+                <li>
+                  <p>
+                    <m>A=\begin{pmatrix}a\amp b\amp c\end{pmatrix}\in M_{1\times 3}(\mathbb{R})</m>, where <m>a,b,c\in\mathbb{R}</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A=\begin{pmatrix}a\\b\\c\\d\\e\end{pmatrix}\in M_{5\times 1}(\mathbb{R})</m>, where <m>a,b,c,d,e\in\mathbb{R}</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A=\begin{pmatrix}1\amp 2\amp 3\\-1\amp -2\amp -3\\0\amp 0\amp 0\end{pmatrix}\in M_3(\mathbb{R})</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A=\begin{pmatrix}0\amp 1\amp 0\\1\amp 0\amp 0\\0\amp 0\amp 1\end{pmatrix}\in M_3(\mathbb{R})</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <m>A=\begin{pmatrix}-1\amp 0\amp 0\amp 0\\0\amp 0\amp 0\amp -1\\0\amp -1\amp 0\amp 0\\0\amp 0\amp -1\amp 0\end{pmatrix}\in M_4(\mathbb{R})</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Find a condition on <m>a,b,c,d\in\mathbb{R}</m> such that the matrix <m>A=\begin{pmatrix}a\amp b\\c\amp d\end{pmatrix}</m> will be equal to its transpose.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Consider a matrix <m>A=\begin{pmatrix}a\amp b\\c\amp d\end{pmatrix}</m>. Find a condition on <m>a,b,c,d\in\mathbb{R}</m> such that  <m>A\,A^t=I_2</m> and <m>A^t\,A=I_2</m>.
+                  </p>
+                </li>
+              </ol>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Check whether <m>f</m> is a function or not. Also check whether <m>f</m> is injective (one-one) or surjective (onto).
+                <me>
+                    f\colon M_2(\mathbb{R})\to\mathbb{R}\quad\text{given by}\quad\begin{pmatrix}a\amp b\\c\amp d\end{pmatrix}\mapsto ad-bc.
+                </me>
+            </p>
+        </statement>
+    </exercise>
     <exercise>
         <statement correct="yes">
             <p>

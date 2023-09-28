@@ -11,6 +11,7 @@
   <xi:include href="sec-basic-operations.ptx" />
   <xi:include href="practice-basic-operations.ptx" />
   <xi:include href="sec-row-echelon-form.ptx" />
+  <xi:include href="practice-row-echelon-form.ptx" />
 
 
 </chapter>

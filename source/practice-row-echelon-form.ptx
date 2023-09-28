@@ -1,0 +1,62 @@
+<exercises xml:id="practice-row-echelon-form">
+    <introduction>
+        <p>
+            A few exercises are related to row reduced echelon form of a matrix are listed below.
+        </p>
+    </introduction>
+    <exercise>
+        <p>
+            Find the row-reduced echelon form of the following matrices.
+            <me>\begin{pmatrix}1\amp 2\amp -1\amp 2\\0\amp 0\amp 0\amp 0\\3\amp 1\amp -2\amp 0\end{pmatrix};\quad\begin{pmatrix}0\amp 1\amp -1\\0\amp -4\amp -1\\3\amp 3\amp 3\\-1\amp -1\amp -1\\2\amp 2\amp 2\end{pmatrix};\quad\begin{pmatrix}0\amp 1\\0\amp 0\end{pmatrix}
+            </me>.
+          </p>
+    </exercise>
+    <exercise>
+        <p>
+            How many pivots are there in one row? How many pivot positions are there in one column?
+          </p>
+    </exercise>
+    <exercise>
+        <p>
+            In a <m>3\times 10</m> matrix what is the largest possible number of pivots?
+          </p>
+    </exercise>
+    <exercise>
+        <p>
+            Write the row-reduced echelon matrix whose every row has a pivot.
+          </p>
+    </exercise>
+    <exercise>
+        <p>
+            Consider the following augmented matrices. In each case conssider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.
+            <ol>
+              <li>
+                <p>
+                  <me>
+                    \left(
+                      \begin{matrix}1\amp 0\amp 0\\0\amp 1\amp 0\\0\amp 0\amp 1\end{matrix}\left|\,\begin{matrix}4\\-1\\2\end{matrix}\right.
+                    \right)
+                  </me>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <me>\left(
+                      \begin{matrix}1\amp 0\amp 1\\0\amp 1\amp 1\\0\amp 0\amp 0\end{matrix}\left|\,\begin{matrix}-2\\4\\0\end{matrix}\right.
+                    \right)
+                  </me>  
+                </p>
+              </li>
+              <li>
+                <p>
+                  <me>
+                    \left(
+                      \begin{matrix}1\amp 8\amp 1\\0\amp 1\amp 1\\0\amp 0\amp 0\end{matrix}\left|\,\begin{matrix}-2\\4\\1\end{matrix}\right.
+                    \right)
+                  </me>
+                </p>
+              </li>
+            </ol>
+          </p>
+    </exercise>
+</exercises>
