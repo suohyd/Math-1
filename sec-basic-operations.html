@@ -189,7 +189,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">Matrices <span class="process-math">\(A,B\in M_{m\times n}(\mathbb{R})\)</span> are <dfn class="terminology">equal</dfn> or <dfn class="terminology">same</dfn> if every <span class="process-math">\((i,j)\)</span>-th entry of <span class="process-math">\(A\)</span> is equal to (same as) the <span class="process-math">\((i,j)\)</span>-th entry of <span class="process-math">\(B\)</span> for every <span class="process-math">\(1\leq i\leq m\)</span> and for every <span class="process-math">\(1\leq j\leq n\text{.}\)</span> That is if</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}\in M_{m\times n}(\mathbb{R})\quad\text{and}\quad B=\begin{pmatrix}b_{11}\amp b_{12}\amp\cdots\amp b_{1n}\\b_{21}\amp b_{22}\amp\cdots\amp b_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\b_{n1}\amp b_{n2}\amp\cdots\amp b_{nn}\end{pmatrix}\in M_{m\times n}(\mathbb{R})
+A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{m1}\amp a_{m2}\amp\cdots\amp a_{mn}\end{pmatrix}\in M_{m\times n}(\mathbb{R})\quad\text{and}\quad B=\begin{pmatrix}b_{11}\amp b_{12}\amp\cdots\amp b_{1n}\\b_{21}\amp b_{22}\amp\cdots\amp b_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\b_{m1}\amp b_{m2}\amp\cdots\amp b_{mn}\end{pmatrix}\in M_{m\times n}(\mathbb{R})
 \end{equation*}
 </div>
 <div class="para">then,</div>
@@ -214,11 +214,11 @@ A=B\quad\text{if and only if}\quad a_{ij}=b_{ij}\,\text{for all}\,1\leq i\leq m\
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">(Transpose of a matrix).</span>
 </h3> For a matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{R})\text{,}\)</span> the transpose of <span class="process-math">\(A\text{,}\)</span> denoted by <span class="process-math">\(A^t\text{,}\)</span> is an <span class="process-math">\(n\times m\)</span> matrix obtained by writing columns of <span class="process-math">\(A\)</span> as rows of <span class="process-math">\(A^t\text{.}\)</span> Thus if<div class="displaymath process-math">
 \begin{equation*}
-A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}\in M_{m\times n}(\mathbb{R})
+A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{m1}\amp a_{m2}\amp\cdots\amp a_{mn}\end{pmatrix}\in M_{m\times n}(\mathbb{R})
 \end{equation*}
 </div>then the transpose of <span class="process-math">\(A\)</span> is<div class="displaymath process-math">
 \begin{equation*}
-A^t=\begin{pmatrix}a_{11}\amp a_{21}\amp\cdots\amp a_{n1}\\a_{12}\amp a_{22}\amp\cdots\amp a_{n2}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{1n}\amp a_{2n}\amp\cdots\amp a_{nn}\end{pmatrix}\in M_{n\times m}(\mathbb{R}).
+A^t=\begin{pmatrix}a_{11}\amp a_{21}\amp\cdots\amp a_{m1}\\a_{12}\amp a_{22}\amp\cdots\amp a_{m2}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{1n}\amp a_{2n}\amp\cdots\amp a_{mn}\end{pmatrix}\in M_{n\times m}(\mathbb{R}).
 \end{equation*}
 </div></article><article class="definition definition-like" id="def-inverse-of-matrix"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">(Inverse of a matrix).</span>
@@ -239,21 +239,21 @@ AB=BA=I_n.
 a_{11}x_1\amp +{}\amp a_{12}x_2 \amp +{}\amp \cdots \amp +{} \amp a_{1n}x_n\amp= b_1\\
 a_{21}x_1\amp +{}\amp a_{22}x_2 \amp +{}\amp \cdots \amp +{} \amp a_{2n}x_n\amp= b_2\\
 {}\amp \vdots{}\amp {} \amp \vdots{}\amp {} \amp \ddots{} \amp {}\amp{} \vdots\\
-a_{n1}x_1\amp +{}\amp a_{n2}x_2 \amp +{}\amp \cdots \amp +{} \amp a_{nn}x_n\amp= b_n\\
+a_{m1}x_1\amp +{}\amp a_{m2}x_2 \amp +{}\amp \cdots \amp +{} \amp a_{mn}x_n\amp= b_m\\
 \end{alignedat}
 \end{equation*}
 </div>
 <div class="para" id="p-16">We may write the system of linear equations given above in a matrix form.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}\begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}=\begin{pmatrix}b_1\\b_2\\\vdots\\b_n\end{pmatrix}
+\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{m1}\amp a_{m2}\amp\cdots\amp a_{mn}\end{pmatrix}\begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}=\begin{pmatrix}b_1\\b_2\\\vdots\\b_m\end{pmatrix}
 \end{equation*}
 </div>
 <div class="para logical" id="p-17">
 <div class="para">If we put</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}
+A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{m1}\amp a_{m2}\amp\cdots\amp a_{mn}\end{pmatrix}
 \end{equation*}
 </div>
 <div class="para">and</div>
@@ -265,7 +265,7 @@ X=\begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}\text{,}
 <div class="para">and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-B=\begin{pmatrix}b_1\\b_2\\\vdots\\b_n\end{pmatrix}
+B=\begin{pmatrix}b_1\\b_2\\\vdots\\b_m\end{pmatrix}
 \end{equation*}
 </div>
 <div class="para">then, the above system of linear equations can be written as</div>
@@ -275,7 +275,7 @@ AX=B.
 \end{equation*}
 </div>
 <div class="para">The matrix <span class="process-math">\(A\)</span> is called the <dfn class="terminology">coefficient matrix</dfn> of the above system.</div>
-</div> <div class="para" id="p-18">If all <span class="process-math">\(b_1=b_2=\cdots=b_n=0\)</span> then the above system of linear equations is said to be <dfn class="terminology">homogeneous</dfn>.</div></article></section></div>
+</div> <div class="para" id="p-18">If all <span class="process-math">\(b_1=b_2=\cdots=b_m=0\)</span> then the above system of linear equations is said to be <dfn class="terminology">homogeneous</dfn>.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-matrices.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="practice-basic-operations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
