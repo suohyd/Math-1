@@ -44,7 +44,7 @@
       <me>
         A=B\quad\text{if and only if}\quad a_{ij}=b_{ij}\,\text{for all}\,1\leq i\leq m\,\text{and}\,1\leq j\leq n.
       </me>
-      Matrices <m>A,B\in M_{m\times n}(\mathbb{R})</m> are said to be <term>not equal</term>, and written as <m>A\neq B</m>, if there is at least one <m>i</m> and at least one <m>j</m> such that <m>(i,j)</m>-th entry of <m>A</m>, <m>a_{ij}</m> and <m>(i,j)</m>-th entry of <m>B</m>, <m>b_{ij}</m> are different, i.e., <m>a_{ij}\neq b_{ij}</m> (for <term>some</term> <m>i</m> and <term>somne</term> <m>j</m>).
+      Matrices <m>A,B\in M_{m\times n}(\mathbb{R})</m> are said to be <term>not equal</term>, and written as <m>A\neq B</m>, if there is at least one <m>i</m> and at least one <m>j</m> such that <m>(i,j)</m>-th entry of <m>A</m>, <m>a_{ij}</m> and <m>(i,j)</m>-th entry of <m>B</m>, <m>b_{ij}</m> are different, i.e., <m>a_{ij}\neq b_{ij}</m> (for <term>some</term> <m>i</m> and <term>some</term> <m>j</m>).
       
     </p>
   </definition>
