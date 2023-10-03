@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Basic matrix operations",
-  "body": " Basic matrix operations   (Zero matrix)   We denote by the matrix with all its entries zero. We call the zero matrix.     (Identity matrix)   We denote by the matrix with all its diagonal entries , and all other (non-diagonal) entries zero. We call the identity matrix.     The -th entry of a matrix  is the entry at the intersection of -th row and -th column of .    We denote the set of all matrices over by . So . A matrix in is called a square matrix and is called the size of a matrix .    For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .    Matrices are equal or same if every -th entry of is equal to (same as) the -th entry of for every and for every . That is, if then, Matrices are said to be not equal , and written as , if there is at least one and at least one such that -th entry of , and -th entry of , are different, i.e., (for some  and some  ).    Suppose that and . We denote the -th entry ( ) (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .    (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is     (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by .     (Coefficient matrix of a system of linear equations and homogeneous system of linear equations) Consider a system of linear equations with for every and .  We may write the system of linear equations given above in a matrix form.   If we put and , and then, the above system of linear equations can be written as The matrix is called the coefficient matrix of the above system.  If all then the above system of linear equations is said to be homogeneous .   "
+  "body": " Basic matrix operations   (Zero matrix)   We denote by the matrix with all its entries zero. We call the zero matrix.     (Identity matrix)   We denote by the matrix with all its diagonal entries , and all other (non-diagonal) entries zero. We call the identity matrix.     The -th entry of a matrix  is the entry at the intersection of -th row and -th column of .    We denote the set of all matrices over by . So . A matrix in is called a square matrix and is called the size of a matrix .    For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .    Matrices are equal or same if every -th entry of is equal to (same as) the -th entry of for every and for every . That is, if then, Matrices are said to be not equal , and written as , if there is at least one and at least one such that -th entry of , and -th entry of , are different, i.e., (for some  and some  ).    Suppose that and . We denote the -th entry ( ) (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .    (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is     If then we have the following. Furthermore, for and we have the following.     (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by , and is said to be invertible .     Note that if is invertible then the inverse of is , i.e.,     (Coefficient matrix of a system of linear equations and homogeneous system of linear equations) Consider a system of linear equations with for every and .  We may write the system of linear equations given above in a matrix form.   If we put and , and then, the above system of linear equations can be written as The matrix is called the coefficient matrix of the above system.  If all then the above system of linear equations is said to be homogeneous .   "
 },
 {
   "id": "def-zero-matrix",
@@ -100,20 +100,38 @@ var ptx_lunr_docs = [
   "body": " (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is   "
 },
 {
+  "id": "basic-properties-of-transpose",
+  "level": "2",
+  "url": "sec-basic-operations.html#basic-properties-of-transpose",
+  "type": "Observation",
+  "number": "1.1.9",
+  "title": "",
+  "body": " If then we have the following. Furthermore, for and we have the following.   "
+},
+{
   "id": "def-inverse-of-matrix",
   "level": "2",
   "url": "sec-basic-operations.html#def-inverse-of-matrix",
   "type": "Definition",
-  "number": "1.1.9",
+  "number": "1.1.10",
   "title": "(Inverse of a matrix).",
-  "body": " (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by .   "
+  "body": " (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by , and is said to be invertible .   "
+},
+{
+  "id": "note-1",
+  "level": "2",
+  "url": "sec-basic-operations.html#note-1",
+  "type": "Note",
+  "number": "1.1.11",
+  "title": "",
+  "body": " Note that if is invertible then the inverse of is , i.e.,   "
 },
 {
   "id": "homogeneous-system",
   "level": "2",
   "url": "sec-basic-operations.html#homogeneous-system",
   "type": "Definition",
-  "number": "1.1.10",
+  "number": "1.1.12",
   "title": "(Coefficient matrix of a system of linear equations and homogeneous system of linear equations).",
   "body": " (Coefficient matrix of a system of linear equations and homogeneous system of linear equations) Consider a system of linear equations with for every and .  We may write the system of linear equations given above in a matrix form.   If we put and , and then, the above system of linear equations can be written as The matrix is called the coefficient matrix of the above system.  If all then the above system of linear equations is said to be homogeneous .  "
 },
@@ -313,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Row reduced echelon form of a matrix",
-  "body": " Row reduced echelon form of a matrix   (Elementary row operations)   Let . Denote by (for ) the -th row of . Following are elementary row operations.   Interchanging -th row with -th row. This operation is usually denoted by .    Multiplying -th row by a nonzero . This operation is usually denoted by .    Adding a constant multiple of -th row to -th row. This operation is usually denoted by .        Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row-reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.    "
+  "body": " Row reduced echelon form of a matrix   (Elementary row operations)   Let . Denote by (for ) the -th row of . Following are elementary row operations.   Interchanging -th row with -th row. This operation is usually denoted by .    Multiplying -th row by a nonzero . This operation is usually denoted by .    Adding a constant multiple of -th row to -th row. This operation is usually denoted by .        Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.    "
 },
 {
   "id": "def-elementary-row-operations",
@@ -331,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Note",
   "number": "1.3.2",
   "title": "Procedure to obtain a row reduced echelon form of a matrix.",
-  "body": " Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row-reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.   "
+  "body": " Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.   "
 },
 {
   "id": "practice-row-echelon-form",
@@ -340,7 +358,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "1.4",
   "title": "Exercises",
-  "body": "  A few exercises related to the row reduced echelon form of a matrix are listed below.   Find the row-reduced echelon form of the following matrices. .  How many pivots are there in one row? How many pivots are there in one column?  In a matrix what is the largest possible number of pivots?  Write the row-reduced echelon matrix whose every row has a pivot.  Consider the following augmented matrices. In each case consider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                   "
+  "body": "  A few exercises related to the row reduced echelon form of a matrix are listed below.   Find the row reduced echelon form of the following matrices. .  How many pivots are there in one row? How many pivots are there in one column?  In a matrix what is the largest possible number of pivots?  Write the row reduced echelon matrix whose every row has a pivot.  Consider the following augmented matrices. In each case consider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                    Consider any square matrix of size of your choice. Using row reduced echelon form determine whether your matrix is invertible or not (see ).   "
 },
 {
   "id": "exercise-21",
@@ -349,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.4.1",
   "title": "",
-  "body": "Find the row-reduced echelon form of the following matrices. . "
+  "body": "Find the row reduced echelon form of the following matrices. . "
 },
 {
   "id": "exercise-22",
@@ -376,7 +394,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.4.4",
   "title": "",
-  "body": "Write the row-reduced echelon matrix whose every row has a pivot. "
+  "body": "Write the row reduced echelon matrix whose every row has a pivot. "
 },
 {
   "id": "exercise-25",
@@ -386,6 +404,15 @@ var ptx_lunr_docs = [
   "number": "1.4.5",
   "title": "",
   "body": "Consider the following augmented matrices. In each case consider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                  "
+},
+{
+  "id": "exercise-26",
+  "level": "2",
+  "url": "practice-row-echelon-form.html#exercise-26",
+  "type": "Exercise",
+  "number": "1.4.6",
+  "title": "",
+  "body": " Consider any square matrix of size of your choice. Using row reduced echelon form determine whether your matrix is invertible or not (see ).  "
 },
 {
   "id": "colophon-2",

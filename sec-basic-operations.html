@@ -221,19 +221,44 @@ A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\c
 \begin{equation*}
 A^t=\begin{pmatrix}a_{11}\amp a_{21}\amp\cdots\amp a_{m1}\\a_{12}\amp a_{22}\amp\cdots\amp a_{m2}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{1n}\amp a_{2n}\amp\cdots\amp a_{mn}\end{pmatrix}\in M_{n\times m}(\mathbb{R}).
 \end{equation*}
+</div></article><article class="observation remark-like" id="basic-properties-of-transpose"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-15">
+<div class="para">If <span class="process-math">\(A\in M_{m\times n}(\mathbb{R})\)</span> then we have the following.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(A^t\right)^t=A\quad\text{and}\quad\left(\alpha A\right)^t=\alpha\,A^t.
+\end{equation*}
+</div>
+<div class="para">Furthermore, for <span class="process-math">\(A\in M_{\ell\times m}(\mathbb{R})\)</span> and <span class="process-math">\(B\in M_{m\times n}(\mathbb{R})\)</span> we have the following.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(AB\right)^t=B^tA^t\in M_{n\times\ell}(\mathbb{R})
+\end{equation*}
+</div>
 </div></article><article class="definition definition-like" id="def-inverse-of-matrix"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">(Inverse of a matrix).</span>
-</h3> <div class="para logical" id="p-15">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">(Inverse of a matrix).</span>
+</h3> <div class="para logical" id="p-16">
 <div class="para">Let <span class="process-math">\(A\in M_n(\mathbb{R})\text{.}\)</span> A square matrix <span class="process-math">\(B\in M_n(\mathbb{R})\)</span> is said to be the <dfn class="terminology">inverse</dfn> of <span class="process-math">\(A\)</span> if</div>
 <div class="displaymath process-math">
 \begin{equation*}
 AB=BA=I_n.
 \end{equation*}
 </div>
-<div class="para">If inverse of <span class="process-math">\(A\)</span> exists then it is denoted by <span class="process-math">\(A^{-1}\text{.}\)</span>
+<div class="para">If inverse of <span class="process-math">\(A\)</span> exists then it is denoted by <span class="process-math">\(A^{-1}\text{,}\)</span> and <span class="process-math">\(A\)</span> is said to be <dfn class="terminology">invertible</dfn>.</div>
+</div></article><article class="note remark-like" id="note-1"><h3 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.1.11</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-17">
+<div class="para">Note that if <span class="process-math">\(A\in M_n(\mathbb{R})\)</span> is invertible then the inverse of <span class="process-math">\(A^{-1}\in M_n(\mathbb{R})\)</span> is <span class="process-math">\(A\text{,}\)</span> i.e.,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(A^{-1}\right)^{-1}=A.
+\end{equation*}
 </div>
 </div></article><article class="definition definition-like" id="homogeneous-system"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">(Coefficient matrix of a system of linear equations and homogeneous system of linear equations).</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.12</span><span class="period">.</span><span class="space"> </span><span class="title">(Coefficient matrix of a system of linear equations and homogeneous system of linear equations).</span>
 </h3> Consider a system of linear equations with <span class="process-math">\(a_{ij},b_i\in\mathbb{R}\)</span> for every <span class="process-math">\(1\leq i\leq m\)</span> and <span class="process-math">\(1\leq j\leq n\text{.}\)</span><div class="displaymath process-math">
 \begin{equation*}
 \begin{alignedat}{4}
@@ -244,13 +269,13 @@ a_{m1}x_1\amp +{}\amp a_{m2}x_2 \amp +{}\amp \cdots \amp +{} \amp a_{mn}x_n\amp=
 \end{alignedat}
 \end{equation*}
 </div>
-<div class="para" id="p-16">We may write the system of linear equations given above in a matrix form.</div>
+<div class="para" id="p-18">We may write the system of linear equations given above in a matrix form.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{m1}\amp a_{m2}\amp\cdots\amp a_{mn}\end{pmatrix}\begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}=\begin{pmatrix}b_1\\b_2\\\vdots\\b_m\end{pmatrix}
 \end{equation*}
 </div>
-<div class="para logical" id="p-17">
+<div class="para logical" id="p-19">
 <div class="para">If we put</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -276,7 +301,7 @@ AX=B.
 \end{equation*}
 </div>
 <div class="para">The matrix <span class="process-math">\(A\)</span> is called the <dfn class="terminology">coefficient matrix</dfn> of the above system.</div>
-</div> <div class="para" id="p-18">If all <span class="process-math">\(b_1=b_2=\cdots=b_m=0\)</span> then the above system of linear equations is said to be <dfn class="terminology">homogeneous</dfn>.</div></article></section></div>
+</div> <div class="para" id="p-20">If all <span class="process-math">\(b_1=b_2=\cdots=b_m=0\)</span> then the above system of linear equations is said to be <dfn class="terminology">homogeneous</dfn>.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-matrices.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="practice-basic-operations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
