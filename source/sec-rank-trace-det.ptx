@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-rank-trace-det" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Some invariants attached to a matrix</title>
+  <introduction>
+    <p>
+        In this section we denote by <m>\mathbb{K}</m> either the set of real numbers, <m>\mathbb{R}</m> or the set of complex numbers, <m>\mathbb{C}</m>.
+    </p>
+  </introduction>
+  <definition xml:id="def-rank">
+    <title>(Rank of a matrix)</title>   
+    <statement>
+        <p>
+            The <term>rank of a matrix <m>A\in M_{m\times n}(\mathbb{K})</m></term> is the number of <term>nonzero</term> rows in the row reduced echelon form of <m>A</m>.
+        </p>
+        <p>
+            We denote the rank of <m>A</m> by <m>{\rm rank}(A)</m>.
+        </p>
+    </statement>
+  </definition>
+  <remark>
+    <p>
+        It follows from <xref ref="def-rank"/> that for a matrix <m>A\in M_{m\times n}(\mathbb{K})</m>, the rank of <m>A</m> is equal to number of pivots in the row reduced echelon form of <m>A</m> which in turn can be at most <m>\min\{m,n\}</m>.
+    </p>
+  </remark>
+  <definition xml:id="def-trace">
+    <statement>
+        <p>
+            The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix <m>A\in M_{n}(\mathbb{K})</m> is denoted by <m>{\rm tr}(A)</m>. If <m>A\in M_{n}(\mathbb{K})</m> is given by 
+            <me>
+                A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}
+            </me>
+            then the trace of <m>A</m>,
+            <me>
+                {\rm tr}(A)=a_{11}+a_{22}+\cdots+a_{nn}.
+            </me>
+            
+            
+        </p>
+    </statement>
+  </definition>
+  <p>
+    We now define the <q>determinant</q> of a square matrix recursively. We will not give a general definition.
+  </p>
+  <convention>
+    <p>
+        Given an <m>n\times n</m> matrix over <m>\K</m>,
+        <me>
+            A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}
+        </me>
+        its determinant is denoted by
+        <me>
+            \det A=\begin{vmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{vmatrix}.
+        </me>
+        
+    </p>
+  </convention>
+  <definition xml:id="def-det-2">
+    <statement>
+        <p>
+            The <term>determinant</term> of a matrix <m>A=\begin{pmatrix}a_{11}\amp a_{12}\\a_{21}\amp a_{22}\end{pmatrix}\in M_2(\K)</m> is denote by 
+            <me>
+                \det A=\begin{vmatrix}a_{11}\amp a_{12}\\a_{21}\amp a_{22}\end{vmatrix}
+            </me>
+            and it is equal to <m>a_{11}a_{22}-a_{12}a_{21}</m>, i.e.,
+            <me>
+                \det A=\begin{vmatrix}a_{11}\amp a_{12}\\a_{21}\amp a_{22}\end{vmatrix}= a_{11}a_{22}-a_{12}a_{21}.
+            </me>            
+        </p>
+    </statement>
+  </definition>
+  <definition xml:id="def-det-3">
+    <statement>
+        <p>
+            Consider <m>A\in M_3(\K)</m> as follows.
+            <me>
+                A=\begin{pmatrix}a_{11}\amp a_{12}\amp a_{13}\\a_{21}\amp a_{22}\amp a_{23}\\a_{31}\amp a_{32}\amp a_{33}\end{pmatrix}
+            </me>
+            The determinant of <m>A</m> is
+            <md>
+                <mrow> \det A\amp=a_{11}\,\begin{vmatrix}a_{22}\amp a_{23}\\a_{32}\amp a_{33}\end{vmatrix}-a_{12}\,\begin{vmatrix}a_{21}\amp a_{23}\\a_{31}\amp a_{33}\end{vmatrix} + a_{13}\, \begin{vmatrix}a_{21}\amp a_{22}\\a_{31}\amp a_{32}\end{vmatrix}</mrow>
+            </md>            
+        </p>
+    </statement>
+  </definition>
+  <note>
+    <p>
+        In the formula of the determinant of <m>A\in M_3(\K)</m> observe the following.
+        <ol>
+            <li>
+                <p>
+                    Change of signs in consequtive terms.
+                </p>
+            </li>
+            <li>
+                <p>
+                    First entry is obtained by multiplying <m>a_{11}</m> by the determinant of <m>2\times 2</m> matrix obtained by deleting the first row and the first column of <m>A</m>. The second entry is obtained by multiplying <m>-a_{12}</m> by the determinant of <m>2\times 2</m> matrix obtained by deleting the first row and the second column of <m>A</m>. The third entry is obtained by multiplying <m>a_{13}</m> by the determinant of <m>2\times 2</m> matrix obtained by deleting the first row and the third  column of <m>A</m>.
+                </p>
+            </li>
+        </ol>
+    </p>
+  </note>
+</section>

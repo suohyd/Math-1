@@ -2,11 +2,16 @@
 
 <section xml:id="sec-row-echelon-form" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Row reduced echelon form of a matrix</title>
+  <introduction>
+    <p>
+      In this section we denote by <m>\mathbb{K}</m> either the set of real numbers, <m>\mathbb{R}</m> or the set of complex numbers, <m>\mathbb{C}</m>.
+    </p>
+  </introduction>
   <definition xml:id="def-elementary-row-operations">
     <title>(Elementary row operations)</title>    
     <statement>
         <p>
-            Let <m>A\in M_{m\times n}(\mathbb{R})</m>. Denote by <m>R_i</m> (for <m>1\leq i\leq m</m>) the <m>i</m>-th row of <m>A</m>. Following are elementary row operations.
+            Let <m>A\in M_{m\times n}(\mathbb{K})</m>. Denote by <m>R_i</m> (for <m>1\leq i\leq m</m>) the <m>i</m>-th row of <m>A</m>. Following are elementary row operations.
             <ol>
               <li>
                 <p>
@@ -15,7 +20,7 @@
               </li>
               <li>
                 <p>
-                  Multiplying  <m>i</m>-th row by a nonzero <m>\alpha\in\mathbb{R}</m>. This operation is usually denoted by <m>R_i\mapsto \alpha R_i</m>.
+                  Multiplying  <m>i</m>-th row by a nonzero <m>\alpha\in\mathbb{K}</m>. This operation is usually denoted by <m>R_i\mapsto \alpha R_i</m>.
                 </p>
               </li>
               <li>
@@ -29,7 +34,7 @@
   </definition>
   <note xml:id="row-reduced-echelon-form-procedure">
     <title>Procedure to obtain a row reduced echelon form of a matrix</title>
-		Recall that given a matrix <m>A\in M_{m\times n}(\mathbb{R})</m>, by applying a sequence of elementary row operations, can be reduced to a <term>row reduced echelon form <m>E_A</m> of <m>A</m></term>. The matrix <m>E_A</m> has the following properties.
+		Recall that given a matrix <m>A\in M_{m\times n}(\mathbb{K})</m>, by applying a sequence of elementary row operations, can be reduced to a <term>row reduced echelon form <m>E_A</m> of <m>A</m></term>. The matrix <m>E_A</m> has the following properties.
 		<ol>
             <li>All zero rows occurs at the bottom of <m>E_A</m>.</li>
 			<li>If a row of <m>E_A</m> is nonzero then the first nonzero entry is <m>1</m>, it is called <term>pivot</term>.</li>
@@ -37,4 +42,12 @@
 			<li>Each column of <m>E_A</m> that contains the pivot has zero everywhere else.</li>
 		</ol>
   </note>
+  <p>The natural question arises: Does the sequence in which row operations are performed change the resulting row reduced echelon form of <m>A?</m> The answer is no!</p>
+  <fact xml:id="fact-uniqueness-of-echelon-form">
+    <statement>
+      <p>
+        The row reduced echelon form of a matrix is unique.
+      </p>
+    </statement>
+  </fact>
 </section>
