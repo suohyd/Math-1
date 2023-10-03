@@ -78,7 +78,7 @@
             </me>
             The determinant of <m>A</m> is
             <md>
-                <mrow> \det A\amp=a_{11}\,\begin{vmatrix}a_{22}\amp a_{23}\\a_{32}\amp a_{33}\end{vmatrix}-a_{12}\,\begin{vmatrix}a_{21}\amp a_{23}\\a_{31}\amp a_{33}\end{vmatrix} + a_{13}\, \begin{vmatrix}a_{21}\amp a_{22}\\a_{31}\amp a_{32}\end{vmatrix}</mrow>
+                <mrow> \det A\amp=a_{11}\,\begin{vmatrix}a_{22}\amp a_{23}\\a_{32}\amp a_{33}\end{vmatrix}-a_{12}\,\begin{vmatrix}a_{21}\amp a_{23}\\a_{31}\amp a_{33}\end{vmatrix} + a_{13}\, \begin{vmatrix}a_{21}\amp a_{22}\\a_{31}\amp a_{32}\end{vmatrix}.</mrow>
             </md>            
         </p>
     </statement>
