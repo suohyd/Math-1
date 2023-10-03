@@ -118,9 +118,9 @@ var ptx_lunr_docs = [
   "body": " (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by , and is said to be invertible .   "
 },
 {
-  "id": "note-1",
+  "id": "inverse-of-inverse",
   "level": "2",
-  "url": "sec-basic-operations.html#note-1",
+  "url": "sec-basic-operations.html#inverse-of-inverse",
   "type": "Note",
   "number": "1.1.11",
   "title": "",
