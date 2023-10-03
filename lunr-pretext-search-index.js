@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Basic matrix operations",
-  "body": " Basic matrix operations   (Zero matrix)   We denote by the matrix with all its entries zero. We call the zero matrix.     (Identity matrix)   We denote by the matrix with all its diagonal entries , and all other (non-diagonal) entries zero. We call the identity matrix.     The -th entry of a matrix  is the entry at the intersection of -th row and -th column of .    We denote the set of all matrices over by . So . A matrix in is called a square matrix and is called the size of a matrix .    For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .    Matrices are equal or same if every -th entry of is equal to (same as) the -th entry of for every and for every . That is, if then, Matrices are said to be not equal , and written as , if there is at least one and at least one such that -th entry of , and -th entry of , are different, i.e., (for some  and some  ).    Suppose that and . We denote the -th entry ( ) (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .    (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is     If then we have the following. Furthermore, for and we have the following.     (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by , and is said to be invertible .     Note that if is invertible then the inverse of is , i.e.,     (Coefficient matrix of a system of linear equations and homogeneous system of linear equations) Consider a system of linear equations with for every and .  We may write the system of linear equations given above in a matrix form.   If we put and , and then, the above system of linear equations can be written as The matrix is called the coefficient matrix of the above system.  If all then the above system of linear equations is said to be homogeneous .   "
+  "body": " Basic matrix operations   In this section we denote by either the set of real numbers, or the set of complex numbers, .    (Zero matrix)   We denote by the matrix with all its entries zero. We call the zero matrix.     (Identity matrix)   We denote by the matrix with all its diagonal entries , and all other (non-diagonal) entries zero. We call the identity matrix.     The -th entry of a matrix  is the entry at the intersection of -th row and -th column of .    We denote the set of all matrices over by . So . A matrix in is called a square matrix and is called the size of a matrix .    For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .    Matrices are equal or same if every -th entry of is equal to (same as) the -th entry of for every and for every . That is, if then, Matrices are said to be not equal , and written as , if there is at least one and at least one such that -th entry of , and -th entry of , are different, i.e., (for some  and some  ).    Suppose that and . We denote the -th entry ( ) (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .    (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is     If then we have the following. Furthermore, for and we have the following.     (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by , and is said to be invertible .     Note that if is invertible then the inverse of is , i.e.,     (Coefficient matrix of a system of linear equations and homogeneous system of linear equations) Consider a system of linear equations with for every and .  We may write the system of linear equations given above in a matrix form.   If we put and , and then, the above system of linear equations can be written as The matrix is called the coefficient matrix of the above system.  If all then the above system of linear equations is said to be homogeneous .   "
 },
 {
   "id": "def-zero-matrix",
@@ -331,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Row reduced echelon form of a matrix",
-  "body": " Row reduced echelon form of a matrix   (Elementary row operations)   Let . Denote by (for ) the -th row of . Following are elementary row operations.   Interchanging -th row with -th row. This operation is usually denoted by .    Multiplying -th row by a nonzero . This operation is usually denoted by .    Adding a constant multiple of -th row to -th row. This operation is usually denoted by .        Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.    "
+  "body": " Row reduced echelon form of a matrix   In this section we denote by either the set of real numbers, or the set of complex numbers, .    (Elementary row operations)   Let . Denote by (for ) the -th row of . Following are elementary row operations.   Interchanging -th row with -th row. This operation is usually denoted by .    Multiplying -th row by a nonzero . This operation is usually denoted by .    Adding a constant multiple of -th row to -th row. This operation is usually denoted by .        Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.    The natural question arises: Does the sequence in which row operations are performed change the resulting row reduced echelon form of The answer is no!    The row reduced echelon form of a matrix is unique.    "
 },
 {
   "id": "def-elementary-row-operations",
@@ -350,6 +350,15 @@ var ptx_lunr_docs = [
   "number": "1.3.2",
   "title": "Procedure to obtain a row reduced echelon form of a matrix.",
   "body": " Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.   "
+},
+{
+  "id": "fact-uniqueness-of-echelon-form",
+  "level": "2",
+  "url": "sec-row-echelon-form.html#fact-uniqueness-of-echelon-form",
+  "type": "Fact",
+  "number": "1.3.3",
+  "title": "",
+  "body": "  The row reduced echelon form of a matrix is unique.   "
 },
 {
   "id": "practice-row-echelon-form",
@@ -413,6 +422,78 @@ var ptx_lunr_docs = [
   "number": "1.4.6",
   "title": "",
   "body": " Consider any square matrix of size of your choice. Using row reduced echelon form determine whether your matrix is invertible or not (see ).  "
+},
+{
+  "id": "sec-rank-trace-det",
+  "level": "1",
+  "url": "sec-rank-trace-det.html",
+  "type": "Section",
+  "number": "1.5",
+  "title": "Some invariants attached to a matrix",
+  "body": " Some invariants attached to a matrix   In this section we denote by either the set of real numbers, or the set of complex numbers, .    (Rank of a matrix)   The rank of a matrix is the number of nonzero rows in the row reduced echelon form of .  We denote the rank of by .     It follows from that for a matrix , the rank of is equal to number of pivots in the row reduced echelon form of which in turn can be at most .     The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix is denoted by . If is given by then the trace of ,     We now define the determinant of a square matrix recursively. We will not give a general definition.   Given an matrix over , its determinant is denoted by      The determinant of a matrix is denote by and it is equal to , i.e.,       Consider as follows. The determinant of is      In the formula of the determinant of observe the following.   Change of signs in consequtive terms    First entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the first column of . The second entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the second column of . The third entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the third column of .      "
+},
+{
+  "id": "def-rank",
+  "level": "2",
+  "url": "sec-rank-trace-det.html#def-rank",
+  "type": "Definition",
+  "number": "1.5.1",
+  "title": "(Rank of a matrix).",
+  "body": " (Rank of a matrix)   The rank of a matrix is the number of nonzero rows in the row reduced echelon form of .  We denote the rank of by .   "
+},
+{
+  "id": "remark-1",
+  "level": "2",
+  "url": "sec-rank-trace-det.html#remark-1",
+  "type": "Remark",
+  "number": "1.5.2",
+  "title": "",
+  "body": " It follows from that for a matrix , the rank of is equal to number of pivots in the row reduced echelon form of which in turn can be at most .  "
+},
+{
+  "id": "def-trace",
+  "level": "2",
+  "url": "sec-rank-trace-det.html#def-trace",
+  "type": "Definition",
+  "number": "1.5.3",
+  "title": "",
+  "body": "  The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix is denoted by . If is given by then the trace of ,    "
+},
+{
+  "id": "convention-4",
+  "level": "2",
+  "url": "sec-rank-trace-det.html#convention-4",
+  "type": "Convention",
+  "number": "1.5.4",
+  "title": "",
+  "body": " Given an matrix over , its determinant is denoted by   "
+},
+{
+  "id": "def-det-2",
+  "level": "2",
+  "url": "sec-rank-trace-det.html#def-det-2",
+  "type": "Definition",
+  "number": "1.5.5",
+  "title": "",
+  "body": "  The determinant of a matrix is denote by and it is equal to , i.e.,    "
+},
+{
+  "id": "def-det-3",
+  "level": "2",
+  "url": "sec-rank-trace-det.html#def-det-3",
+  "type": "Definition",
+  "number": "1.5.6",
+  "title": "",
+  "body": "  Consider as follows. The determinant of is    "
+},
+{
+  "id": "note-3",
+  "level": "2",
+  "url": "sec-rank-trace-det.html#note-3",
+  "type": "Note",
+  "number": "1.5.7",
+  "title": "",
+  "body": " In the formula of the determinant of observe the following.   Change of signs in consequtive terms    First entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the first column of . The second entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the second column of . The third entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the third column of .     "
 },
 {
   "id": "colophon-2",
