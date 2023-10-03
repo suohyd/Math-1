@@ -6,7 +6,7 @@
     </introduction>
     <exercise>
         <p>
-            Find the row-reduced echelon form of the following matrices.
+            Find the row reduced echelon form of the following matrices.
             <me>\begin{pmatrix}1\amp 2\amp -1\amp 2\\0\amp 0\amp 0\amp 0\\3\amp 1\amp -2\amp 0\end{pmatrix};\quad\begin{pmatrix}0\amp 1\amp -1\\0\amp -4\amp -1\\3\amp 3\amp 3\\-1\amp -1\amp -1\\2\amp 2\amp 2\end{pmatrix};\quad\begin{pmatrix}0\amp 1\\0\amp 0\end{pmatrix}
             </me>.
           </p>
@@ -23,7 +23,7 @@
     </exercise>
     <exercise>
         <p>
-            Write the row-reduced echelon matrix whose every row has a pivot.
+            Write the row reduced echelon matrix whose every row has a pivot.
           </p>
     </exercise>
     <exercise>
@@ -58,5 +58,12 @@
               </li>
             </ol>
           </p>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Consider any square matrix of size <m>n</m> of your choice. Using row reduced echelon form determine whether your matrix is invertible or not (see <xref ref="def-inverse-of-matrix"/>).
+        </p>
+      </statement>
     </exercise>
 </exercises>

@@ -29,7 +29,7 @@
   </definition>
   <note xml:id="row-reduced-echelon-form-procedure">
     <title>Procedure to obtain a row reduced echelon form of a matrix</title>
-		Recall that given a matrix <m>A\in M_{m\times n}(\mathbb{R})</m>, by applying a sequence of elementary row operations, can be reduced to a <term>row-reduced echelon form <m>E_A</m> of <m>A</m></term>. The matrix <m>E_A</m> has the following properties.
+		Recall that given a matrix <m>A\in M_{m\times n}(\mathbb{R})</m>, by applying a sequence of elementary row operations, can be reduced to a <term>row reduced echelon form <m>E_A</m> of <m>A</m></term>. The matrix <m>E_A</m> has the following properties.
 		<ol>
             <li>All zero rows occurs at the bottom of <m>E_A</m>.</li>
 			<li>If a row of <m>E_A</m> is nonzero then the first nonzero entry is <m>1</m>, it is called <term>pivot</term>.</li>

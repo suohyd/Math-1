@@ -70,6 +70,20 @@
           </me>
         </statement>  
     </definition>
+    <observation xml:id="basic-properties-of-transpose">
+      <p>
+        If <m>A\in M_{m\times n}(\mathbb{R})</m> then we have the following.
+        <me>
+          \left(A^t\right)^t=A\quad\text{and}\quad\left(\alpha A\right)^t=\alpha\,A^t.
+        </me>
+        Furthermore, for <m>A\in M_{\ell\times m}(\mathbb{R})</m> and <m>B\in M_{m\times n}(\mathbb{R})</m> we have the following.
+        <me>
+          \left(AB\right)^t=B^tA^t\in M_{n\times\ell}(\mathbb{R})
+        </me>
+        
+        
+      </p>
+    </observation>
     <definition xml:id="def-inverse-of-matrix">
       <title>(Inverse of a matrix)</title>
       <statement>
@@ -78,10 +92,19 @@
           <me>
             AB=BA=I_n.
           </me>
-          If inverse of <m>A</m> exists then it is denoted by <m>A^{-1}</m>.
+          If inverse of <m>A</m> exists then it is denoted by <m>A^{-1}</m>, and <m>A</m> is said to be <term>invertible</term>.
         </p>
       </statement>
     </definition>
+    <note xml:id="inverse-of-inverse">
+      <p>
+        Note that if <m>A\in M_n(\mathbb{R})</m> is invertible then the inverse of <m>A^{-1}\in M_n(\mathbb{R})</m> is <m>A</m>, i.e.,
+        <me>
+          \left(A^{-1}\right)^{-1}=A.
+        </me>
+        
+      </p>
+    </note>
     <definition xml:id="homogeneous-system">
       <title>(Coefficient matrix of a system of linear equations and homogeneous system of linear equations)</title>
       Consider a system of linear equations with <m>a_{ij},b_i\in\mathbb{R}</m> for every <m>1\leq i\leq m</m> and <m>1\leq j\leq n</m>.
