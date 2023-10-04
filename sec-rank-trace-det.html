@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="practice-row-echelon-form.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrices.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} \newcommand{\K}{\mathbb{K}} \newcommand{\det}{{\rm det}\,}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="practice-row-echelon-form.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrices.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="practice-rank-trace-det.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} \newcommand{\K}{\mathbb{K}} \newcommand{\det}{{\rm det}\,} \newcommand{\tr}{{\rm tr}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -161,6 +161,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-row-echelon-form.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Row reduced echelon form of a matrix</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-row-echelon-form.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-rank-trace-det.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Some invariants attached to a matrix</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-rank-trace-det.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
@@ -168,20 +169,21 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-rank-trace-det"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.5</span><span class="space"> </span><span class="title">Some invariants attached to a matrix</span>
 </h2>
-<section class="introduction" id="introduction-6"><div class="para" id="p-83">In this section we denote by <span class="process-math">\(\mathbb{K}\)</span> either the set of real numbers, <span class="process-math">\(\mathbb{R}\)</span> or the set of complex numbers, <span class="process-math">\(\mathbb{C}\text{.}\)</span>
+<section class="introduction" id="introduction-6"><div class="para" id="p-98">In this section we denote by <span class="process-math">\(\mathbb{K}\)</span> either the set of real numbers, <span class="process-math">\(\mathbb{R}\)</span> or the set of complex numbers, <span class="process-math">\(\mathbb{C}\text{.}\)</span>
 </div></section><article class="definition definition-like" id="def-rank"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span><span class="space"> </span><span class="title">(Rank of a matrix).</span>
-</h3> <div class="para" id="p-84">The <dfn class="terminology">rank of a matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\)</span></dfn> is the number of <dfn class="terminology">nonzero</dfn> rows in the row reduced echelon form of <span class="process-math">\(A\text{.}\)</span>
-</div> <div class="para" id="p-85">We denote the rank of <span class="process-math">\(A\)</span> by <span class="process-math">\({\rm rank}(A)\text{.}\)</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-99">The <dfn class="terminology">rank of a matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\)</span></dfn> is the number of <dfn class="terminology">nonzero</dfn> rows in the row reduced echelon form of <span class="process-math">\(A\text{.}\)</span>
+</div> <div class="para" id="p-100">We denote the rank of <span class="process-math">\(A\)</span> by <span class="process-math">\({\rm rank}(A)\text{.}\)</span>
 </div></article><article class="remark remark-like" id="remark-1"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-86">It follows from <a href="" class="xref" data-knowl="./knowl/def-rank.html" title="Definition 1.5.1: (Rank of a matrix)">Definition 1.5.1</a> that for a matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\text{,}\)</span> the rank of <span class="process-math">\(A\)</span> is equal to number of pivots in the row reduced echelon form of <span class="process-math">\(A\)</span> which in turn can be at most <span class="process-math">\(\min\{m,n\}\text{.}\)</span>
+<div class="para" id="p-101">It follows from <a href="" class="xref" data-knowl="./knowl/def-rank.html" title="Definition 1.5.1">Definition 1.5.1</a> that for a matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\text{,}\)</span> the rank of <span class="process-math">\(A\)</span> is equal to number of pivots in the row reduced echelon form of <span class="process-math">\(A\)</span> which in turn can be at most <span class="process-math">\(\min\{m,n\}\text{.}\)</span>
 </div></article><article class="definition definition-like" id="def-trace"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-87">
-<div class="para">The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix <span class="process-math">\(A\in M_{n}(\mathbb{K})\)</span> is denoted by <span class="process-math">\({\rm tr}(A)\text{.}\)</span> If <span class="process-math">\(A\in M_{n}(\mathbb{K})\)</span> is given by</div>
+<div class="para logical" id="p-102">
+<div class="para">The <dfn class="terminology">trace</dfn> of a square matrix is the sum of all its diagonal entries. The trace of a square matrix <span class="process-math">\(A\in M_{n}(\mathbb{K})\)</span> is denoted by <span class="process-math">\({\rm tr}(A)\text{.}\)</span> If <span class="process-math">\(A\in M_{n}(\mathbb{K})\)</span> is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
 A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}
@@ -194,11 +196,11 @@ A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\c
 {\rm tr}(A)=a_{11}+a_{22}+\cdots+a_{nn}.
 \end{equation*}
 </div>
-</div></article><div class="para" id="p-88">We now define the “determinant” of a square matrix recursively. We will not give a general definition.</div>
+</div></article><div class="para" id="p-103">We now define the “determinant” of a square matrix recursively. We will not give a general definition.</div>
 <article class="convention remark-like" id="convention-4"><h3 class="heading">
 <span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-89">
+<div class="para logical" id="p-104">
 <div class="para">Given an <span class="process-math">\(n\times n\)</span> matrix over <span class="process-math">\(\K\text{,}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -215,7 +217,7 @@ A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\c
 </div></article><article class="definition definition-like" id="def-det-2"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-90">
+<div class="para logical" id="p-105">
 <div class="para">The <dfn class="terminology">determinant</dfn> of a matrix <span class="process-math">\(A=\begin{pmatrix}a_{11}\amp a_{12}\\a_{21}\amp a_{22}\end{pmatrix}\in M_2(\K)\)</span> is denote by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -231,7 +233,7 @@ A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\c
 </div></article><article class="definition definition-like" id="def-det-3"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.6</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-91">
+<div class="para logical" id="p-106">
 <div class="para">Consider <span class="process-math">\(A\in M_3(\K)\)</span> as follows.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -247,16 +249,84 @@ A=\begin{pmatrix}a_{11}\amp a_{12}\amp a_{13}\\a_{21}\amp a_{22}\amp a_{23}\\a_{
 </div></article><article class="note remark-like" id="note-3"><h3 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">1.5.7</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-92">
+<div class="para logical" id="p-107">
 <div class="para">In the formula of the determinant of <span class="process-math">\(A\in M_3(\K)\)</span> observe the following.</div>
 <ol class="decimal">
-<li id="li-34"><div class="para" id="p-93">Change of signs in consecutive terms.</div></li>
-<li id="li-35"><div class="para" id="p-94">First entry is obtained by multiplying <span class="process-math">\(a_{11}\)</span> by the determinant of <span class="process-math">\(2\times 2\)</span> matrix obtained by deleting the first row and the first column of <span class="process-math">\(A\text{.}\)</span> The second entry is obtained by multiplying <span class="process-math">\(-a_{12}\)</span> by the determinant of <span class="process-math">\(2\times 2\)</span> matrix obtained by deleting the first row and the second column of <span class="process-math">\(A\text{.}\)</span> The third entry is obtained by multiplying <span class="process-math">\(a_{13}\)</span> by the determinant of <span class="process-math">\(2\times 2\)</span> matrix obtained by deleting the first row and the third  column of <span class="process-math">\(A\text{.}\)</span>
+<li id="li-40"><div class="para" id="p-108">Change of signs in consecutive terms.</div></li>
+<li id="li-41"><div class="para" id="p-109">First entry is obtained by multiplying <span class="process-math">\(a_{11}\)</span> by the determinant of <span class="process-math">\(2\times 2\)</span> matrix obtained by deleting the first row and the first column of <span class="process-math">\(A\text{.}\)</span> The second entry is obtained by multiplying <span class="process-math">\(-a_{12}\)</span> by the determinant of <span class="process-math">\(2\times 2\)</span> matrix obtained by deleting the first row and the second column of <span class="process-math">\(A\text{.}\)</span> The third entry is obtained by multiplying <span class="process-math">\(a_{13}\)</span> by the determinant of <span class="process-math">\(2\times 2\)</span> matrix obtained by deleting the first row and the third  column of <span class="process-math">\(A\text{.}\)</span>
 </div></li>
 </ol>
-</div></article></section></div>
+</div></article><div class="para logical" id="p-110">
+<div class="para">For the rest of this section we use a short notation to write a square matrix, viz., we write <span class="process-math">\(A=(a_{ij})\in M_n(\K)\)</span> to denote the following matrix.</div>
+<div class="displaymath process-math" id="short-notation-for-matrix">
+\begin{equation}
+A=(a_{ij})=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}\tag{1.5.1}
+\end{equation}
+</div>
+</div>
+<article class="fact theorem-like" id="properties-of-det"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-111">
+<em class="alert">Properties of the determinant</em>. Assume that <span class="process-math">\(A=(a_{ij})\in M_n(\K)\text{.}\)</span>
+</div>
+<div class="para logical" id="p-112"><ol class="decimal">
+<li id="row-linearity-det"><div class="para" id="p-derived-row-linearity-det">
+<em class="alert">Row linearity</em>. Let <span class="process-math">\(A_i=(a_{i1}\,a_{i2}\,\cdots\,a_{in})\)</span> be the <span class="process-math">\(i\)</span>-th row of <span class="process-math">\(A\text{.}\)</span> For <span class="process-math">\(\beta\in \K\)</span> we let <span class="process-math">\(\beta A_i=(\beta a_{i1}\,\beta a_{i2}\,\cdots\,\beta a_{in})\text{.}\)</span> For any <span class="process-math">\(B\in M_{1\times n}(\K)\)</span> and any <span class="process-math">\(\beta,\gamma\in \K\)</span> and any <span class="process-math">\(i\in\{1,2,\ldots,n\}\)</span> we get the following.<div class="displaymath process-math">
+\begin{equation*}
+\det\begin{pmatrix}A_1\\A_2\\\vdots\\A_{i-1}\\\beta A_i+\gamma B\\A_{i+1}\\\vdots\\A_n\end{pmatrix}=\beta\,\det\begin{pmatrix}A_1\\A_2\\\vdots\\A_{i-1}\\A_i\\A_{i+1}\\\vdots\\A_n\end{pmatrix}+\gamma\,\det\begin{pmatrix}A_1\\A_2\\\vdots\\A_{i-1}\\B\\A_{i+1}\\\vdots\\A_n\end{pmatrix}
+\end{equation*}
+</div>
+</div></li>
+<li id="li-43"><div class="para" id="p-derived-li-43">For <span class="process-math">\(A\in M_n(\K)\)</span> and any <span class="process-math">\(\beta\in \K\text{,}\)</span> <span class="process-math">\(\det(\beta A)=\beta^n\cdot\det(A)\text{.}\)</span>
+</div></li>
+<li id="row-reaarrangment-det"><div class="para" id="p-derived-row-reaarrangment-det">
+<em class="alert">Row rearrangement</em>. Let <span class="process-math">\(A^\prime\)</span> be the matrix obtained by interchanging the <span class="process-math">\(i\)</span>-th row of <span class="process-math">\(A\)</span> with the <span class="process-math">\(j\)</span>-th row of <span class="process-math">\(A\text{.}\)</span> Then<div class="displaymath process-math">
+\begin{equation*}
+\det A^\prime=-\det A.
+\end{equation*}
+</div>
+</div></li>
+<li id="li-45"><div class="para" id="p-derived-li-45">
+<em class="alert">Alternating</em>. If any two rows of <span class="process-math">\(A\in M_n(\K)\)</span> are the same then <span class="process-math">\(\det A=0\text{.}\)</span>
+</div></li>
+<li id="transpose-det"><div class="para" id="p-derived-transpose-det">
+<em class="alert">Transpose</em>. For any <span class="process-math">\(A\in M_n(\K)\text{,}\)</span><div class="displaymath process-math">
+\begin{equation*}
+\det A^t=\det A.
+\end{equation*}
+</div>
+</div></li>
+<li id="triangular-det"><div class="para" id="p-derived-triangular-det">
+<em class="alert">Triangular matrices</em>. If <span class="process-math">\(A=(a_{ij})\in M_n(\K)\)</span> is an upper triangular (resp., lower triangular) matrix, i.e., <span class="process-math">\(a_{ij}=0\)</span> for <span class="process-math">\(i&gt;j\)</span> (resp., <span class="process-math">\(a_{ij}=0\)</span> for <span class="process-math">\(i&lt;j\)</span>) then<div class="displaymath process-math">
+\begin{equation*}
+\det(A)=a_{11}a_{22}\cdots a_{nn}.
+\end{equation*}
+</div>
+</div></li>
+<li id="block-det"><div class="para" id="p-derived-block-det">
+<em class="alert">Block form</em>. Let <span class="process-math">\(r\in\{1,2,\ldots,n-1\}\text{.}\)</span> Let <span class="process-math">\(B\in M_r(\K)\text{,}\)</span> <span class="process-math">\(C\in M_{r\times n-r}(\K)\text{,}\)</span> <span class="process-math">\(D\in M_{n-r}(\K)\text{,}\)</span> and <span class="process-math">\(\mathbf{0}\in M_{n-r\times r}(\K)\)</span> be the zero matrix. The determinant of<div class="displaymath process-math">
+\begin{equation*}
+A=\begin{pmatrix}B\amp C\\\mathbf{0}\amp D\end{pmatrix}
+\end{equation*}
+</div>is given by<div class="displaymath process-math">
+\begin{equation*}
+\det A=\det B\cdot\det D.
+\end{equation*}
+</div>Similar result is true for lower triangular block matrices.</div></li>
+<li id="multiplicative-det"><div class="para" id="p-derived-multiplicative-det">
+<em class="alert">Multiplicative property</em>. Let <span class="process-math">\(A, B\in M_n(\K)\text{.}\)</span> We have<div class="displaymath process-math">
+\begin{equation*}
+\det(AB)=\det(A)\cdot\det(B).
+\end{equation*}
+</div>
+</div></li>
+<li id="invertibility-of-matrix-det"><div class="para" id="p-113">
+<em class="alert">Invertibility.</em> A matrix <span class="process-math">\(A\in M_n(\K)\)</span> is invertible if and only if <span class="process-math">\(\det A\neq 0\)</span> if and only if <span class="process-math">\({\rm rank}(A)=n\text{.}\)</span>
+</div></li>
+</ol></div></article></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="practice-row-echelon-form.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="practice-row-echelon-form.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="practice-rank-trace-det.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

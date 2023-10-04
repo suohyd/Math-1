@@ -331,7 +331,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Row reduced echelon form of a matrix",
-  "body": " Row reduced echelon form of a matrix   In this section we denote by either the set of real numbers, or the set of complex numbers, .    (Elementary row operations)   Let . Denote by (for ) the -th row of . Following are elementary row operations.   Interchanging -th row with -th row. This operation is usually denoted by .    Multiplying -th row by a nonzero . This operation is usually denoted by .    Adding a constant multiple of -th row to -th row. This operation is usually denoted by .        Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.    The natural question arises: Does the sequence in which row operations are performed change the resulting row reduced echelon form of The answer is no!    The row reduced echelon form of a matrix is unique.    "
+  "body": " Row reduced echelon form of a matrix   In this section we denote by either the set of real numbers, or the set of complex numbers, .    (Elementary row operations)   Let . Denote by (for ) the -th row of . Following are elementary row operations.   Interchanging -th row with -th row. This operation is usually denoted by .    Multiplying -th row by a nonzero . This operation is usually denoted by .    Adding a constant multiple of -th row to -th row. This operation is usually denoted by .         A square matrix is said to be an elementary matrix if it is obtained from the identity matrix by performing only one of the row operations described in on .     Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.    The natural question arises: Does the sequence in which row operations are performed change the resulting row reduced echelon form of The answer is no!    The row reduced echelon form of a matrix is unique.         Let be a block row reduced echelon form of , where and are column vectors. The system has a solution if and only if the system is a solution.    Let be a block row reduced echelon form of , where and are column vectors. The system has a solution if and only if there is no pivot in the last column . In that case, one may assign arbitrary values to if the -th column does not contain a pivot.    Every system (here is matrix with all entries zero) of equations and unknowns with has a nonzero solution.         A square matrix is invertible (see ) if and only if the row reduced echelon form of is the identity matrix .    "
 },
 {
   "id": "def-elementary-row-operations",
@@ -343,11 +343,20 @@ var ptx_lunr_docs = [
   "body": " (Elementary row operations)   Let . Denote by (for ) the -th row of . Following are elementary row operations.   Interchanging -th row with -th row. This operation is usually denoted by .    Multiplying -th row by a nonzero . This operation is usually denoted by .    Adding a constant multiple of -th row to -th row. This operation is usually denoted by .      "
 },
 {
+  "id": "def-elementary-matrices",
+  "level": "2",
+  "url": "sec-row-echelon-form.html#def-elementary-matrices",
+  "type": "Definition",
+  "number": "1.3.2",
+  "title": "",
+  "body": "  A square matrix is said to be an elementary matrix if it is obtained from the identity matrix by performing only one of the row operations described in on .   "
+},
+{
   "id": "row-reduced-echelon-form-procedure",
   "level": "2",
   "url": "sec-row-echelon-form.html#row-reduced-echelon-form-procedure",
   "type": "Note",
-  "number": "1.3.2",
+  "number": "1.3.3",
   "title": "Procedure to obtain a row reduced echelon form of a matrix.",
   "body": " Procedure to obtain a row reduced echelon form of a matrix Recall that given a matrix , by applying a sequence of elementary row operations, can be reduced to a row reduced echelon form of . The matrix has the following properties.  All zero rows occurs at the bottom of .  If a row of is nonzero then the first nonzero entry is , it is called pivot .  In any two successive nonzero rows of , the pivot in the lower row occurs to the right of the pivot in the higher row.  Each column of that contains the pivot has zero everywhere else.   "
 },
@@ -356,9 +365,27 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-row-echelon-form.html#fact-uniqueness-of-echelon-form",
   "type": "Fact",
-  "number": "1.3.3",
+  "number": "1.3.4",
   "title": "",
   "body": "  The row reduced echelon form of a matrix is unique.   "
+},
+{
+  "id": "thm-solutions-of-linear-equations",
+  "level": "2",
+  "url": "sec-row-echelon-form.html#thm-solutions-of-linear-equations",
+  "type": "Theorem",
+  "number": "1.3.5",
+  "title": "",
+  "body": "     Let be a block row reduced echelon form of , where and are column vectors. The system has a solution if and only if the system is a solution.    Let be a block row reduced echelon form of , where and are column vectors. The system has a solution if and only if there is no pivot in the last column . In that case, one may assign arbitrary values to if the -th column does not contain a pivot.    Every system (here is matrix with all entries zero) of equations and unknowns with has a nonzero solution.      "
+},
+{
+  "id": "thm-invertible-matrix-row-echelon-form",
+  "level": "2",
+  "url": "sec-row-echelon-form.html#thm-invertible-matrix-row-echelon-form",
+  "type": "Theorem",
+  "number": "1.3.6",
+  "title": "",
+  "body": "  A square matrix is invertible (see ) if and only if the row reduced echelon form of is the identity matrix .   "
 },
 {
   "id": "practice-row-echelon-form",
@@ -367,7 +394,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "1.4",
   "title": "Exercises",
-  "body": "  A few exercises related to the row reduced echelon form of a matrix are listed below.   Find the row reduced echelon form of the following matrices. .  How many pivots are there in one row? How many pivots are there in one column?  In a matrix what is the largest possible number of pivots?  Write the row reduced echelon matrix whose every row has a pivot.  Consider the following augmented matrices. In each case consider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                    Consider any square matrix of size of your choice. Using row reduced echelon form determine whether your matrix is invertible or not (see ).   "
+  "body": "  A few exercises related to the row reduced echelon form of a matrix are listed below.   Find the row reduced echelon form of the following matrices. .  How many pivots are there in one row? How many pivots are there in one column?  In a matrix what is the largest possible number of pivots?  Write the row reduced echelon matrix whose every row has a pivot.  Consider the following augmented matrices. In each case consider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                   where .      Consider any square matrix of size of your choice. Using row reduced echelon form determine whether your matrix is invertible or not (see ).    List all possible types of elementary matrices of size and . Further show that these matrices are invertible.    Let . Perform the row operation described in , and denote the resulting matrix by . Now perform the exact same operation on the identity matrix , and denote the resulting matrix by (note that is an elemetary matrix). Show that . What happens if we consider in terms of columns of ?  Do the same exercise for other two row operations mentioned in .    Consider the system of equations with and .     Show that if the above system has two distinct solutions then it has infinitely many solutions.    Show that this system has solution in the complex numbers if and only if it has a solution in the real numbers.       Let . Show that if the system has a unique solution for some particular then the system has a unique solution for any .   "
 },
 {
   "id": "exercise-21",
@@ -412,7 +439,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.4.5",
   "title": "",
-  "body": "Consider the following augmented matrices. In each case consider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                  "
+  "body": "Consider the following augmented matrices. In each case consider the corresponding system of linear equations and determine whether the system has no solution, a unique solution, or infinitely many solutions.                   where .    "
 },
 {
   "id": "exercise-26",
@@ -424,13 +451,49 @@ var ptx_lunr_docs = [
   "body": " Consider any square matrix of size of your choice. Using row reduced echelon form determine whether your matrix is invertible or not (see ).  "
 },
 {
+  "id": "exercise-27",
+  "level": "2",
+  "url": "practice-row-echelon-form.html#exercise-27",
+  "type": "Exercise",
+  "number": "1.4.7",
+  "title": "",
+  "body": " List all possible types of elementary matrices of size and . Further show that these matrices are invertible.  "
+},
+{
+  "id": "exercise-28",
+  "level": "2",
+  "url": "practice-row-echelon-form.html#exercise-28",
+  "type": "Exercise",
+  "number": "1.4.8",
+  "title": "",
+  "body": " Let . Perform the row operation described in , and denote the resulting matrix by . Now perform the exact same operation on the identity matrix , and denote the resulting matrix by (note that is an elemetary matrix). Show that . What happens if we consider in terms of columns of ?  Do the same exercise for other two row operations mentioned in .  "
+},
+{
+  "id": "exercise-29",
+  "level": "2",
+  "url": "practice-row-echelon-form.html#exercise-29",
+  "type": "Exercise",
+  "number": "1.4.9",
+  "title": "",
+  "body": " Consider the system of equations with and .     Show that if the above system has two distinct solutions then it has infinitely many solutions.    Show that this system has solution in the complex numbers if and only if it has a solution in the real numbers.     "
+},
+{
+  "id": "exercise-30",
+  "level": "2",
+  "url": "practice-row-echelon-form.html#exercise-30",
+  "type": "Exercise",
+  "number": "1.4.10",
+  "title": "",
+  "body": " Let . Show that if the system has a unique solution for some particular then the system has a unique solution for any .  "
+},
+{
   "id": "sec-rank-trace-det",
   "level": "1",
   "url": "sec-rank-trace-det.html",
   "type": "Section",
   "number": "1.5",
   "title": "Some invariants attached to a matrix",
-  "body": " Some invariants attached to a matrix   In this section we denote by either the set of real numbers, or the set of complex numbers, .    (Rank of a matrix)   The rank of a matrix is the number of nonzero rows in the row reduced echelon form of .  We denote the rank of by .     It follows from that for a matrix , the rank of is equal to number of pivots in the row reduced echelon form of which in turn can be at most .     The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix is denoted by . If is given by then the trace of ,     We now define the determinant of a square matrix recursively. We will not give a general definition.   Given an matrix over , its determinant is denoted by      The determinant of a matrix is denote by and it is equal to , i.e.,       Consider as follows. The determinant of is      In the formula of the determinant of observe the following.   Change of signs in consecutive terms.    First entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the first column of . The second entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the second column of . The third entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the third column of .      "
+  "body": " Some invariants attached to a matrix   In this section we denote by either the set of real numbers, or the set of complex numbers, .     The rank of a matrix is the number of nonzero rows in the row reduced echelon form of .  We denote the rank of by .     It follows from that for a matrix , the rank of is equal to number of pivots in the row reduced echelon form of which in turn can be at most .     The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix is denoted by . If is given by then the trace of ,     We now define the determinant of a square matrix recursively. We will not give a general definition.   Given an matrix over , its determinant is denoted by      The determinant of a matrix is denote by and it is equal to , i.e.,       Consider as follows. The determinant of is      In the formula of the determinant of observe the following.   Change of signs in consecutive terms.    First entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the first column of . The second entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the second column of . The third entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the third column of .      For the rest of this section we use a short notation to write a square matrix, viz., we write to denote the following matrix.     Properties of the determinant . Assume that .    Row linearity . Let be the -th row of . For we let . For any and any and any we get the following.   For and any , .   Row rearrangement . Let be the matrix obtained by interchanging the -th row of with the -th row of . Then    Alternating . If any two rows of are the same then .   Transpose . For any ,    Triangular matrices . If is an upper triangular (resp., lower triangular) matrix, i.e., for (resp., for ) then    Block form . Let . Let , , , and be the zero matrix. The determinant of is given by Similar result is true for lower triangular block matrices.   Multiplicative property . Let . We have     Invertibility. A matrix is invertible if and only if if and only if .      "
 },
 {
   "id": "def-rank",
@@ -438,8 +501,8 @@ var ptx_lunr_docs = [
   "url": "sec-rank-trace-det.html#def-rank",
   "type": "Definition",
   "number": "1.5.1",
-  "title": "(Rank of a matrix).",
-  "body": " (Rank of a matrix)   The rank of a matrix is the number of nonzero rows in the row reduced echelon form of .  We denote the rank of by .   "
+  "title": "",
+  "body": "  The rank of a matrix is the number of nonzero rows in the row reduced echelon form of .  We denote the rank of by .   "
 },
 {
   "id": "remark-1",
@@ -494,6 +557,69 @@ var ptx_lunr_docs = [
   "number": "1.5.7",
   "title": "",
   "body": " In the formula of the determinant of observe the following.   Change of signs in consecutive terms.    First entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the first column of . The second entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the second column of . The third entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the third column of .     "
+},
+{
+  "id": "properties-of-det",
+  "level": "2",
+  "url": "sec-rank-trace-det.html#properties-of-det",
+  "type": "Fact",
+  "number": "1.5.8",
+  "title": "",
+  "body": "  Properties of the determinant . Assume that .    Row linearity . Let be the -th row of . For we let . For any and any and any we get the following.   For and any , .   Row rearrangement . Let be the matrix obtained by interchanging the -th row of with the -th row of . Then    Alternating . If any two rows of are the same then .   Transpose . For any ,    Triangular matrices . If is an upper triangular (resp., lower triangular) matrix, i.e., for (resp., for ) then    Block form . Let . Let , , , and be the zero matrix. The determinant of is given by Similar result is true for lower triangular block matrices.   Multiplicative property . Let . We have     Invertibility. A matrix is invertible if and only if if and only if .     "
+},
+{
+  "id": "practice-rank-trace-det",
+  "level": "1",
+  "url": "practice-rank-trace-det.html",
+  "type": "Exercises",
+  "number": "1.6",
+  "title": "Exercises",
+  "body": "  Find the rank of matrices in .    Given show that and that   Furthermore show that if is invertible then    Use the formula for -th entry of a product given in .    Consider any square matrix of size of your choice and find its determinant.    Show that the following matrix is invertible, and that .     Show that the determinant of the following matrix is . Find a condition on so that the determinant of the above matrix is nonzero.   "
+},
+{
+  "id": "exercise-31",
+  "level": "2",
+  "url": "practice-rank-trace-det.html#exercise-31",
+  "type": "Exercise",
+  "number": "1.6.1",
+  "title": "",
+  "body": " Find the rank of matrices in .  "
+},
+{
+  "id": "exercise-32",
+  "level": "2",
+  "url": "practice-rank-trace-det.html#exercise-32",
+  "type": "Exercise",
+  "number": "1.6.2",
+  "title": "",
+  "body": " Given show that and that   Furthermore show that if is invertible then    Use the formula for -th entry of a product given in .  "
+},
+{
+  "id": "exercise-33",
+  "level": "2",
+  "url": "practice-rank-trace-det.html#exercise-33",
+  "type": "Exercise",
+  "number": "1.6.3",
+  "title": "",
+  "body": " Consider any square matrix of size of your choice and find its determinant.  "
+},
+{
+  "id": "exercise-34",
+  "level": "2",
+  "url": "practice-rank-trace-det.html#exercise-34",
+  "type": "Exercise",
+  "number": "1.6.4",
+  "title": "",
+  "body": " Show that the following matrix is invertible, and that .   "
+},
+{
+  "id": "exercise-35",
+  "level": "2",
+  "url": "practice-rank-trace-det.html#exercise-35",
+  "type": "Exercise",
+  "number": "1.6.5",
+  "title": "",
+  "body": " Show that the determinant of the following matrix is . Find a condition on so that the determinant of the above matrix is nonzero.  "
 },
 {
   "id": "colophon-2",
