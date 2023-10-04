@@ -13,23 +13,30 @@
         <p>
             Let <m>A\in M_{m\times n}(\mathbb{K})</m>. Denote by <m>R_i</m> (for <m>1\leq i\leq m</m>) the <m>i</m>-th row of <m>A</m>. Following are elementary row operations.
             <ol>
-              <li>
+              <li xml:id="interchanging-rows">
                 <p>
                   Interchanging <m>i</m>-th row with <m>j</m>-th row. This operation is usually denoted by <m>R_i\leftrightarrow R_j</m>.
                 </p>
               </li>
-              <li>
+              <li xml:id="constant-multiple">
                 <p>
                   Multiplying  <m>i</m>-th row by a nonzero <m>\alpha\in\mathbb{K}</m>. This operation is usually denoted by <m>R_i\mapsto \alpha R_i</m>.
                 </p>
               </li>
-              <li>
+              <li xml:id="adding-scalar-multiple-of-row-to-other-row">
                 <p>
                   Adding a constant multiple of <m>j</m>-th row to <m>i</m>-th row. This operation is usually denoted by <m>R_i\mapsto R_i+\alpha R_j</m>.
                 </p>
               </li>
             </ol>
         </p>
+    </statement>
+  </definition>
+  <definition xml:id="def-elementary-matrices">
+    <statement>
+      <p>
+        A square matrix <m>E\in M_n(\K)</m> is said to be an <term>elementary matrix</term> if it is obtained from the identity matrix <m>I_n</m> by performing only one of the row operations described in <xref ref="def-elementary-row-operations"/> on <m>I_n</m>.
+      </p>
     </statement>
   </definition>
   <note xml:id="row-reduced-echelon-form-procedure">
@@ -50,4 +57,36 @@
       </p>
     </statement>
   </fact>
+  <theorem xml:id="thm-solutions-of-linear-equations">
+    <statement>
+      <p>
+        <ol>
+          <li xml:id="equivalence-of-solution">
+            <p>
+              Let <m>\left(A^\prime|B^\prime\right)</m> be a block row reduced echelon form of <m>\left(A|B\right)</m>, where <m>B^\prime</m> and <m>B</m> are column vectors. The system <m>AX=B</m> has a solution if and only if the system <m>A^\prime X=B^\prime</m> is a solution.
+            </p>
+          </li>
+          <li xml:id="existence-of-solution">
+            <p>
+              Let <m>\left(A^\prime|B^\prime\right)</m> be a block row reduced echelon form of <m>\left(A|B\right)</m>, where <m>B^\prime</m> and <m>B</m> are column vectors. The system <m>A^\prime X=B^\prime</m> has a solution if and only if there is <alert>no</alert> pivot in the last column <m>B^\prime</m>. In that case, one may assign arbitrary values to <m>x_i</m> if the <m>i</m>-th column <alert>does not</alert> contain a pivot.
+            </p>
+          </li>
+          <li xml:id="rank-less-infinite-solutions">
+            <p>
+              Every system <m>AX=0</m> (here <m>0</m> is <m>m\times 1</m> matrix with all entries zero) of <m>m</m> equations and <m>n</m> unknowns with <m>m&lt;n</m> has a nonzero solution.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </theorem>
+  <theorem xml:id="thm-invertible-matrix-row-echelon-form">
+    <statement>
+      <p>
+        A square matrix <m>A\in M_n(\K)</m> is invertible (see <xref ref="def-inverse-of-matrix"/>) if and only if the row reduced echelon form of <m>A</m> is the identity matrix <m>I_n</m>.
+      </p>
+    </statement>
+  </theorem>
+  
+  
 </section>

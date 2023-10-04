@@ -1,0 +1,57 @@
+<exercises xml:id="practice-rank-trace-det">
+    <exercise>
+        <statement>
+            <p>
+                Find the rank of matrices in <xref ref="practice-row-echelon-form"/>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Given <m>A,B\in M_n(\K)</m> show that <m>\tr(A+B)=\tr(A)+\tr(B)</m> and that <me>tr(AB)=\tr(BA).</me>
+            </p>
+            <p>
+                Furthermore show that if <m>A</m> is invertible then
+                <me>
+                    \tr(B)=\tr(ABA^{-1}).
+                </me>
+                
+            </p>
+        </statement>
+        <hint>
+            <p>
+                Use the formula for <m>(i,j)</m>-th entry of a product <m>AB</m> given in <xref ref="ij-entry-of-product"/>.
+            </p>
+        </hint>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Consider any square matrix of size <m>n</m> of your choice and find its determinant.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Show that the following matrix <m>P</m> is invertible, and that <m>P^{-1}=P^t</m>.
+                <me>
+                    P=\begin{pmatrix}0\amp 0\amp 0\amp 1\\1\amp 0\amp 0\amp 0\\0\amp 1\amp 0\amp 0\\0\amp 0\amp 1\amp 0\end{pmatrix}
+                </me>
+                
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Show that the determinant of the following matrix is <m>(a-b)(b-c)(c-a)</m>.
+                <me>
+                    \begin{pmatrix}1\amp 1\amp 1\\a\amp b\amp c\\a^2\amp b^2\amp c^2\end{pmatrix}
+                </me>
+                Find a condition on <m>a,b,c\in\K</m> so that the determinant of the above matrix is nonzero.
+            </p>
+        </statement>
+    </exercise>
+</exercises>

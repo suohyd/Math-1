@@ -56,6 +56,14 @@
                   </me>
                 </p>
               </li>
+              <li>
+                <p>
+                  <me>
+                    \left(\begin{matrix}i\amp 0\amp 0\amp 0\\1\amp -i\amp 0\amp 0\\1\amp 2\amp i\amp 0\\1\amp 3\amp 3\amp -i\end{matrix}\left|\,\begin{matrix}1\\2\\3\\3\end{matrix}\right.\right),
+                  </me>
+                  where <m>i^2=-1</m>.
+                </p>
+              </li>
             </ol>
           </p>
     </exercise>
@@ -63,6 +71,51 @@
       <statement>
         <p>
           Consider any square matrix of size <m>n</m> of your choice. Using row reduced echelon form determine whether your matrix is invertible or not (see <xref ref="def-inverse-of-matrix"/>).
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          List all possible types of elementary matrices of size <m>2</m> and <m>3</m>. Further show that these matrices are invertible.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Let <m>A\in M_3(\K)</m>. Perform the row operation described in <xref ref="adding-scalar-multiple-of-row-to-other-row"/>, and denote the resulting matrix by <m>A^\prime</m>. Now perform the exact same operation on the identity matrix <m>I_3\in M_3(\K)</m>, and denote the resulting matrix by <m>E</m> (note that <m>E</m> is an elemetary matrix). Show that <m>EA=A^\prime</m>. What happens if we consider <m>AE</m> in terms of columns of <m>A</m>?
+        </p>
+        <p>
+          Do the same exercise for other two row operations mentioned in <xref ref="def-elementary-row-operations"/>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Consider the system of equations <m>AX=B</m> with <m>A\in M_{m\times n}(\R)</m> and <m>B\in M_{m\times 1}(\R)</m>. 
+        </p>
+        <p>
+          <ol>
+          <li>
+            <p>
+              Show that if the above system has two distinct solutions then it has infinitely many solutions.
+            </p>
+          </li>
+          <li>
+            <p>
+              Show that this system has a solution in the complex numbers if and only if it has a solution in the real numbers.
+            </p>
+          </li>
+        </ol>
+      </p>
+      </statement>
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          Let <m>A\in M_n(\K)</m>. Show that if the system <m>AX=B</m> has a unique solution for some particular <m>B\in M_{n\times 1}(\K)</m> then the system <m>AX=C</m> has a unique solution for any <m>C\in M_{n\times 1}(\K)</m>.
         </p>
       </statement>
     </exercise>

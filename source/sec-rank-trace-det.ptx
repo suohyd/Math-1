@@ -7,8 +7,7 @@
         In this section we denote by <m>\mathbb{K}</m> either the set of real numbers, <m>\mathbb{R}</m> or the set of complex numbers, <m>\mathbb{C}</m>.
     </p>
   </introduction>
-  <definition xml:id="def-rank">
-    <title>(Rank of a matrix)</title>   
+  <definition xml:id="def-rank">   
     <statement>
         <p>
             The <term>rank of a matrix <m>A\in M_{m\times n}(\mathbb{K})</m></term> is the number of <term>nonzero</term> rows in the row reduced echelon form of <m>A</m>.
@@ -26,7 +25,7 @@
   <definition xml:id="def-trace">
     <statement>
         <p>
-            The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix <m>A\in M_{n}(\mathbb{K})</m> is denoted by <m>{\rm tr}(A)</m>. If <m>A\in M_{n}(\mathbb{K})</m> is given by 
+            The <term>trace</term> of a square matrix is the sum of all its diagonal entries. The trace of a square matrix <m>A\in M_{n}(\mathbb{K})</m> is denoted by <m>{\rm tr}(A)</m>. If <m>A\in M_{n}(\mathbb{K})</m> is given by 
             <me>
                 A=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}
             </me>
@@ -100,4 +99,53 @@
         </ol>
     </p>
   </note>
+    <p>
+    For the rest of this section we use a short notation to write a square matrix, viz., we write <m>A=(a_{ij})\in M_n(\K)</m> to denote the following matrix.
+    <men xml:id="short-notation-for-matrix">
+        A=(a_{ij})=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}
+    </men>
+    </p>
+    <fact xml:id="properties-of-det">
+        <p>
+            <alert>Properties of the determinant</alert>. Assume that <m>A=(a_{ij})\in M_n(\K)</m>.
+        </p>
+    <p>
+    <ol>
+        <li xml:id="row-linearity-det"><alert>Row linearity</alert>. Let <m>A_i=(a_{i1}\,a_{i2}\,\cdots\,a_{in})</m> be the <m>i</m>-th row of <m>A</m>. For <m>\beta\in \K</m> we let <m>\beta A_i=(\beta a_{i1}\,\beta a_{i2}\,\cdots\,\beta a_{in})</m>. For any <m>B\in M_{1\times n}(\K)</m> and any <m>\beta,\gamma\in \K</m> and any <m>i\in\{1,2,\ldots,n\}</m> we get the following.
+        <me>\det\begin{pmatrix}A_1\\A_2\\\vdots\\A_{i-1}\\\beta A_i+\gamma B\\A_{i+1}\\\vdots\\A_n\end{pmatrix}=\beta\,\det\begin{pmatrix}A_1\\A_2\\\vdots\\A_{i-1}\\A_i\\A_{i+1}\\\vdots\\A_n\end{pmatrix}+\gamma\,\det\begin{pmatrix}A_1\\A_2\\\vdots\\A_{i-1}\\B\\A_{i+1}\\\vdots\\A_n\end{pmatrix}</me>
+    </li>
+    <li>
+        For <m>A\in M_n(\K)</m> and any <m>\beta\in \K</m>, <m>\det(\beta A)=\beta^n\cdot\det(A)</m>.
+    </li>
+    <li xml:id="row-reaarrangment-det">
+        <alert>Row rearrangement</alert>. Let <m>A^\prime</m> be the matrix obtained by interchanging the <m>i</m>-th row of <m>A</m> with the <m>j</m>-th row of <m>A</m>. Then <me>\det A^\prime=-\det A.</me>
+    </li>
+    <li>
+        <alert>Alternating</alert>. If any two rows of <m>A\in M_n(\K)</m> are the same then <m>\det A=0</m>.
+    </li>
+    <li xml:id="transpose-det">
+        <alert>Transpose</alert>. For any <m>A\in M_n(\K)</m>,
+        <me>\det A^t=\det A.</me>
+    </li>
+    <li xml:id="triangular-det">
+        <alert>Triangular matrices</alert>. If <m>A=(a_{ij})\in M_n(\K)</m> is an upper triangular (resp., lower triangular) matrix, i.e., <m>a_{ij}=0</m> for <m>i&gt;j</m> (resp., <m>a_{ij}=0</m> for <m>i&lt;j</m>) then
+        <me>\det(A)=a_{11}a_{22}\cdots a_{nn}.</me>
+    </li>
+    <li xml:id="block-det">
+        <alert>Block form</alert>. Let <m>r\in\{1,2,\ldots,n-1\}</m>. Let <m>B\in M_r(\K)</m>, <m>C\in M_{r\times n-r}(\K)</m>, <m>D\in M_{n-r}(\K)</m>, and <m>\mathbf{0}\in M_{n-r\times r}(\K)</m> be the zero matrix. The determinant of 
+        <me>A=\begin{pmatrix}B\amp C\\\mathbf{0}\amp D\end{pmatrix}</me> is given by 
+        <me>\det A=\det B\cdot\det D.</me>
+        Similar result is true for lower triangular block matrices.
+    </li>
+    <li xml:id="multiplicative-det">
+        <alert>Multiplicative property</alert>. Let <m>A, B\in M_n(\K)</m>. We have <me>\det(AB)=\det(A)\cdot\det(B).</me>
+    </li>
+    <li xml:id="invertibility-of-matrix-det">
+        <p>
+            <alert>Invertibility.</alert> A matrix <m>A\in M_n(\K)</m> is invertible if and only if <m>\det A\neq 0</m> if and only if <m>{\rm rank}(A)=n</m>.
+        </p>
+    </li>
+    </ol>
+    </p>
+</fact>
 </section>
