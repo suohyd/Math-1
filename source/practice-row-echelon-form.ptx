@@ -70,7 +70,7 @@
     <exercise>
       <statement>
         <p>
-          Consider any square matrix of size <m>n</m> of your choice. Using row reduced echelon form determine whether your matrix is invertible or not (see <xref ref="def-inverse-of-matrix"/>).
+          Consider any square matrix of size <m>n</m> of your choice. Using the row reduced echelon form determine whether your matrix is invertible or not (see <xref ref="def-inverse-of-matrix"/>).
         </p>
       </statement>
     </exercise>
@@ -105,7 +105,7 @@
           </li>
           <li>
             <p>
-              Show that this system has a solution in the complex numbers if and only if it has a solution in the real numbers.
+              Show that the above system has a solution in the complex numbers if and only if it has a solution in the real numbers.
             </p>
           </li>
         </ol>

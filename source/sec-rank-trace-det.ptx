@@ -19,7 +19,7 @@
   </definition>
   <remark>
     <p>
-        It follows from <xref ref="def-rank"/> that for a matrix <m>A\in M_{m\times n}(\mathbb{K})</m>, the rank of <m>A</m> is equal to number of pivots in the row reduced echelon form of <m>A</m> which in turn can be at most <m>\min\{m,n\}</m>.
+        It follows from <xref ref="def-rank"/> that for a matrix <m>A\in M_{m\times n}(\mathbb{K})</m>, the rank of <m>A</m> is equal to the number of pivots in the row reduced echelon form of <m>A</m>, which in turn can be at most <m>\min\{m,n\}</m>.
     </p>
   </remark>
   <definition xml:id="def-trace">
@@ -61,9 +61,9 @@
             <me>
                 \det A=\begin{vmatrix}a_{11}\amp a_{12}\\a_{21}\amp a_{22}\end{vmatrix}
             </me>
-            and it is equal to <m>a_{11}a_{22}-a_{12}a_{21}</m>, i.e.,
+            and it is equal to <m>a_{11}a_{22}-a_{12}a_{21}\in\K</m>, i.e.,
             <me>
-                \det A=\begin{vmatrix}a_{11}\amp a_{12}\\a_{21}\amp a_{22}\end{vmatrix}= a_{11}a_{22}-a_{12}a_{21}.
+                \det A=\begin{vmatrix}a_{11}\amp a_{12}\\a_{21}\amp a_{22}\end{vmatrix}= a_{11}a_{22}-a_{12}a_{21}\in\K.
             </me>            
         </p>
     </statement>
@@ -77,7 +77,7 @@
             </me>
             The determinant of <m>A</m> is
             <md>
-                <mrow> \det A\amp=a_{11}\,\begin{vmatrix}a_{22}\amp a_{23}\\a_{32}\amp a_{33}\end{vmatrix}-a_{12}\,\begin{vmatrix}a_{21}\amp a_{23}\\a_{31}\amp a_{33}\end{vmatrix} + a_{13}\, \begin{vmatrix}a_{21}\amp a_{22}\\a_{31}\amp a_{32}\end{vmatrix}.</mrow>
+                <mrow> \det A\amp=a_{11}\,\begin{vmatrix}a_{22}\amp a_{23}\\a_{32}\amp a_{33}\end{vmatrix}-a_{12}\,\begin{vmatrix}a_{21}\amp a_{23}\\a_{31}\amp a_{33}\end{vmatrix} + a_{13}\, \begin{vmatrix}a_{21}\amp a_{22}\\a_{31}\amp a_{32}\end{vmatrix}\in\K.</mrow>
             </md>            
         </p>
     </statement>
@@ -105,6 +105,11 @@
         A=(a_{ij})=\begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{n1}\amp a_{n2}\amp\cdots\amp a_{nn}\end{pmatrix}
     </men>
     </p>
+    <note>
+        <p>
+            We emphasis that the determinant of a square matrix is an element of <m>\K</m>.
+        </p>
+      </note>
     <fact xml:id="properties-of-det">
         <p>
             <alert>Properties of the determinant</alert>. Assume that <m>A=(a_{ij})\in M_n(\K)</m>.
@@ -115,7 +120,7 @@
         <me>\det\begin{pmatrix}A_1\\A_2\\\vdots\\A_{i-1}\\\beta A_i+\gamma B\\A_{i+1}\\\vdots\\A_n\end{pmatrix}=\beta\,\det\begin{pmatrix}A_1\\A_2\\\vdots\\A_{i-1}\\A_i\\A_{i+1}\\\vdots\\A_n\end{pmatrix}+\gamma\,\det\begin{pmatrix}A_1\\A_2\\\vdots\\A_{i-1}\\B\\A_{i+1}\\\vdots\\A_n\end{pmatrix}</me>
     </li>
     <li>
-        For <m>A\in M_n(\K)</m> and any <m>\beta\in \K</m>, <m>\det(\beta A)=\beta^n\cdot\det(A)</m>.
+        For <m>A\in M_n(\K)</m> and any <m>\beta\in \K</m>, <m>\det(\beta A)=\beta^n\cdot\det A</m>.
     </li>
     <li xml:id="row-reaarrangment-det">
         <alert>Row rearrangement</alert>. Let <m>A^\prime</m> be the matrix obtained by interchanging the <m>i</m>-th row of <m>A</m> with the <m>j</m>-th row of <m>A</m>. Then <me>\det A^\prime=-\det A.</me>
@@ -129,7 +134,7 @@
     </li>
     <li xml:id="triangular-det">
         <alert>Triangular matrices</alert>. If <m>A=(a_{ij})\in M_n(\K)</m> is an upper triangular (resp., lower triangular) matrix, i.e., <m>a_{ij}=0</m> for <m>i&gt;j</m> (resp., <m>a_{ij}=0</m> for <m>i&lt;j</m>) then
-        <me>\det(A)=a_{11}a_{22}\cdots a_{nn}.</me>
+        <me>\det A=a_{11}a_{22}\cdots a_{nn}.</me>
     </li>
     <li xml:id="block-det">
         <alert>Block form</alert>. Let <m>r\in\{1,2,\ldots,n-1\}</m>. Let <m>B\in M_r(\K)</m>, <m>C\in M_{r\times n-r}(\K)</m>, <m>D\in M_{n-r}(\K)</m>, and <m>\mathbf{0}\in M_{n-r\times r}(\K)</m> be the zero matrix. The determinant of 
@@ -138,7 +143,7 @@
         Similar result is true for lower triangular block matrices.
     </li>
     <li xml:id="multiplicative-det">
-        <alert>Multiplicative property</alert>. Let <m>A, B\in M_n(\K)</m>. We have <me>\det(AB)=\det(A)\cdot\det(B).</me>
+        <alert>Multiplicative property</alert>. Let <m>A, B\in M_n(\K)</m>. We have <me>\det AB=\det A\cdot\det B.</me>
     </li>
     <li xml:id="invertibility-of-matrix-det">
         <p>

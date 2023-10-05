@@ -122,7 +122,7 @@
         \end{alignedat}
        </me>
        <p>
-        We may write the system of linear equations given above in a matrix form.
+        We may write the above system of linear equations in the matrix form.
        </p>
        <me>
         \begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{m1}\amp a_{m2}\amp\cdots\amp a_{mn}\end{pmatrix}\begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}=\begin{pmatrix}b_1\\b_2\\\vdots\\b_m\end{pmatrix}
@@ -136,7 +136,7 @@
         The matrix <m>A</m> is called the <term>coefficient matrix</term> of the above system.
        </p>
        <p>
-        If all <m>b_1=b_2=\cdots=b_m=0</m> then the above system of linear equations is said to be <term>homogeneous</term>.
+        If all <m>b_1=b_2=\cdots=b_m=0</m> then the above system of linear equations is said to be <alert>homogeneous</alert>.
        </p>
       </definition>
 </section>
