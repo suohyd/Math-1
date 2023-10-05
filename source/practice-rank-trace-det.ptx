@@ -9,7 +9,7 @@
     <exercise>
         <statement>
             <p>
-                Given <m>A,B\in M_n(\K)</m> show that <m>\tr(A+B)=\tr(A)+\tr(B)</m> and that <me>tr(AB)=\tr(BA).</me>
+                Given <m>A,B\in M_n(\K)</m> show that <m>\tr(A+B)=\tr(A)+\tr(B)</m> and that <me>\tr(AB)=\tr(BA).</me>
             </p>
             <p>
                 Furthermore show that if <m>A</m> is invertible then
