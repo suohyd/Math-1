@@ -63,7 +63,7 @@
         <ol>
           <li xml:id="equivalence-of-solution">
             <p>
-              Let <m>\left(A^\prime|B^\prime\right)</m> be a block row reduced echelon form of <m>\left(A|B\right)</m>, where <m>B^\prime</m> and <m>B</m> are column vectors. The system <m>AX=B</m> has a solution if and only if the system <m>A^\prime X=B^\prime</m> is has a solution.
+              Let <m>\left(A^\prime|B^\prime\right)</m> be a block row reduced echelon form of <m>\left(A|B\right)</m>, where <m>B^\prime</m> and <m>B</m> are column vectors. The system <m>AX=B</m> has a solution if and only if the system <m>A^\prime X=B^\prime</m> has a solution.
             </p>
           </li>
           <li xml:id="existence-of-solution">
