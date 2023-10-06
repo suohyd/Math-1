@@ -18,7 +18,7 @@
   <colophon>
 
     <website>
-      <url href="https://sites.google.com/uohyd.ac.in/abhay-soman/home">My website</url>
+      <url href="https://sites.google.com/uohyd.ac.in/abhay-soman/home">Abhay Soman</url>
     </website>
 
     <copyright>
@@ -27,6 +27,7 @@
       <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>
+    <p> This book was authored in <url href="https://pretextbook.org/"><pretext /></url>. </p>
   </colophon>
   <preface>
     <p>
