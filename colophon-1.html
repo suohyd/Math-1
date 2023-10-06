@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Questions for Math-1">
 <meta property="book:author" content="Abhay Soman">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -164,14 +181,24 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-rank-trace-det.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="SageMath.html" class="internal"><span class="codenumber">A</span> <span class="title">Computations using SageMath</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sage-echelon-form.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Row reduced echelon form and a system of linear equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sage-rank-trace-det.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Computing rank, trace, and determinant</span></a></div></li>
+</ul>
+</li></ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="colophon" id="colophon-1"><h2 class="heading hide-type">
 <span class="type">Colophon</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Colophon</span>
 </h2>
-<p class="credit"><b class="title">Website</b> <a class="external" href="https://sites.google.com/uohyd.ac.in/abhay-soman/home" target="_blank">My website</a><a class="xref" id="fn-1" href="" data-knowl="./knowl/fn-1.html" title="Footnote 0.0.1"><sup> 1 </sup></a></p>
+<p class="credit"><b class="title">Website</b> <a class="external" href="https://sites.google.com/uohyd.ac.in/abhay-soman/home" target="_blank">Abhay Soman</a><a class="xref" id="fn-1" href="" data-knowl="./knowl/fn-1.html" title="Footnote 0.0.1"><sup> 1 </sup></a></p>
 <p class="copyright">©2023–2024 Abhay Soman</p>
-<p class="license">This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <a class="external" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CreativeCommons.org</a><a class="xref" id="fn-2" href="" data-knowl="./knowl/fn-2.html" title="Footnote 0.0.2"><sup> 2 </sup></a></p></section></div>
+<p class="license">This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <a class="external" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CreativeCommons.org</a><a class="xref" id="fn-2" href="" data-knowl="./knowl/fn-2.html" title="Footnote 0.0.2"><sup> 2 </sup></a></p>
+<div class="para" id="p-1">This book was authored in <a class="external" href="https://pretextbook.org/" target="_blank">PreTeXt</a><a class="xref" id="fn-3" href="" data-knowl="./knowl/fn-3.html" title="Footnote 0.0.3"><sup> 3 </sup></a>.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="frontmatter.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="preface-1.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

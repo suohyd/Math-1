@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Questions for Math-1">
 <meta property="book:author" content="Abhay Soman">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -164,31 +181,40 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-rank-trace-det.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="SageMath.html" class="internal"><span class="codenumber">A</span> <span class="title">Computations using SageMath</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sage-echelon-form.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Row reduced echelon form and a system of linear equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sage-rank-trace-det.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Computing rank, trace, and determinant</span></a></div></li>
+</ul>
+</li></ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-basic-operations"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Basic matrix operations</span>
 </h2>
-<section class="introduction" id="introduction-2"><div class="para" id="p-8">In this section we denote by <span class="process-math">\(\mathbb{K}\)</span> either the set of real numbers, <span class="process-math">\(\mathbb{R}\)</span> or the set of complex numbers, <span class="process-math">\(\mathbb{C}\text{.}\)</span>
+<section class="introduction" id="introduction-2"><div class="para" id="p-9">In this section we denote by <span class="process-math">\(\mathbb{K}\)</span> either the set of real numbers, <span class="process-math">\(\mathbb{R}\)</span> or the set of complex numbers, <span class="process-math">\(\mathbb{C}\text{.}\)</span>
 </div></section><article class="definition definition-like" id="def-zero-matrix"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">(Zero matrix).</span>
-</h3> <div class="para" id="p-9">We denote by <span class="process-math">\(0_n\)</span> the <span class="process-math">\(n\times n\)</span> matrix with all its entries zero. We call <span class="process-math">\(0_n\)</span> the zero matrix.</div></article><article class="definition definition-like" id="def-identity-matrix"><h3 class="heading">
+</h3> <div class="para" id="p-10">We denote by <span class="process-math">\(0_n\)</span> the <span class="process-math">\(n\times n\)</span> matrix with all its entries zero. We call <span class="process-math">\(0_n\)</span> the zero matrix.</div></article><article class="definition definition-like" id="def-identity-matrix"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">(Identity matrix).</span>
-</h3> <div class="para" id="p-10">We denote by <span class="process-math">\(I_n\)</span> the <span class="process-math">\(n\times n\)</span> matrix with all its diagonal entries <span class="process-math">\(1\text{,}\)</span> and all other (non-diagonal) entries zero. We call <span class="process-math">\(I_n\)</span> the identity matrix.</div></article><article class="convention remark-like" id="ij-entry-of-matrix"><h3 class="heading">
+</h3> <div class="para" id="p-11">We denote by <span class="process-math">\(I_n\)</span> the <span class="process-math">\(n\times n\)</span> matrix with all its diagonal entries <span class="process-math">\(1\text{,}\)</span> and all other (non-diagonal) entries zero. We call <span class="process-math">\(I_n\)</span> the identity matrix.</div></article><article class="convention remark-like" id="ij-entry-of-matrix"><h3 class="heading">
 <span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-11">The <dfn class="terminology"><span class="process-math">\((i,j)\)</span>-th entry of a matrix</dfn> <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\)</span> is the entry at the intersection of <span class="process-math">\(i\)</span>-th row and <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(A\text{.}\)</span>
+<div class="para" id="p-12">The <dfn class="terminology"><span class="process-math">\((i,j)\)</span>-th entry of a matrix</dfn> <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\)</span> is the entry at the intersection of <span class="process-math">\(i\)</span>-th row and <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(A\text{.}\)</span>
 </div></article><article class="convention remark-like" id="convention-2"><h3 class="heading">
 <span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-12">We denote the set of all <span class="process-math">\(n\times n\)</span> matrices over <span class="process-math">\(\mathbb{K}\)</span> by <span class="process-math">\(M_n(\mathbb{K})\text{.}\)</span> So <span class="process-math">\(M_{n\times n}(\mathbb{K})=M_n(\mathbb{K})\text{.}\)</span> A matrix in <span class="process-math">\(M_n(\mathbb{K})\)</span> is called a <dfn class="terminology">square matrix</dfn> and <span class="process-math">\(n\)</span> is called the <dfn class="terminology">size of a matrix</dfn>.</div></article><article class="convention remark-like" id="convention-3"><h3 class="heading">
+<div class="para" id="p-13">We denote the set of all <span class="process-math">\(n\times n\)</span> matrices over <span class="process-math">\(\mathbb{K}\)</span> by <span class="process-math">\(M_n(\mathbb{K})\text{.}\)</span> So <span class="process-math">\(M_{n\times n}(\mathbb{K})=M_n(\mathbb{K})\text{.}\)</span> A matrix in <span class="process-math">\(M_n(\mathbb{K})\)</span> is called a <dfn class="terminology">square matrix</dfn> and <span class="process-math">\(n\)</span> is called the <dfn class="terminology">size of a matrix</dfn>.</div></article><article class="convention remark-like" id="convention-3"><h3 class="heading">
 <span class="type">Convention</span><span class="space"> </span><span class="codenumber">1.1.5</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-13">For any matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\)</span> and <span class="process-math">\(\alpha\in\mathbb{K}\)</span> we denote by <span class="process-math">\(\alpha A\in M_{m\times n}(\mathbb{K})\)</span> the matrix obtained by multiplying every entry of the matrix <span class="process-math">\(A\)</span> by <span class="process-math">\(\alpha\text{.}\)</span>
+<div class="para" id="p-14">For any matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\)</span> and <span class="process-math">\(\alpha\in\mathbb{K}\)</span> we denote by <span class="process-math">\(\alpha A\in M_{m\times n}(\mathbb{K})\)</span> the matrix obtained by multiplying every entry of the matrix <span class="process-math">\(A\)</span> by <span class="process-math">\(\alpha\text{.}\)</span>
 </div></article><article class="definition definition-like" id="equal-matrices"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.6</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-14">
+<div class="para logical" id="p-15">
 <div class="para">Matrices <span class="process-math">\(A,B\in M_{m\times n}(\mathbb{K})\)</span> are <dfn class="terminology">equal</dfn> or <dfn class="terminology">same</dfn> if every <span class="process-math">\((i,j)\)</span>-th entry of <span class="process-math">\(A\)</span> is equal to (same as) the <span class="process-math">\((i,j)\)</span>-th entry of <span class="process-math">\(B\)</span> for every <span class="process-math">\(1\leq i\leq m\)</span> and for every <span class="process-math">\(1\leq j\leq n\text{.}\)</span> That is, if</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -205,7 +231,7 @@ A=B\quad\text{if and only if}\quad a_{ij}=b_{ij}\,\text{for all}\,1\leq i\leq m\
 </div></article><article class="observation remark-like" id="ij-entry-of-product"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-15">
+<div class="para logical" id="p-16">
 <div class="para">Suppose that <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\)</span> and <span class="process-math">\(B\in M_{n\times\ell}(\mathbb{K})\text{.}\)</span> We denote the <span class="process-math">\((i,j)\)</span>-th entry (<a href="" class="xref" data-knowl="./knowl/ij-entry-of-matrix.html" title="Convention 1.1.3">Convention 1.1.3</a>) <span class="process-math">\(A\)</span> (respectively, <span class="process-math">\(B\)</span>) by <span class="process-math">\(a_{ij}\)</span> (respectively, <span class="process-math">\(b_{ij}\)</span>). The <span class="process-math">\((i,j)\)</span>-th entry of the matrix multiplication <span class="process-math">\(AB\)</span> is given by the following formula.</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/ij-entry-of-matrix.html">
 \begin{equation*}
@@ -227,7 +253,7 @@ A^t=\begin{pmatrix}a_{11}\amp a_{21}\amp\cdots\amp a_{m1}\\a_{12}\amp a_{22}\amp
 </div></article><article class="observation remark-like" id="basic-properties-of-transpose"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-16">
+<div class="para logical" id="p-17">
 <div class="para">If <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\)</span> then we have the following.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -242,7 +268,7 @@ A^t=\begin{pmatrix}a_{11}\amp a_{21}\amp\cdots\amp a_{m1}\\a_{12}\amp a_{22}\amp
 </div>
 </div></article><article class="definition definition-like" id="def-inverse-of-matrix"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">(Inverse of a matrix).</span>
-</h3> <div class="para logical" id="p-17">
+</h3> <div class="para logical" id="p-18">
 <div class="para">Let <span class="process-math">\(A\in M_n(\mathbb{K})\text{.}\)</span> A square matrix <span class="process-math">\(B\in M_n(\mathbb{K})\)</span> is said to be the <dfn class="terminology">inverse</dfn> of <span class="process-math">\(A\)</span> if</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -253,7 +279,7 @@ AB=BA=I_n.
 </div></article><article class="note remark-like" id="inverse-of-inverse"><h3 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">1.1.11</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-18">
+<div class="para logical" id="p-19">
 <div class="para">Note that if <span class="process-math">\(A\in M_n(\mathbb{K})\)</span> is invertible then the inverse of <span class="process-math">\(A^{-1}\in M_n(\mathbb{K})\)</span> is <span class="process-math">\(A\text{,}\)</span> i.e.,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -272,13 +298,13 @@ a_{m1}x_1\amp +{}\amp a_{m2}x_2 \amp +{}\amp \cdots \amp +{} \amp a_{mn}x_n\amp=
 \end{alignedat}
 \end{equation*}
 </div>
-<div class="para" id="p-19">We may write the above system of linear equations in the matrix form.</div>
+<div class="para" id="p-20">We may write the above system of linear equations in the matrix form.</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{pmatrix}a_{11}\amp a_{12}\amp\cdots\amp a_{1n}\\a_{21}\amp a_{22}\amp\cdots\amp a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\a_{m1}\amp a_{m2}\amp\cdots\amp a_{mn}\end{pmatrix}\begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}=\begin{pmatrix}b_1\\b_2\\\vdots\\b_m\end{pmatrix}
 \end{equation*}
 </div>
-<div class="para logical" id="p-20">
+<div class="para logical" id="p-21">
 <div class="para">If we put</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -304,7 +330,7 @@ AX=B.
 \end{equation*}
 </div>
 <div class="para">The matrix <span class="process-math">\(A\)</span> is called the <dfn class="terminology">coefficient matrix</dfn> of the above system.</div>
-</div> <div class="para" id="p-21">If all <span class="process-math">\(b_1=b_2=\cdots=b_m=0\)</span> then the above system of linear equations is said to be <em class="alert">homogeneous</em>.</div></article></section></div>
+</div> <div class="para" id="p-22">If all <span class="process-math">\(b_1=b_2=\cdots=b_m=0\)</span> then the above system of linear equations is said to be <em class="alert">homogeneous</em>.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-matrices.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="practice-basic-operations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Questions for Math-1">
 <meta property="book:author" content="Abhay Soman">
-<script>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,7 +41,24 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
   },
   "chtml": {
     "scale": 0.98,
@@ -164,12 +181,21 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-rank-trace-det.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-appendix">
+<div class="toc-title-box"><a href="SageMath.html" class="internal"><span class="codenumber">A</span> <span class="title">Computations using SageMath</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sage-echelon-form.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Row reduced echelon form and a system of linear equations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sage-rank-trace-det.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Computing rank, trace, and determinant</span></a></div></li>
+</ul>
+</li></ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-matrices"><h2 class="heading">
 <span class="type">Chapter</span><span class="space"> </span><span class="codenumber">1</span><span class="space"> </span><span class="title">Related to matrices</span>
 </h2>
-<section class="introduction" id="introduction-1"><div class="para" id="p-7">We list a few exercises related to matrices and their properties.</div></section><nav class="summary-links"><ul>
+<section class="introduction" id="introduction-1"><div class="para" id="p-8">We list a few exercises related to matrices and their properties.</div></section><nav class="summary-links"><ul>
 <li><a href="sec-basic-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Basic matrix operations</span></a></li>
 <li><a href="practice-basic-operations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></li>
 <li><a href="sec-row-echelon-form.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Row reduced echelon form of a matrix</span></a></li>

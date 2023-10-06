@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": "  My website   copyright  "
+  "body": "  Abhay Soman   copyright  This book was authored in PreTeXt .  "
 },
 {
   "id": "preface-1",
@@ -631,13 +631,22 @@ var ptx_lunr_docs = [
   "body": " Show that the determinant of the following matrix is . Find a condition on so that the determinant of the above matrix is nonzero.  "
 },
 {
-  "id": "colophon-2",
+  "id": "sec-sage-echelon-form",
   "level": "1",
-  "url": "colophon-2.html",
-  "type": "Colophon",
-  "number": "",
-  "title": "Colophon",
-  "body": " This book was authored in PreTeXt .  "
+  "url": "sec-sage-echelon-form.html",
+  "type": "Section",
+  "number": "A.1",
+  "title": "Row reduced echelon form and a system of linear equations",
+  "body": " Row reduced echelon form and a system of linear equations  We use online computer algebra system SageMath to compute the row reduced echelon form of a given matrix. In the following example A=matrix(RR,[[1,2,1,-1],[9,7,5,5],[1,-2,2,8]]) represents matrix over . The entries [1,2,1,-1] , [9,7,5,5] , and [1,-2,2,8] represents the first, the second, and the third row of , respectively.  You may input the matrix of your choice to get the row reduced echelon form. Please first do the calculations yourself and then verify using SageMath.     In the following SageMath can compute the solution of the system . You may change and appropriately.   In the following we can reduced the augmented matrix to the row reduced echelon form. You may change and appropriately.   "
+},
+{
+  "id": "sec-sage-rank-trace-det",
+  "level": "1",
+  "url": "sec-sage-rank-trace-det.html",
+  "type": "Section",
+  "number": "A.2",
+  "title": "Computing rank, trace, and determinant",
+  "body": " Computing rank, trace, and determinant  We use online computer algebra system SageMath to compute the rank, the trace and the determinant of a given matrix. In the following example A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]]) represents matrix over . The entries [1,2,0,-1] , [1,6,0,1] , and [1,-2,2,8] represents the first, the second, and the third row of , respectively.  We can compute the rank of a matrix.   We can compute the trace of a matrix.   We can compute the determinant of a matrix.   "
 }
 ]
 
