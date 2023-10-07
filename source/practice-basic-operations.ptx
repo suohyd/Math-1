@@ -180,8 +180,8 @@
                   <p>
                     <me>
                     \begin{alignedat}{2}
-                    2x\amp +{}\amp y \amp +{}\amp -z \amp = 2\\
-                    x\amp +{}\amp y \amp +{}\amp z \amp = 0
+                    2x+y-z \amp = 2\\
+                    x+y+z \amp = 0
                     \end{alignedat}
                    </me>
                   </p>
@@ -190,9 +190,9 @@
                   <p>
                     <me>
                       \begin{alignedat}{3}
-                      -x\amp +{}\amp 3y \amp +{}\amp z \amp = -2\\
-                      x\amp +{}\amp y \amp +{}\amp 9z \amp = 0\\
-                      2x\amp +{}\amp 8y\amp {}\amp {}\amp=30
+                      -x+3y+z \amp = -2\\
+                      x+y+9z \amp = 0\\
+                      2x+8y\amp =30
                       \end{alignedat}
                     </me>  
                   </p>

@@ -1,0 +1,43 @@
+<section xml:id="sec-sage-rank-trace-det">
+    <title>Computing rank, trace, and determinant</title>
+    <introduction>
+      We use online computer algebra system <url href="https://www.sagemath.org/">SageMath</url> to compute the rank, the trace and the determinant of a given matrix. In the following example <c>A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]])</c> represents <m>3\times 4</m> matrix <m>A</m> over <m>\R</m>. The entries <c>[1,2,0,-1]</c>, <c>[1,6,0,1]</c>, and <c>[1,-2,2,8]</c> represents the first, the second, and the third row of <m>A</m>, respectively.
+    </introduction>
+    <p>
+      We can compute the rank of a matrix.
+    </p>
+    <sage>
+      <input>
+        sage: A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]])
+        sage: A.rank()
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+    <p>
+      We can compute the trace of a matrix.
+    </p>
+    <sage>
+      <input>
+        sage: A=matrix(RR,[[1,-1,1],[0,1,0],[0,0,-1]])
+        sage: A.trace()
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+    <p>
+      We can compute the determinant of a matrix.
+    </p>
+    <sage>
+      <input>
+        sage: A=matrix(RR,[[2,-1,0,0,0,0],[-1,2,-1,0,0,0],[0,-1,2,-1,0,0],[0,0,-1,2,-1,0],[0,0,0,-1,2,-1],[0,0,0,0,-1,2]])
+        sage: A.det()
+      </input>
+      <output>
+        (for static output)
+      </output>
+    </sage>
+    
+  </section>

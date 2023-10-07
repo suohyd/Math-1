@@ -25,91 +25,25 @@
       <p>
         We use online computer algebra system <url href="https://www.sagemath.org/">SageMath</url> to perform certain computations. It may be a useful tool to check the correctness of calculations. Please first do the calculations yourself and then verify using SageMath. 
       </p>
-    </introduction>    
-    <section xml:id="sec-sage-echelon-form">
-      <title>Row reduced echelon form and a system of linear equations</title>
-      <introduction>
-        We use online computer algebra system <url href="https://www.sagemath.org/">SageMath</url> to compute the row reduced echelon form of a given matrix. In the following example <c>A=matrix(RR,[[1,2,1,-1],[9,7,5,5],[1,-2,2,8]])</c> represents <m>3\times 4</m> matrix <m>A</m> over <m>\R</m>. The entries <c>[1,2,1,-1]</c>, <c>[9,7,5,5]</c>, and <c>[1,-2,2,8]</c> represents the first, the second, and the third row of <m>A</m>, respectively.
-      </introduction>
-      <p>
-        You may input the matrix of your choice to get the row reduced echelon form. Please first do the calculations yourself and then verify using SageMath.
-      </p>
-      <p>
-        <sage>
-        <input>
-          sage: A=matrix(RR,[[1,2,1,-1],[9,7,5,5],[1,-2,2,8]]); A
-          sage: A.echelon_form()
-        </input>
-      </sage>
-      </p>
-    
-      <p>
-        In the following SageMath can compute the solution of the system <m>AX=Y</m>. You may change <m>A</m> and <m>Y</m> appropriately.
-    
-        <sage>
-          <input>
-            sage: A=matrix(RR,[[1,0,0],[1,0,1],[2,2,1]])
-            sage: Y=vector([1,0,0])
-            sage: X = A.solve_right(Y)
-            sage: A*X
-            <!--sage: A*x==vector([1,0,0])-->
-          </input>			
-        </sage>
-      </p>
-    
-      <p>
-        In the following we can reduced the augmented matrix <m>[A|v]</m> to the row reduced echelon form. You may change <m>A</m> and <m>v</m> appropriately.
-      <sage>
-        <input>
-          sage: A=matrix(RR,[[1,2,3],[1,0,1],[2,2,1]])
-          sage: v=vector([1,0,0])
-          sage: matrix(A.augment(v)).rref()
-        </input>
-      </sage>
-      </p>
-    </section>
-    <section xml:id="sec-sage-rank-trace-det">
-      <title>Computing rank, trace, and determinant</title>
-      <introduction>
-        We use online computer algebra system <url href="https://www.sagemath.org/">SageMath</url> to compute the rank, the trace and the determinant of a given matrix. In the following example <c>A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]])</c> represents <m>3\times 4</m> matrix <m>A</m> over <m>\R</m>. The entries <c>[1,2,0,-1]</c>, <c>[1,6,0,1]</c>, and <c>[1,-2,2,8]</c> represents the first, the second, and the third row of <m>A</m>, respectively.
-      </introduction>
-      <p>
-        We can compute the rank of a matrix.
-      </p>
-      <sage>
-        <input>
-          sage: A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]])
-          sage: A.rank()
-        </input>
-        <output>
-          (for static output)
-        </output>
-      </sage>
-      <p>
-        We can compute the trace of a matrix.
-      </p>
-      <sage>
-        <input>
-          sage: A=matrix(RR,[[1,-1,1],[0,1,0],[0,0,-1]])
-          sage: A.trace()
-        </input>
-        <output>
-          (for static output)
-        </output>
-      </sage>
-      <p>
-        We can compute the determinant of a matrix.
-      </p>
-      <sage>
-        <input>
-          sage: A=matrix(RR,[[2,-1,0,0,0,0],[-1,2,-1,0,0,0],[0,-1,2,-1,0,0],[0,0,-1,2,-1,0],[0,0,0,-1,2,-1],[0,0,0,0,-1,2]])
-          sage: A.det()
-        </input>
-        <output>
-          (for static output)
-        </output>
-      </sage>
+    </introduction>
+    <xi:include href="sec-sage-echelon-form.ptx" />
+    <xi:include href="sec-sage-rank-trace-det.ptx" />
+    <section xml:id="sec-tp">
+      <title>tp</title>
+      <figure xml:id="fig-sage-cubic">
+        <caption>A cubic plotted by SageMath on
+        <m>[-3,2]</m></caption>
+        <image xml:id="sageplot-cubic" width="50%">
+          <description>A cubic function on the interval
+          [-3,2]</description>
       
+      <sageplot>
+      f(x) = (x-1)*(x+1)*(x-2)
+      plot(f, (x, -3, 2), color='blue', thickness=3)
+      </sageplot>
+        </image>
+      
+      </figure>
     </section>
     </appendix>
 </backmatter>
