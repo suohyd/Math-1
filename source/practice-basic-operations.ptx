@@ -178,23 +178,19 @@
               <ol>
                 <li>
                   <p>
-                    <me>
-                    \begin{alignedat}{2}
-                    2x+y-z \amp = 2\\
-                    x+y+z \amp = 0
-                    \end{alignedat}
-                   </me>
+                    <md>
+                      <mrow>2x+y-z \amp =2</mrow>
+                      <mrow>x+y+z \amp =0</mrow>
+                   </md>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <me>
-                      \begin{alignedat}{3}
-                      -x+3y+z \amp = -2\\
-                      x+y+9z \amp = 0\\
-                      2x+8y\amp =30
-                      \end{alignedat}
-                    </me>  
+                    <md>
+                      <mrow>-x+3y+z  \amp =-2</mrow>
+                      <mrow>x+y+9z \amp =0</mrow>
+                      <mrow>2x+8y \amp =30</mrow>
+                    </md>  
                   </p>
                 </li>
               </ol>
@@ -342,12 +338,10 @@
         <statement correct="yes">
             <p>
                 The following system of linear equations has infinitely many solutions.
-                <me>
-                    \begin{alignedat}{2}
-                    x\amp +{}\amp y +\amp {}\amp 0\cdot z \amp = 2\\
-                    0\cdot x\amp+{}\amp 0\cdot y\amp{}+\amp z \amp = 0
-                    \end{alignedat}
-                   </me>
+                <md>
+                    <mrow>x+y\amp = 2</mrow>
+                    <mrow> z\amp =0</mrow>
+                </md>
             </p>
         </statement>
     </exercise>

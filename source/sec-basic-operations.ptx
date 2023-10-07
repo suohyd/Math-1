@@ -113,14 +113,12 @@
     <definition xml:id="homogeneous-system">
       <title>(Coefficient matrix of a system of linear equations and homogeneous system of linear equations)</title>
       Consider a system of linear equations with <m>a_{ij},b_i\in\mathbb{K}</m> for every <m>1\leq i\leq m</m> and <m>1\leq j\leq n</m>.
-      <me>
-        \begin{alignedat}{4}
-        a_{11}x_1\amp +{}\amp a_{12}x_2 \amp +{}\amp \cdots \amp +{} \amp a_{1n}x_n\amp= b_1\\
-        a_{21}x_1\amp +{}\amp a_{22}x_2 \amp +{}\amp \cdots \amp +{} \amp a_{2n}x_n\amp= b_2\\
-        {}\amp \vdots{}\amp {} \amp \vdots{}\amp {} \amp \ddots{} \amp {}\amp{} \vdots\\
-        a_{m1}x_1\amp +{}\amp a_{m2}x_2 \amp +{}\amp \cdots \amp +{} \amp a_{mn}x_n\amp= b_m\\
-        \end{alignedat}
-       </me>
+      <md>
+        <mrow>a_{11}x_1+a_{12}x_2+ \cdots +a_{1n}x_n\amp= b_1</mrow>
+        <mrow>a_{21}x_1+a_{22}x_2+ \cdots +a_{2n}x_n\amp= b_2</mrow>
+        <mrow>\vdots\amp {}</mrow>
+        <mrow>a_{m1}x_1+a_{m2}x_2+ \cdots +a_{mn}x_n\amp= b_m</mrow>
+       </md>
        <p>
         We may write the above system of linear equations in the matrix form.
        </p>
