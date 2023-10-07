@@ -154,7 +154,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-basic-operations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrices.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-row-echelon-form.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} \newcommand{\K}{\mathbb{K}} \newcommand{\det}{{\rm det}\,} \newcommand{\tr}{{\rm tr}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-basic-operations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrices.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-row-echelon-form.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} \newcommand{\K}{\mathbb{K}}  \newcommand{\tr}{{\rm tr}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -188,6 +188,7 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sage-echelon-form.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Row reduced echelon form and a system of linear equations</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sage-rank-trace-det.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Computing rank, trace, and determinant</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-tp.html" class="internal"><span class="codenumber">A.3</span> <span class="title">tp</span></a></div></li>
 </ul>
 </li></ul>
 </li>
@@ -262,22 +263,18 @@ A^k=\underbrace{AAA\cdots A}_{k\text{-times}}.
 </div>
 </div></article><article class="exercise exercise-like" id="exercise-8"><h3 class="heading"><span class="codenumber">8<span class="period">.</span></span></h3>
 <div class="para" id="p-38">Write the augmented matrix corresponding to the given system of equations.</div> <ol class="lower-alpha">
-<li id="li-9"><div class="para logical" id="p-39"><div class="displaymath process-math">
-\begin{equation*}
-\begin{alignedat}{2}
-2x\amp +{}\amp y \amp +{}\amp -z \amp = 2\\
-x\amp +{}\amp y \amp +{}\amp z \amp = 0
-\end{alignedat}
-\end{equation*}
+<li id="li-9"><div class="para logical" id="p-39"><div class="displaymath process-math" id="md-2">
+\begin{align*}
+2x+y-z \amp =2\\
+x+y+z \amp =0
+\end{align*}
 </div></div></li>
-<li id="li-10"><div class="para logical" id="p-40"><div class="displaymath process-math">
-\begin{equation*}
-\begin{alignedat}{3}
--x\amp +{}\amp 3y \amp +{}\amp z \amp = -2\\
-x\amp +{}\amp y \amp +{}\amp 9z \amp = 0\\
-2x\amp +{}\amp 8y\amp {}\amp {}\amp=30
-\end{alignedat}
-\end{equation*}
+<li id="li-10"><div class="para logical" id="p-40"><div class="displaymath process-math" id="md-3">
+\begin{align*}
+-x+3y+z  \amp =-2\\
+x+y+9z \amp =0\\
+2x+8y \amp =30
+\end{align*}
 </div></div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-9"><h3 class="heading"><span class="codenumber">9<span class="period">.</span></span></h3>
 <div class="para" id="p-41">In the following, given <span class="process-math">\(A\)</span> compute its transpose and also compute <span class="process-math">\(A\,A^t\)</span> and <span class="process-math">\(A^t\, A\text{.}\)</span>
@@ -364,13 +361,11 @@ A=\begin{pmatrix}5\amp 2\\-2\amp 0\end{pmatrix}\quad \text{and}\quad B=\begin{pm
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" data-multipleanswers="false" id="">
 <div class="para logical" id="p-63">
 <div class="para">The following system of linear equations has infinitely many solutions.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{alignedat}{2}
-x\amp +{}\amp y +\amp {}\amp 0\cdot z \amp = 2\\
-0\cdot x\amp+{}\amp 0\cdot y\amp{}+\amp z \amp = 0
-\end{alignedat}
-\end{equation*}
+<div class="displaymath process-math" id="md-4">
+\begin{align*}
+x+y+\amp = 2\\
+z\amp =0
+\end{align*}
 </div>
 </div>
 <li data-component="answer" id="_opt_t" data-correct=""><p>True.</p></li>

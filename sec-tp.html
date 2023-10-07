@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Row reduced echelon form of a matrix</title>
+<title>tp</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -154,7 +154,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="practice-basic-operations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-matrices.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="practice-row-echelon-form.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} \newcommand{\K}{\mathbb{K}}  \newcommand{\tr}{{\rm tr}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-sage-rank-trace-det.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="SageMath.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} \newcommand{\K}{\mathbb{K}}  \newcommand{\tr}{{\rm tr}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -170,75 +170,36 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-1.html" class="internal"><span class="title">Preface</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-matrices.html" class="internal"><span class="codenumber">1</span> <span class="title">Related to matrices</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-basic-operations.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Basic matrix operations</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-basic-operations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-row-echelon-form.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Row reduced echelon form of a matrix</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-row-echelon-form.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Row reduced echelon form of a matrix</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-row-echelon-form.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-rank-trace-det.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Some invariants attached to a matrix</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-rank-trace-det.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-backmatter">
+<li class="toc-item toc-backmatter contains-active">
 <div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-appendix">
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-appendix contains-active">
 <div class="toc-title-box"><a href="SageMath.html" class="internal"><span class="codenumber">A</span> <span class="title">Computations using SageMath</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sage-echelon-form.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Row reduced echelon form and a system of linear equations</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-sage-rank-trace-det.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Computing rank, trace, and determinant</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-tp.html" class="internal"><span class="codenumber">A.3</span> <span class="title">tp</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-tp.html" class="internal"><span class="codenumber">A.3</span> <span class="title">tp</span></a></div></li>
 </ul>
 </li></ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-row-echelon-form"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3</span><span class="space"> </span><span class="title">Row reduced echelon form of a matrix</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-tp"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">A.3</span><span class="space"> </span><span class="title">tp</span>
 </h2>
-<section class="introduction" id="introduction-4"><div class="para" id="p-67">In this section we denote by <span class="process-math">\(\mathbb{K}\)</span> either the set of real numbers, <span class="process-math">\(\mathbb{R}\)</span> or the set of complex numbers, <span class="process-math">\(\mathbb{C}\text{.}\)</span>
-</div></section><article class="definition definition-like" id="def-elementary-row-operations"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">(Elementary row operations).</span>
-</h3> <div class="para logical" id="p-68">
-<div class="para">Let <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\text{.}\)</span> Denote by <span class="process-math">\(R_i\)</span> (for <span class="process-math">\(1\leq i\leq m\)</span>) the <span class="process-math">\(i\)</span>-th row of <span class="process-math">\(A\text{.}\)</span> Following are elementary row operations.</div>
-<ol class="decimal">
-<li id="interchanging-rows"><div class="para" id="p-69">Interchanging <span class="process-math">\(i\)</span>-th row with <span class="process-math">\(j\)</span>-th row. This operation is usually denoted by <span class="process-math">\(R_i\leftrightarrow R_j\text{.}\)</span>
-</div></li>
-<li id="constant-multiple"><div class="para" id="p-70">Multiplying  <span class="process-math">\(i\)</span>-th row by a nonzero <span class="process-math">\(\alpha\in\mathbb{K}\text{.}\)</span> This operation is usually denoted by <span class="process-math">\(R_i\mapsto \alpha R_i\text{.}\)</span>
-</div></li>
-<li id="adding-scalar-multiple-of-row-to-other-row"><div class="para" id="p-71">Adding a constant multiple of <span class="process-math">\(j\)</span>-th row to <span class="process-math">\(i\)</span>-th row. This operation is usually denoted by <span class="process-math">\(R_i\mapsto R_i+\alpha R_j\text{.}\)</span>
-</div></li>
-</ol>
-</div></article><article class="definition definition-like" id="def-elementary-matrices"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-72">A square matrix <span class="process-math">\(E\in M_n(\K)\)</span> is said to be an <dfn class="terminology">elementary matrix</dfn> if it is obtained from the identity matrix <span class="process-math">\(I_n\)</span> by performing only one of the row operations described in <a href="" class="xref" data-knowl="./knowl/def-elementary-row-operations.html" title="Definition 1.3.1: (Elementary row operations)">Definition 1.3.1</a> on <span class="process-math">\(I_n\text{.}\)</span>
-</div></article><article class="note remark-like" id="row-reduced-echelon-form-procedure"><h3 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Procedure to obtain a row reduced echelon form of a matrix.</span>
-</h3> Recall that given a matrix <span class="process-math">\(A\in M_{m\times n}(\mathbb{K})\text{,}\)</span> by applying a sequence of elementary row operations, can be reduced to a <dfn class="terminology">row reduced echelon form <span class="process-math">\(E_A\)</span> of <span class="process-math">\(A\)</span></dfn>. The matrix <span class="process-math">\(E_A\)</span> has the following properties. <ol class="decimal">
-<li id="li-27"><div class="para" id="p-derived-li-27">All zero rows occurs at the bottom of <span class="process-math">\(E_A\text{.}\)</span>
-</div></li>
-<li id="li-28"><div class="para" id="p-derived-li-28">If a row of <span class="process-math">\(E_A\)</span> is nonzero then the first nonzero entry is <span class="process-math">\(1\text{,}\)</span> it is called <dfn class="terminology">pivot</dfn>.</div></li>
-<li id="li-29"><div class="para" id="p-derived-li-29">In any two successive nonzero rows of <span class="process-math">\(E_A\text{,}\)</span> the pivot in the lower row occurs to the right of the pivot in the higher row.</div></li>
-<li id="li-30"><div class="para" id="p-derived-li-30">Each column of <span class="process-math">\(E_A\)</span> that contains the pivot has zero everywhere else.</div></li>
-</ol></article><div class="para" id="p-73">The natural question arises: Does the sequence in which row operations are performed change the resulting row reduced echelon form of <span class="process-math">\(A?\)</span> The answer is no!</div>
-<article class="fact theorem-like" id="fact-uniqueness-of-echelon-form"><h3 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-74">The row reduced echelon form of a matrix is unique.</div></article><article class="theorem theorem-like" id="thm-solutions-of-linear-equations"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span>
-</h3>
-<div class="para logical" id="p-75"><ol class="decimal">
-<li id="equivalence-of-solution"><div class="para" id="p-76">Let <span class="process-math">\(\left(A^\prime|B^\prime\right)\)</span> be a block row reduced echelon form of <span class="process-math">\(\left(A|B\right)\text{,}\)</span> where <span class="process-math">\(B^\prime\)</span> and <span class="process-math">\(B\)</span> are column vectors. The system <span class="process-math">\(AX=B\)</span> has a solution if and only if the system <span class="process-math">\(A^\prime X=B^\prime\)</span> has a solution.</div></li>
-<li id="existence-of-solution"><div class="para" id="p-77">Let <span class="process-math">\(\left(A^\prime|B^\prime\right)\)</span> be a block row reduced echelon form of <span class="process-math">\(\left(A|B\right)\text{,}\)</span> where <span class="process-math">\(B^\prime\)</span> and <span class="process-math">\(B\)</span> are column vectors. The system <span class="process-math">\(A^\prime X=B^\prime\)</span> has a solution if and only if there is <em class="alert">no</em> pivot in the last column <span class="process-math">\(B^\prime\text{.}\)</span> In that case, one may assign arbitrary values to <span class="process-math">\(x_i\)</span> if the <span class="process-math">\(i\)</span>-th column <em class="alert">does not</em> contain a pivot.</div></li>
-<li id="rank-less-infinite-solutions"><div class="para" id="p-78">Every system <span class="process-math">\(AX=0\)</span> (here <span class="process-math">\(0\)</span> is <span class="process-math">\(m\times 1\)</span> matrix with all entries zero) of <span class="process-math">\(m\)</span> equations and <span class="process-math">\(n\)</span> unknowns with <span class="process-math">\(m&lt;n\)</span> has a nonzero solution.</div></li>
-</ol></div></article><article class="theorem theorem-like" id="thm-invertible-matrix-row-echelon-form"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-79">A square matrix <span class="process-math">\(A\in M_n(\K)\)</span> is invertible (see <a href="" class="xref" data-knowl="./knowl/def-inverse-of-matrix.html" title="Definition 1.1.10: (Inverse of a matrix)">Definition 1.1.10</a>) if and only if the row reduced echelon form of <span class="process-math">\(A\)</span> is the identity matrix <span class="process-math">\(I_n\text{.}\)</span>
-</div></article></section></div>
+<figure class="figure figure-like" id="fig-sage-cubic"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/sageplot/sageplot-cubic.svg" role="img" class="contained" alt="A cubic function on the interval [-3,2]"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">A.3.1<span class="period">.</span></span><span class="space"> </span>A cubic plotted by SageMath on <span class="process-math">\([-3,2]\)</span></figcaption></figure></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="practice-basic-operations.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="practice-row-echelon-form.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-sage-rank-trace-det.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

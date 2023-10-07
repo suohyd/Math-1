@@ -647,6 +647,24 @@ var ptx_lunr_docs = [
   "number": "A.2",
   "title": "Computing rank, trace, and determinant",
   "body": " Computing rank, trace, and determinant  We use online computer algebra system SageMath to compute the rank, the trace and the determinant of a given matrix. In the following example A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]]) represents matrix over . The entries [1,2,0,-1] , [1,6,0,1] , and [1,-2,2,8] represents the first, the second, and the third row of , respectively.  We can compute the rank of a matrix.   We can compute the trace of a matrix.   We can compute the determinant of a matrix.   "
+},
+{
+  "id": "sec-tp",
+  "level": "1",
+  "url": "sec-tp.html",
+  "type": "Section",
+  "number": "A.3",
+  "title": "tp",
+  "body": " tp   A cubic plotted by SageMath on   A cubic function on the interval [-3,2]     "
+},
+{
+  "id": "fig-sage-cubic",
+  "level": "2",
+  "url": "sec-tp.html#fig-sage-cubic",
+  "type": "Figure",
+  "number": "A.3.1",
+  "title": "",
+  "body": " A cubic plotted by SageMath on   A cubic function on the interval [-3,2]    "
 }
 ]
 
