@@ -166,7 +166,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-sage-echelon-form.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="SageMath.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} \newcommand{\K}{\mathbb{K}}  \newcommand{\tr}{{\rm tr}}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-sage-echelon-form.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="SageMath.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} \newcommand{\C}{\mathbb C} \newcommand{\K}{\mathbb{K}}  \newcommand{\tr}{{\rm tr}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -207,15 +207,15 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-sage-rank-trace-det"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">A.2</span><span class="space"> </span><span class="title">Computing rank, trace, and determinant</span>
 </h2>
-<section class="introduction" id="introduction-9">We use online computer algebra system <a class="external" href="https://www.sagemath.org/" target="_blank">SageMath</a><a class="xref" id="fn-6" href="" data-knowl="./knowl/fn-6.html" title="Footnote A.2.1"><sup> 1 </sup></a> to compute the rank, the trace and the determinant of a given matrix. In the following example <code class="code-inline tex2jax_ignore">A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]])</code> represents <span class="process-math">\(3\times 4\)</span> matrix <span class="process-math">\(A\)</span> over <span class="process-math">\(\R\text{.}\)</span> The entries <code class="code-inline tex2jax_ignore">[1,2,0,-1]</code>, <code class="code-inline tex2jax_ignore">[1,6,0,1]</code>, and <code class="code-inline tex2jax_ignore">[1,-2,2,8]</code> represents the first, the second, and the third row of <span class="process-math">\(A\text{,}\)</span> respectively.</section><div class="para" id="p-128">We can compute the rank of a matrix.</div>
+<section class="introduction" id="introduction-9">We use online computer algebra system <a class="external" href="https://www.sagemath.org/" target="_blank">SageMath</a><a class="xref" id="fn-7" href="" data-knowl="./knowl/fn-7.html" title="Footnote A.2.1"><sup> 1 </sup></a> to compute the rank, the trace and the determinant of a given matrix. In the following example <code class="code-inline tex2jax_ignore">A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]])</code> represents <span class="process-math">\(3\times 4\)</span> matrix <span class="process-math">\(A\)</span> over <span class="process-math">\(\R\text{.}\)</span> The entries <code class="code-inline tex2jax_ignore">[1,2,0,-1]</code>, <code class="code-inline tex2jax_ignore">[1,6,0,1]</code>, and <code class="code-inline tex2jax_ignore">[1,-2,2,8]</code> represents the first, the second, and the third row of <span class="process-math">\(A\text{,}\)</span> respectively.</section><div class="para" id="p-132">We can compute the rank of a matrix.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-4"><script type="text/x-sage">sage: A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]])
 sage: A.rank()
 </script></pre>
-<div class="para" id="p-129">We can compute the trace of a matrix.</div>
+<div class="para" id="p-133">We can compute the trace of a matrix.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-5"><script type="text/x-sage">sage: A=matrix(RR,[[1,-1,1],[0,1,0],[0,0,-1]])
 sage: A.trace()
 </script></pre>
-<div class="para" id="p-130">We can compute the determinant of a matrix.</div>
+<div class="para" id="p-134">We can compute the determinant of a matrix.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-6"><script type="text/x-sage">sage: A=matrix(RR,[[2,-1,0,0,0,0],[-1,2,-1,0,0,0],[0,-1,2,-1,0,0],[0,0,-1,2,-1,0],[0,0,0,-1,2,-1],[0,0,0,0,-1,2]])
 sage: A.det()
 </script></pre></section></div>
