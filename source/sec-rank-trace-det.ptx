@@ -54,6 +54,11 @@
         
     </p>
   </convention>
+  <note>
+    <p>
+        Apart from various explantions given in lectures one may see this <url href="https://www.youtube.com/watch?v=Ip3X9LOh2dk">YouTube video</url> with excellent animations to get started with the concept of determinants.
+    </p>
+  </note>
   <definition xml:id="def-det-2">
     <statement>
         <p>
