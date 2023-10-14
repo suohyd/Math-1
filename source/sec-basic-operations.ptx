@@ -34,7 +34,7 @@
       We denote the set of all <m>n\times n</m> matrices over <m>\mathbb{K}</m> by <m>M_n(\mathbb{K})</m>. So <m>M_{n\times n}(\mathbb{K})=M_n(\mathbb{K})</m>. A matrix in <m>M_n(\mathbb{K})</m> is called a <term>square matrix</term> and <m>n</m> is called the <term>size of a matrix</term>. 
     </p>
   </convention>
-  <convention>
+  <convention xml:id="scalar-times-matrix">
     <p>
       For any matrix <m>A\in M_{m\times n}(\mathbb{K})</m> and <m>\alpha\in\mathbb{K}</m> we denote by <m>\alpha A\in M_{m\times n}(\mathbb{K})</m> the matrix obtained by multiplying every entry of the matrix <m>A</m> by <m>\alpha</m>.
     </p>
@@ -46,6 +46,9 @@
       </p>
       <p>
         A matrix in <m>M_{n\times 1}(\K)</m> is called a <term>row vector in <m>n</m>-dimensional space <m>\K^n</m></term>.
+      </p>
+      <p>
+        We identify <m>\K</m> with <m>M_{1\times 1}(\K)</m>.
       </p>
     </statement>
   </definition>
