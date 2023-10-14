@@ -9,18 +9,18 @@
         <ol>
           <li>
             <p>
-              For any <m>\lambda\in\K</m> and any <m>v\in M_{m\times 1}(\K)</m>,
+              For any <m>\lambda\in\K</m> and any <m>v\in M_{n\times 1}(\K)</m>,
               <me>
-                T(\lambda\, v)=\lambda\,T(v).
+                T(\lambda\, v)=\lambda\,T(v)\in M_{m\times 1}(\K).
               </me>
               
             </p>
           </li>
           <li>
             <p>
-              For any <m>v,w\in M_{m\times 1}(\K)</m>,
+              For any <m>v,w\in M_{n\times 1}(\K)</m>,
               <me>
-                T(v+w)=T(v)+T(w).
+                T(v+w)=T(v)+T(w)\in M_{m\times 1}(\K).
               </me>
               
             </p>
@@ -32,11 +32,14 @@
   <definition xml:id="def-standard-basis">
     <statement>
       <p>
-        Let <m>r\in\N</m>. For each <m>i\in\{1,2,3,\ldots,r\}</m> we consider the following column vector.
+        Let <m>n\in\N</m>. For each <m>i\in\{1,2,3,\ldots,n\}</m> we consider the following column vector.
         <me>
-          e_i=\begin{pmatrix}0\\0\\\vdots\\0\\1\\0\\\vdots\\0\end{pmatrix}\in M_{r\times 1}(\K),
+          e_i=\begin{pmatrix}0\\0\\\vdots\\0\\1\\0\\\vdots\\0\end{pmatrix}\in M_{n\times 1}(\K),
         </me>
-        where <m>1</m> occurs in the <m>i</m>-th row and all other entries are zero. We call <m>e_i</m> the <term><m>i</m>-th standard basis vector of <m>M_{r\times 1}(\K)</m></term>.
+        where <m>1</m> occurs in the <m>i</m>-th row and all other entries are zero. We call <m>e_i</m> the <term><m>i</m>-th standard basis vector of <m>M_{n\times 1}(\K)</m></term>.
+      </p>
+      <p>
+        We call the set of column vectors <m>\{e_1,e_2,\ldots,e_n\}</m> the <term>standard basis</term>.
       </p>
     </statement>
   </definition>
@@ -60,7 +63,7 @@
   <definition xml:id="def-matrix-of-linear-map">
     <statement>
       <p>
-        We keep notations of <xref ref="action-on-basis"/>. For <m>T</m> we associate a matrix, denoted by <m>[T]</m>, whose <m>i</m>-the column vector is <m>T(e_i)</m>, for <m>i\in\{1,2,\ldots,n\}</m>. Thus, if 
+        We keep notations of <xref ref="action-on-basis"/>. For a linear map <m>T</m> we associate a matrix, denoted by <m>[T]</m>, whose <m>i</m>-th column vector is <m>T(e_i)</m>, for <m>i\in\{1,2,\ldots,n\}</m>. Thus, if 
         <me>
           T(e_i)=\begin{pmatrix}a_{1i}\\a_{2i}\\\vdots\\a_{mi}\end{pmatrix}\in M_{m\times 1}(\K)
         </me>
@@ -72,4 +75,50 @@
       </p>
     </statement>
   </definition>
+  <remark>
+    <p>
+      We remark that in <xref ref="def-matrix-of-linear-map"/>, the matrix associated with a linear map is always taken to be with respect to the standard basis.
+    </p>
+  </remark>
+
+  <remark xml:id="linear-map-using-matrix">
+    <p>
+      Let <m>B\in M_{m\times n}(\K)</m>. Consider the following map.
+      <me>
+        \ell_B\colon M_{n\times 1}(\K)\to M_{m\times 1}(\K)\quad\text{given by}\quad v\mapsto Bv
+      </me>
+      This map is a linear map. Note that if 
+      <me>
+        \begin{pmatrix}b_{11}\amp b_{12}\amp\cdots\amp b_{1n}\\b_{21}\amp b_{22}\amp\cdots\amp b_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\b_{m1}\amp b_{m2}\amp\cdots\amp b_{mn}\\\end{pmatrix}
+      </me>
+      then, for any <m>1\leq i\leq n</m>, we get the following.
+      <men xml:id="eqn-matrix-columns-action-on-basis">
+        \ell_B(e_i)=Be_i=\begin{pmatrix}b_{1i}\\b_{2i}\\\vdots\\b_{mi}\end{pmatrix}
+      </men>
+      Furthermore, the matrix of of the linear map, <m>[\ell_B]</m> is the following. 
+      <me>
+        \left[\ell_B\right]=B
+      </me>
+      
+    </p>
+  </remark>
+  <p>
+    Using <xref ref="def-matrix-of-linear-map"/> and <xref ref="linear-map-using-matrix"/> we get a one-one correspondence between the set of all <m>m\times n</m> matrices over <m>\K</m>, and the set of all linear maps from <m>M_{n\times 1}(\K)</m> to <m>M_{m\times 1}(\K)</m>. We note that in <xref ref="def-matrix-of-linear-map"/>, the matrix associated with a linear map is always taken to be with respect to the standard basis (<xref ref="def-standard-basis"/>).
+  </p>
+  <theorem xml:id="thm-correspondence-between-matrices-linear-maps">
+    <statement>
+      <p>
+        The map 
+        <me>
+          \varphi\colon\left\{T\colon M_{n\times 1}(\K)\to M_{m\times 1}(\K): T\text{ is a linear map}\right\}\to M_{m\times n}(\K)
+        </me>
+        given by
+        <me>
+          T\mapsto [T]
+        </me>
+        where, <m>[T]</m> is the matrix associated to <m>T</m> as in <xref ref="def-matrix-of-linear-map"/>.
+      </p>
+    </statement>
+  </theorem>
+  
 </section>
