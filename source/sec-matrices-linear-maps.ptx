@@ -110,7 +110,7 @@
       <p>
         The map 
         <me>
-          \varphi\colon\left\{T\colon M_{n\times 1}(\K)\to M_{m\times 1}(\K): T\text{ is a linear map}\right\}\to M_{m\times n}(\K)
+          \varphi\colon\left\{T\colon M_{n\times 1}(\K)\to M_{m\times 1}(\K)\big| T\text{ is a linear map}\right\}\to M_{m\times n}(\K)
         </me>
         given by
         <me>

@@ -15,6 +15,7 @@
   <xi:include href="sec-rank-trace-det.ptx" />
   <xi:include href="practice-rank-trace-det.ptx" />
   <xi:include href="sec-matrices-linear-maps.ptx" />
+  <xi:include href="practice-matrices-linear-maps.ptx" />
 
 
 </chapter>
