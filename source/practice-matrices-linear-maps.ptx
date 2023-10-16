@@ -4,73 +4,122 @@
             A few exercises related to the concept of linear maps are listed below.
         </p>
     </introduction>
+    <exercisegroup>
+        <introduction>
+            <p>
+                Consider the following maps. In each of the following cases do the following.
+                <ol>
+                    <li>
+                        <p>
+                            Check if the map defined is linear or not.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            If the map is linear then find its associated matrix as outlined in <xref ref="def-matrix-of-linear-map"/>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Draw the images of standard basis vectors (see <xref ref="def-standard-basis"/>).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            If the map is linear and if its associated matrix, <m>[T]=A</m>, is invertible then find <m>\ell_{A^{-1}}</m>. Compute <m>T\circ\ell_{A^{-1}}</m> and <m>\ell_{A^{-1}}\circ T</m>.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </introduction>
+        <exercise>
+            <p>
+                <m>T\colon M_{2\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
+                <me>
+                    T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}y\\-x\end{pmatrix}
+                </me>
+                
+            </p>
+
+        </exercise>
+        <exercise>
+            <p>
+                <m>T\colon M_{2\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
+                <me>
+                    T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x\\-y\end{pmatrix}
+                </me>
+                
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                <m>T\colon M_{2\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
+                <me>
+                    T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x+2\\y\end{pmatrix}
+                </me>
+                
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                <m>T\colon M_{2\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
+                <me>
+                    T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}\alpha\, x\\\beta \,y\end{pmatrix}
+                </me>
+                where, <m>\alpha</m> and <m>\beta</m> are real numbers.
+            </p> 
+        </exercise>
+        <exercise>
+            <p>
+                <m>T\colon M_{2\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
+                <me>
+                    T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x+y\\x-y\end{pmatrix}
+                </me>
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                <m>T\colon M_{2\times 1}(\R)\to \R</m> given by
+                <me>
+                    T\begin{pmatrix}x\\y\end{pmatrix}=x
+                </me>
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                <m>T\colon M_{3\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
+                <me>
+                    T\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}y\\z\end{pmatrix}
+                </me>
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                <m>T\colon M_{3\times 1}(\R)\to M_{3\times 1}(\R)</m> given by
+                <me>
+                    T\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}x+y\\y-z\\x+z\end{pmatrix}
+                </me>
+            </p>
+        </exercise>
+        <exercise>
+            <p>
+                <m>T\colon M_{3\times 1}(\R)\to M_{3\times 1}(\R)</m> given by
+                <me>
+                    T\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}\cos x\\y\\z\end{pmatrix}
+                </me>
+                
+            </p>
+        </exercise>
+    </exercisegroup>
     <exercise>
         <statement>
             <p>
-                Consider the following maps. In each of the following cases first check whether given map is linear or not. If the map is linear then find its associated matrix as outlined in <xref ref="def-matrix-of-linear-map"/>. Furthermore, draw the images of standard basis vectors (see <xref ref="def-standard-basis"/>).
+                Assume that <m>T\colon M_{3\times 1}(\R)\to M_{3\times 1}(\R)</m> is a linear map and
+                <me>
+                    T(e_1)=\begin{pmatrix}1\\1\\1\end{pmatrix},\quad T(e_2)=\begin{pmatrix}-1\\-1\\-1\end{pmatrix},\quad\text{and}\quad T(e_3)=\begin{pmatrix}1\\-1\\1\end{pmatrix}.
+                </me>
+                Find <m>T\begin{pmatrix}2\\-3\\8\end{pmatrix}</m>.
             </p>
-            <ol>
-                <li>
-                    <p>
-                        <m>T\colon M_{2\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
-                        <me>
-                            T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}y\\-x\end{pmatrix}
-                        </me>
-                        
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <m>T\colon M_{2\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
-                        <me>
-                            T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x\\-y\end{pmatrix}
-                        </me>
-                        
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <m>T\colon M_{2\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
-                        <me>
-                            T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x+2\\y\end{pmatrix}
-                        </me>
-                        
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <m>T\colon M_{2\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
-                        <me>
-                            T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}\alpha\, x\\\beta \,y\end{pmatrix}
-                        </me>
-                        where, <m>\alpha</m> and <m>\beta</m> are real numbers.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <m>T\colon M_{2\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
-                        <me>
-                            T\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}x+y\\x-y\end{pmatrix}
-                        </me>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <m>T\colon M_{2\times 1}(\R)\to \R</m> given by
-                        <me>
-                            T\begin{pmatrix}x\\y\end{pmatrix}=x
-                        </me>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <m>T\colon M_{3\times 1}(\R)\to M_{2\times 1}(\R)</m> given by
-                        <me>
-                            T\begin{pmatrix}x\\y\\z\end{pmatrix}=\begin{pmatrix}y\\z\end{pmatrix}
-                        </me>
-                    </p>
-                </li>
-            </ol>
         </statement>
     </exercise>
 </exercises>    
