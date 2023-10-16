@@ -9,27 +9,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
-<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({
-  "inputLocation": "pre.sagecell-sage",
-  "linked": true,
-  "linkKey": "linked-sage",
-  "autoeval": false,
-  "languages": [
-    "sage"
-  ],
-  "evalButtonText": "Evaluate (Sage)"
-});
-</script>
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">In the following we can reduced the augmented matrix <span class="process-math">\([A|v]\)</span> to the row reduced echelon form. You may change <span class="process-math">\(A\)</span> and <span class="process-math">\(v\)</span> appropriately. <pre class="ptx-sagecell sagecell-sage" id="sage-3"><script type="text/x-sage">sage: A=matrix(RR,[[1,2,3],[1,0,1],[2,2,1]])
-sage: v=vector([1,0,0])
-sage: matrix(A.augment(v)).rref()
-</script></pre>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(n\in\N\text{.}\)</span> For each <span class="process-math">\(i\in\{1,2,3,\ldots,n\}\)</span> we consider the following column vector.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e_i=\begin{pmatrix}0\\0\\\vdots\\0\\1\\0\\\vdots\\0\end{pmatrix}\in M_{n\times 1}(\K),
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-sage-echelon-form.html#p-131" class="internal">in-context</a></span>
+<div class="para">where <span class="process-math">\(1\)</span> occurs in the <span class="process-math">\(i\)</span>-th row and all other entries are zero. We call <span class="process-math">\(e_i\)</span> the <dfn class="terminology"><span class="process-math">\(i\)</span>-th standard basis vector of <span class="process-math">\(M_{n\times 1}(\K)\)</span></dfn>.</div>
+</div>
+<span class="incontext"><a class="internal" href="sec-matrices-linear-maps.html#p-131">in-context</a></span>
 </body>
 </html>

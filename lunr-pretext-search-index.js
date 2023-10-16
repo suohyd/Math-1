@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Basic matrix operations",
-  "body": " Basic matrix operations   In this section we denote by either the set of real numbers, or the set of complex numbers, .    (Zero matrix)   We denote by the matrix with all its entries zero. We call the zero matrix.     (Identity matrix)   We denote by the matrix with all its diagonal entries , and all other (non-diagonal) entries zero. We call the identity matrix.     The -th entry of a matrix  is the entry at the intersection of -th row and -th column of .    We denote the set of all matrices over by . So . A matrix in is called a square matrix and is called the size of a matrix .    For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .     A matrix in is called a column vector in -dimensional space .  A matrix in is called a row vector in -dimensional space .      is a column vector in -dimensional space while is a row vector in -dimensional space .    Matrices are equal or same if every -th entry of is equal to (same as) the -th entry of for every and for every . That is, if then, Matrices are said to be not equal , and written as , if there is at least one and at least one such that -th entry of , and -th entry of , are different, i.e., (for some  and some  ).    Suppose that and . We denote the -th entry ( ) (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .    (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is     If then we have the following. Furthermore, for and we have the following.     (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by , and is said to be invertible .     Note that if is invertible then the inverse of is , i.e.,     (Coefficient matrix of a system of linear equations and homogeneous system of linear equations) Consider a system of linear equations with for every and .  We may write the above system of linear equations in the matrix form.   If we put and , and then, the above system of linear equations can be written as The matrix is called the coefficient matrix of the above system.  If all then the above system of linear equations is said to be homogeneous .   "
+  "body": " Basic matrix operations   In this section we denote by either the set of real numbers, or the set of complex numbers, .    (Zero matrix)   We denote by the matrix with all its entries zero. We call the zero matrix.     (Identity matrix)   We denote by the matrix with all its diagonal entries , and all other (non-diagonal) entries zero. We call the identity matrix.     The -th entry of a matrix  is the entry at the intersection of -th row and -th column of .    We denote the set of all matrices over by . So . A matrix in is called a square matrix and is called the size of a matrix .    For any matrix and we denote by the matrix obtained by multiplying every entry of the matrix by .     A matrix in is called a column vector in -dimensional space .  A matrix in is called a row vector in -dimensional space .  We identify with .      is a column vector in -dimensional space while is a row vector in -dimensional space .    Matrices are equal or same if every -th entry of is equal to (same as) the -th entry of for every and for every . That is, if then, Matrices are said to be not equal , and written as , if there is at least one and at least one such that -th entry of , and -th entry of , are different, i.e., (for some  and some  ).    Suppose that and . We denote the -th entry ( ) (respectively, ) by (respectively, ). The -th entry of the matrix multiplication is given by the following formula. where and .    (Transpose of a matrix)  For a matrix , the transpose of , denoted by , is an matrix obtained by writing columns of as rows of . Thus if then the transpose of is     If then we have the following. Furthermore, for and we have the following.     (Inverse of a matrix)   Let . A square matrix is said to be the inverse of if If inverse of exists then it is denoted by , and is said to be invertible .     Note that if is invertible then the inverse of is , i.e.,     (Coefficient matrix of a system of linear equations and homogeneous system of linear equations) Consider a system of linear equations with for every and .  We may write the above system of linear equations in the matrix form.   If we put and , and then, the above system of linear equations can be written as The matrix is called the coefficient matrix of the above system.  If all then the above system of linear equations is said to be homogeneous .   "
 },
 {
   "id": "def-zero-matrix",
@@ -64,9 +64,9 @@ var ptx_lunr_docs = [
   "body": " We denote the set of all matrices over by . So . A matrix in is called a square matrix and is called the size of a matrix .  "
 },
 {
-  "id": "convention-3",
+  "id": "scalar-times-matrix",
   "level": "2",
-  "url": "sec-basic-operations.html#convention-3",
+  "url": "sec-basic-operations.html#scalar-times-matrix",
   "type": "Convention",
   "number": "1.1.5",
   "title": "",
@@ -79,7 +79,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.1.6",
   "title": "",
-  "body": "  A matrix in is called a column vector in -dimensional space .  A matrix in is called a row vector in -dimensional space .   "
+  "body": "  A matrix in is called a column vector in -dimensional space .  A matrix in is called a row vector in -dimensional space .  We identify with .   "
 },
 {
   "id": "example-1",
@@ -511,7 +511,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.5",
   "title": "Some invariants attached to a matrix",
-  "body": " Some invariants attached to a matrix   In this section we denote by either the set of real numbers, or the set of complex numbers, .     The rank of a matrix is the number of nonzero rows in the row reduced echelon form of .  We denote the rank of by .     It follows from that for a matrix , the rank of is equal to the number of pivots in the row reduced echelon form of , which in turn can be at most .     The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix is denoted by . If is given by then the trace of ,     We now define the determinant of a square matrix recursively. We will not give a general definition.   Given an matrix over , its determinant is denoted by     Apart from various explantions given in lectures one may see this YouTube video with excellent animation to get started with determinants.     The determinant of a matrix is denote by and it is equal to , i.e.,       Consider as follows. The determinant of is      In the formula of the determinant of observe the following.   Change of signs in consecutive terms.    First entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the first column of . The second entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the second column of . The third entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the third column of .      For the rest of this section we use a short notation to write a square matrix, viz., we write to denote the following matrix.    We emphasis that the determinant of a square matrix is an element of .     Properties of the determinant . Assume that .    Row linearity . Let be the -th row of . For we let . For any and any and any we get the following.   For and any , .   Row rearrangement . Let be the matrix obtained by interchanging the -th row of with the -th row of . Then    Alternating . If any two rows of are the same then .   Transpose . For any ,    Triangular matrices . If is an upper triangular (resp., lower triangular) matrix, i.e., for (resp., for ) then    Block form . Let . Let , , , and be the zero matrix. The determinant of is given by Similar result is true for lower triangular block matrices.   Multiplicative property . Let . We have     Invertibility. A matrix is invertible if and only if if and only if .      "
+  "body": " Some invariants attached to a matrix   In this section we denote by either the set of real numbers, or the set of complex numbers, .     The rank of a matrix is the number of nonzero rows in the row reduced echelon form of .  We denote the rank of by .     It follows from that for a matrix , the rank of is equal to the number of pivots in the row reduced echelon form of , which in turn can be at most .     The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix is denoted by . If is given by then the trace of ,     We now define the determinant of a square matrix recursively. We will not give a general definition.   Given an matrix over , its determinant is denoted by     Apart from various explantions given in lectures one may see this YouTube video with excellent animations to get started with the concept of determinants.     The determinant of a matrix is denote by and it is equal to , i.e.,       Consider as follows. The determinant of is      In the formula of the determinant of observe the following.   Change of signs in consecutive terms.    First entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the first column of . The second entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the second column of . The third entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the third column of .      For the rest of this section we use a short notation to write a square matrix, viz., we write to denote the following matrix.    We stress that the determinant of a square matrix is an element of .     Properties of the determinant . Assume that .    Row linearity . Let be the -th row of . For we let . For any and any and any we get the following.   For and any , .   Row rearrangement . Let be the matrix obtained by interchanging the -th row of with the -th row of . Then    Alternating . If any two rows of are the same then .   Transpose . For any ,    Triangular matrices . If is an upper triangular (resp., lower triangular) matrix, i.e., for (resp., for ) then    Block form . Let . Let , , , and be the zero matrix. The determinant of is given by Similar result is true for lower triangular block matrices.   Multiplicative property . Let . We have     Invertibility. A matrix is invertible if and only if if and only if .      "
 },
 {
   "id": "def-rank",
@@ -556,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Note",
   "number": "1.5.5",
   "title": "",
-  "body": " Apart from various explantions given in lectures one may see this YouTube video with excellent animation to get started with determinants.  "
+  "body": " Apart from various explantions given in lectures one may see this YouTube video with excellent animations to get started with the concept of determinants.  "
 },
 {
   "id": "def-det-2",
@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Note",
   "number": "1.5.9",
   "title": "",
-  "body": " We emphasis that the determinant of a square matrix is an element of .  "
+  "body": " We stress that the determinant of a square matrix is an element of .  "
 },
 {
   "id": "properties-of-det",
@@ -656,6 +656,186 @@ var ptx_lunr_docs = [
   "number": "1.6.5",
   "title": "",
   "body": " Show that the determinant of the following matrix is . Find a condition on so that the determinant of the above matrix is nonzero.  "
+},
+{
+  "id": "sec-matrices-linear-maps",
+  "level": "1",
+  "url": "sec-matrices-linear-maps.html",
+  "type": "Section",
+  "number": "1.7",
+  "title": "Matrices and linear maps",
+  "body": " Matrices and linear maps    Let . A function is said to be a linear map if it satisfies the following conditions.   For any and any ,     For any ,          Let . For each we consider the following column vector. where occurs in the -th row and all other entries are zero. We call the -th standard basis vector of .  We call the set of column vectors the standard basis .     Suppose that . Then we have the following.    Using , if is a linear map then, for any we get the following. Thus, a linear map is completely determined by column vectors .    We keep notations of . For a linear map we associate a matrix, denoted by , whose -th column vector is , for . Thus, if then, associated matrix will be      We remark that in , the matrix associated with a linear map is always taken to be with respect to the standard basis.    Let . Consider the following map. This map is a linear map. Note that if then, for any , we get the following. Furthermore, the matrix of of the linear map, is the following.    Using and we get a one-one correspondence between the set of all matrices over , and the set of all linear maps from to . We note that in , the matrix associated with a linear map is always taken to be with respect to the standard basis ( ).    The map given by where, is the matrix associated to as in .    "
+},
+{
+  "id": "def-linear-map",
+  "level": "2",
+  "url": "sec-matrices-linear-maps.html#def-linear-map",
+  "type": "Definition",
+  "number": "1.7.1",
+  "title": "",
+  "body": "  Let . A function is said to be a linear map if it satisfies the following conditions.   For any and any ,     For any ,       "
+},
+{
+  "id": "def-standard-basis",
+  "level": "2",
+  "url": "sec-matrices-linear-maps.html#def-standard-basis",
+  "type": "Definition",
+  "number": "1.7.2",
+  "title": "",
+  "body": "  Let . For each we consider the following column vector. where occurs in the -th row and all other entries are zero. We call the -th standard basis vector of .  We call the set of column vectors the standard basis .   "
+},
+{
+  "id": "linear-combination",
+  "level": "2",
+  "url": "sec-matrices-linear-maps.html#linear-combination",
+  "type": "Observation",
+  "number": "1.7.3",
+  "title": "",
+  "body": " Suppose that . Then we have the following.   "
+},
+{
+  "id": "action-on-basis",
+  "level": "2",
+  "url": "sec-matrices-linear-maps.html#action-on-basis",
+  "type": "Observation",
+  "number": "1.7.4",
+  "title": "",
+  "body": "Using , if is a linear map then, for any we get the following. Thus, a linear map is completely determined by column vectors . "
+},
+{
+  "id": "def-matrix-of-linear-map",
+  "level": "2",
+  "url": "sec-matrices-linear-maps.html#def-matrix-of-linear-map",
+  "type": "Definition",
+  "number": "1.7.5",
+  "title": "",
+  "body": "  We keep notations of . For a linear map we associate a matrix, denoted by , whose -th column vector is , for . Thus, if then, associated matrix will be    "
+},
+{
+  "id": "remark-2",
+  "level": "2",
+  "url": "sec-matrices-linear-maps.html#remark-2",
+  "type": "Remark",
+  "number": "1.7.6",
+  "title": "",
+  "body": " We remark that in , the matrix associated with a linear map is always taken to be with respect to the standard basis.  "
+},
+{
+  "id": "linear-map-using-matrix",
+  "level": "2",
+  "url": "sec-matrices-linear-maps.html#linear-map-using-matrix",
+  "type": "Remark",
+  "number": "1.7.7",
+  "title": "",
+  "body": " Let . Consider the following map. This map is a linear map. Note that if then, for any , we get the following. Furthermore, the matrix of of the linear map, is the following.   "
+},
+{
+  "id": "thm-correspondence-between-matrices-linear-maps",
+  "level": "2",
+  "url": "sec-matrices-linear-maps.html#thm-correspondence-between-matrices-linear-maps",
+  "type": "Theorem",
+  "number": "1.7.8",
+  "title": "",
+  "body": "  The map given by where, is the matrix associated to as in .   "
+},
+{
+  "id": "practice-matrices-linear-maps",
+  "level": "1",
+  "url": "practice-matrices-linear-maps.html",
+  "type": "Exercises",
+  "number": "1.8",
+  "title": "Exercises",
+  "body": "  A few exercises related to the concept of linear maps are listed below.     Consider the following maps. In each of the following cases do the following.   Check if the map defined is linear or not.    If the map is linear then find its associated matrix as outlined in .    Draw the images of standard basis vectors (see ).    If the map is linear and if its associated matrix, , is invertible then find . Compute and .       given by    given by    given by    given by where, and are real numbers.   given by    given by    given by    given by    given by     Assume that is a linear map and Find .   "
+},
+{
+  "id": "exercise-36",
+  "level": "2",
+  "url": "practice-matrices-linear-maps.html#exercise-36",
+  "type": "Exercise",
+  "number": "1.8.1",
+  "title": "",
+  "body": " given by  "
+},
+{
+  "id": "exercise-37",
+  "level": "2",
+  "url": "practice-matrices-linear-maps.html#exercise-37",
+  "type": "Exercise",
+  "number": "1.8.2",
+  "title": "",
+  "body": " given by  "
+},
+{
+  "id": "exercise-38",
+  "level": "2",
+  "url": "practice-matrices-linear-maps.html#exercise-38",
+  "type": "Exercise",
+  "number": "1.8.3",
+  "title": "",
+  "body": " given by  "
+},
+{
+  "id": "exercise-39",
+  "level": "2",
+  "url": "practice-matrices-linear-maps.html#exercise-39",
+  "type": "Exercise",
+  "number": "1.8.4",
+  "title": "",
+  "body": " given by where, and are real numbers. "
+},
+{
+  "id": "exercise-40",
+  "level": "2",
+  "url": "practice-matrices-linear-maps.html#exercise-40",
+  "type": "Exercise",
+  "number": "1.8.5",
+  "title": "",
+  "body": " given by  "
+},
+{
+  "id": "exercise-41",
+  "level": "2",
+  "url": "practice-matrices-linear-maps.html#exercise-41",
+  "type": "Exercise",
+  "number": "1.8.6",
+  "title": "",
+  "body": " given by  "
+},
+{
+  "id": "exercise-42",
+  "level": "2",
+  "url": "practice-matrices-linear-maps.html#exercise-42",
+  "type": "Exercise",
+  "number": "1.8.7",
+  "title": "",
+  "body": " given by  "
+},
+{
+  "id": "exercise-43",
+  "level": "2",
+  "url": "practice-matrices-linear-maps.html#exercise-43",
+  "type": "Exercise",
+  "number": "1.8.8",
+  "title": "",
+  "body": " given by  "
+},
+{
+  "id": "exercise-44",
+  "level": "2",
+  "url": "practice-matrices-linear-maps.html#exercise-44",
+  "type": "Exercise",
+  "number": "1.8.9",
+  "title": "",
+  "body": " given by  "
+},
+{
+  "id": "exercise-45",
+  "level": "2",
+  "url": "practice-matrices-linear-maps.html#exercise-45",
+  "type": "Exercise",
+  "number": "1.8.10",
+  "title": "",
+  "body": " Assume that is a linear map and Find .  "
 },
 {
   "id": "sec-sage-echelon-form",
