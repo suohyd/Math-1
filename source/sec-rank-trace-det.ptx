@@ -112,7 +112,7 @@
     </p>
     <note>
         <p>
-            We emphasis that the determinant of a square matrix is an element of <m>\K</m>.
+            We stress that the determinant of a square matrix is an element of <m>\K</m>.
         </p>
       </note>
     <fact xml:id="properties-of-det">
@@ -127,7 +127,7 @@
     <li>
         For <m>A\in M_n(\K)</m> and any <m>\beta\in \K</m>, <m>\det(\beta A)=\beta^n\cdot\det A</m>.
     </li>
-    <li xml:id="row-reaarrangment-det">
+    <li xml:id="row-rearrangment-det">
         <alert>Row rearrangement</alert>. Let <m>A^\prime</m> be the matrix obtained by interchanging the <m>i</m>-th row of <m>A</m> with the <m>j</m>-th row of <m>A</m>. Then <me>\det A^\prime=-\det A.</me>
     </li>
     <li>
