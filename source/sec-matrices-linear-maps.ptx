@@ -95,7 +95,7 @@
       <men xml:id="eqn-matrix-columns-action-on-basis">
         \ell_B(e_i)=Be_i=\begin{pmatrix}b_{1i}\\b_{2i}\\\vdots\\b_{mi}\end{pmatrix}
       </men>
-      Furthermore, the matrix of of the linear map, <m>[\ell_B]</m> is the following. 
+      Furthermore, the matrix of the linear map, <m>[\ell_B]</m> is the following. 
       <me>
         \left[\ell_B\right]=B
       </me>
