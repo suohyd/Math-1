@@ -664,7 +664,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.7",
   "title": "Matrices and linear maps",
-  "body": " Matrices and linear maps    Let . A function is said to be a linear map if it satisfies the following conditions.   For any and any ,     For any ,          Let . For each we consider the following column vector. where occurs in the -th row and all other entries are zero. We call the -th standard basis vector of .  We call the set of column vectors the standard basis .     Suppose that . Then we have the following.    Using , if is a linear map then, for any we get the following. Thus, a linear map is completely determined by column vectors .    We keep notations of . For a linear map we associate a matrix, denoted by , whose -th column vector is , for . Thus, if then, associated matrix will be      We remark that in , the matrix associated with a linear map is always taken to be with respect to the standard basis.    Let . Consider the following map. This map is a linear map. Note that if then, for any , we get the following. Furthermore, the matrix of of the linear map, is the following.    Using and we get a one-one correspondence between the set of all matrices over , and the set of all linear maps from to . We note that in , the matrix associated with a linear map is always taken to be with respect to the standard basis ( ).    The map given by where, is the matrix associated to as in .    "
+  "body": " Matrices and linear maps    Let . A function is said to be a linear map if it satisfies the following conditions.   For any and any ,     For any ,          Let . For each we consider the following column vector. where occurs in the -th row and all other entries are zero. We call the -th standard basis vector of .  We call the set of column vectors the standard basis .     Suppose that . Then we have the following.    Using , if is a linear map then, for any we get the following. Thus, a linear map is completely determined by column vectors .    We keep notations of . For a linear map we associate a matrix, denoted by , whose -th column vector is , for . Thus, if then, associated matrix will be      We remark that in , the matrix associated with a linear map is always taken to be with respect to the standard basis.    Let . Consider the following map. This map is a linear map. Note that if then, for any , we get the following. Furthermore, the matrix of the linear map, is the following.    Using and we get a one-one correspondence between the set of all matrices over , and the set of all linear maps from to . We note that in , the matrix associated with a linear map is always taken to be with respect to the standard basis ( ).    The map given by where, is the matrix associated to as in .    "
 },
 {
   "id": "def-linear-map",
@@ -727,7 +727,7 @@ var ptx_lunr_docs = [
   "type": "Remark",
   "number": "1.7.7",
   "title": "",
-  "body": " Let . Consider the following map. This map is a linear map. Note that if then, for any , we get the following. Furthermore, the matrix of of the linear map, is the following.   "
+  "body": " Let . Consider the following map. This map is a linear map. Note that if then, for any , we get the following. Furthermore, the matrix of the linear map, is the following.   "
 },
 {
   "id": "thm-correspondence-between-matrices-linear-maps",
