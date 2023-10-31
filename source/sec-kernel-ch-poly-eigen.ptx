@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-kernel-ch-poly-eigen" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Kernel, Characteristic polynomials, eigenvalues and eigenvectors</title>
+  <definition xml:id="def-kernel">
+    <statement>
+        <p>
+            Let <m>T\colon M_{n\times 1}(\K)\to M_{m\times 1}(\K)</m> be a linear map. The <term>kernel of <m>T</m></term> is the following set (more precisely a linear subspace).
+            <me>
+                \ker(T)=\left\{v\in M_{n\times 1}(\K):T(v)=\begin{pmatrix}0\\0\\\vdots\\0\end{pmatrix}\in M_{m\times 1}(\K)\right\}
+            </me>
+            
+        </p>
+    </statement>
+  </definition>
+  <note>
+    The kernel of a linear map always contains <m>0\in M_{n\times 1}(\K)</m>.
+  </note>
+  <definition xml:id="def-characteristic-polynomial">
+    <statement>
+        <p>
+            Let <m>A=(a_{ij})\in M_n(\K)</m> be a square matrix. The <term>characteristic polynomial of <m>A</m></term> is 
+            <me>
+                \chi_A(x)=\det\left(xI_n-A\right)=\left|\begin{matrix}x-a_{11}\amp -a_{12}\amp\cdots\amp -a_{1n}\\-a_{21}\amp x-a_{22}\amp\cdots\amp -a_{2n}\\\vdots\amp\vdots\amp\ddots\amp\vdots\\-a_{n1}\amp -a_{n2}\amp\cdots\amp x-a_{nn}\end{matrix}\right|\in\K[x],
+            </me>
+            where <m>x</m> is a variable and <m>I_n</m> is the identity matrix.
+        </p>
+    </statement>
+  </definition>
+  <definition xml:id="def-eigenvalue">
+    <statement>
+        <p>
+            Let <m>A\in M_n(\K)</m>. A root of the characteristic polynomial of <m>A</m> is called an <term>eigenvalue of <m>A</m></term>.
+        </p>
+    </statement>
+  </definition>
+</section>
