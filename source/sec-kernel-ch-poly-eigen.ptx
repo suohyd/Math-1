@@ -34,4 +34,42 @@
         </p>
     </statement>
   </definition>
+  <definition xml:id="def-eigenvector">
+    <statement>
+      <p>
+        Let <m>A\in M_{n\times 1}(\K)</m> matrix and <m>\lambda\in\K</m> be an eigenvalue of <m>A</m>. A nonzero <m>v\in M_{n\times 1}(\K)</m> is said to be an <term>eigenvector corresponding to <m>\lambda</m></term> if <m>Av=\lambda v</m>.
+      </p>
+    </statement>
+  </definition>
+  <remark>
+    If <m>v</m> is an eigenvector corresponding to an eigenvalue <m>\lambda</m> then, for any <m>\alpha\in\K</m> we have the following.
+    <me>
+      A\left(\alpha v\right)=\alpha Av=\alpha(\lambda v)=\lambda\left(\alpha v\right)
+    </me>
+    Thus, if <m>v</m> is an eigenvector corresponding to an eigenvalue <m>\lambda</m> then so is any nonzero scalar multiple of <m>v</m>.
+    <p>
+      Geometrically, if we draw a straight line through the origin in the direction of an eigenvector, then any vector on this straight line will remain on the line after the linear map corresponding to <m>A</m> (see <xref ref="linear-map-using-matrix"/>) is applied.
+    </p>
+  </remark>
+  <note xml:id="computing-eigenvector">
+    <p>
+      Let <m>A\in M_{n\times 1}(\K)</m> and <m>\lambda\in\K</m> be an eigenvalue of <m>A</m>. We descibe a method to find an eigenvector corresponding to <m>\lambda</m>. 
+    </p>
+    <p>
+      Consider the following matrix <m>A_\lambda</m> and the linear map corresponding to <m>A_\lambda</m>.
+      <me>
+        A_\lambda=\lambda\cdot I_n-A\quad\text{and}\quad T_{\lambda}\colon M_{n\times 1}(\K)\to M_{n\times 1}(\K)\quad\text{given by}\quad v\mapsto A_\lambda v
+      </me>
+      Suppose that <m>0\neq v_0\in\ker(T_\lambda)</m>. Thus we must have the following.
+      <md>
+        <mrow>T_\lambda(v_0) \amp=(\lambda\cdot I_n-A)v_0 </mrow>
+        <mrow> \amp=\lambda\cdot I_nv_0-Av_0 </mrow>
+        <mrow> \amp=\lambda v_0-Av_0 </mrow>
+      </md>
+      Hence, we get that <m>Av_0=\lambda v_0</m>.
+    </p>
+    <p>
+      The above calculations show that any nonzero column vector in the kernel of <m>T_\lambda</m> will be an eigenvector corresponding to <m>\lambda</m>.
+    </p>
+  </note>
 </section>

@@ -17,6 +17,7 @@
   <xi:include href="sec-matrices-linear-maps.ptx" />
   <xi:include href="practice-matrices-linear-maps.ptx" />
   <xi:include href="sec-kernel-ch-poly-eigen.ptx" />
+  <xi:include href="practice-kernel-ch-poly-eigen.ptx" />
 
 
 </chapter>

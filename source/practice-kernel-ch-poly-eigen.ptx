@@ -1,0 +1,105 @@
+<exercises xml:id="practice-kernel-ch-poly-eigen">
+    <exercisegroup>
+        <introduction>
+            <p>
+                Compute the kernel of the linear corresponding to the given matrix (see <xref ref="linear-map-using-matrix"/>). Furthermore, find all eigenvalues in <m>\R</m> and <m>\C</m> and corresponding eigenvectors.
+            </p>
+        </introduction>
+        <exercise>
+            <statement>
+                <p>
+                    <me>
+                        A=\begin{pmatrix}\cos\theta\amp -\sin\theta\\\sin\theta\amp\cos\theta\end{pmatrix}
+                    </me>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <me>
+                        A=\begin{pmatrix}1\amp 1\\1\amp 1\end{pmatrix}
+                    </me>
+                    
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <me>
+                        A=\begin{pmatrix}0\amp -1\amp 0\\-1\amp 0\amp 0\\0\amp 0\amp -1\end{pmatrix}
+                    </me>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <me>
+                        A=\begin{pmatrix}-1\amp 0\amp 0\\0\amp 0\amp -1\\0\amp 1\amp 0\end{pmatrix}
+                    </me>
+                    
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <me>
+                        A=\begin{pmatrix}a\amp b\\0\amp c\end{pmatrix}
+                    </me>
+                    where, <m>a,b,c\in\K</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <me>
+                        A=\begin{pmatrix}a\amp 0\\0\amp b\end{pmatrix}
+                    </me>
+                    where, <m>a,b\in\K</m>.
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <me>
+                        A=\begin{pmatrix}1\amp i\\-i\amp 1\end{pmatrix}
+                    </me>
+                    
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <me>
+                        A=\begin{pmatrix}2\amp 0\amp 0\\1\amp 2\amp 0\\0\amp 1\amp 2\end{pmatrix}
+                    </me>
+                    
+                </p>
+            </statement>
+        </exercise>
+    </exercisegroup>
+    <exercise>
+        <statement>
+            <p>Consider the following matrix.
+                <me>
+                    A=\begin{pmatrix}-1\amp 0\\2\amp 1\end{pmatrix}
+                </me>
+                Find <m>A^{10}\begin{pmatrix}2\\0\end{pmatrix}</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Find a matrix <m>A\in M_2(\R)</m> such that <m>A^2=I_2</m>, <m>A\neq I_2</m>, and <m>A\neq -I_2</m>. List all its eigenvalues in <m>\R</m> and find corresponding eigenvectors. Describe action of the linear map corresponding to <m>A</m> geometrically.
+            </p>
+        </statement>
+        
+    </exercise>
+</exercises>
