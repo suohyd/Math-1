@@ -916,7 +916,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "1.10",
   "title": "Exercises",
-  "body": "   Compute the kernel of the linear corresponding to the given matrix (see ). Furthermore, find all eigenvalues in and and corresponding eigenvectors.                         where, .     where, .               Consider the following matrix. Find .    Find such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.   "
+  "body": "   Compute the kernel of the linear corresponding to the given matrix (see ). Furthermore, find all eigenvalues in and and corresponding eigenvectors.                         where, .     where, .               Consider the following matrix. Find .    Find a matrix such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.   "
 },
 {
   "id": "exercise-46",
@@ -1006,7 +1006,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.10.10",
   "title": "",
-  "body": " Find such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.  "
+  "body": " Find a matrix such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.  "
 },
 {
   "id": "sec-sage-echelon-form",
