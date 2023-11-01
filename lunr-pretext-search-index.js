@@ -838,6 +838,177 @@ var ptx_lunr_docs = [
   "body": " Assume that is a linear map and Find .  "
 },
 {
+  "id": "sec-kernel-ch-poly-eigen",
+  "level": "1",
+  "url": "sec-kernel-ch-poly-eigen.html",
+  "type": "Section",
+  "number": "1.9",
+  "title": "Kernel, Characteristic polynomials, eigenvalues and eigenvectors",
+  "body": " Kernel, Characteristic polynomials, eigenvalues and eigenvectors    Let be a linear map. The kernel of is the following set (more precisely a linear subspace).     The kernel of a linear map always contains .    Let be a square matrix. The characteristic polynomial of is where is a variable and is the identity matrix.      Let . A root of the characteristic polynomial of is called an eigenvalue of .      Let matrix and be an eigenvalue of . A nonzero is said to be an eigenvector corresponding to if .    If is an eigenvector corresponding to an eigenvalue then, for any we have the following. Thus, if is an eigenvector corresponding to an eigenvalue then so is any nonzero scalar multiple of . Geometrically, if we draw a straight line through the origin in the direction of an eigenvector, then any vector on this straight line will remain on the line after the linear map corresponding to (see ) is applied.    Let and be an eigenvalue of . We descibe a method to find an eigenvector corresponding to .  Consider the following matrix and the linear map corresponding to . Suppose that . Thus we must have the following. Hence, we get that .  The above calculations show that any nonzero column vector in the kernel of will be an eigenvector corresponding to .   "
+},
+{
+  "id": "def-kernel",
+  "level": "2",
+  "url": "sec-kernel-ch-poly-eigen.html#def-kernel",
+  "type": "Definition",
+  "number": "1.9.1",
+  "title": "",
+  "body": "  Let be a linear map. The kernel of is the following set (more precisely a linear subspace).    "
+},
+{
+  "id": "note-6",
+  "level": "2",
+  "url": "sec-kernel-ch-poly-eigen.html#note-6",
+  "type": "Note",
+  "number": "1.9.2",
+  "title": "",
+  "body": "The kernel of a linear map always contains . "
+},
+{
+  "id": "def-characteristic-polynomial",
+  "level": "2",
+  "url": "sec-kernel-ch-poly-eigen.html#def-characteristic-polynomial",
+  "type": "Definition",
+  "number": "1.9.3",
+  "title": "",
+  "body": "  Let be a square matrix. The characteristic polynomial of is where is a variable and is the identity matrix.   "
+},
+{
+  "id": "def-eigenvalue",
+  "level": "2",
+  "url": "sec-kernel-ch-poly-eigen.html#def-eigenvalue",
+  "type": "Definition",
+  "number": "1.9.4",
+  "title": "",
+  "body": "  Let . A root of the characteristic polynomial of is called an eigenvalue of .   "
+},
+{
+  "id": "def-eigenvector",
+  "level": "2",
+  "url": "sec-kernel-ch-poly-eigen.html#def-eigenvector",
+  "type": "Definition",
+  "number": "1.9.5",
+  "title": "",
+  "body": "  Let matrix and be an eigenvalue of . A nonzero is said to be an eigenvector corresponding to if .   "
+},
+{
+  "id": "remark-4",
+  "level": "2",
+  "url": "sec-kernel-ch-poly-eigen.html#remark-4",
+  "type": "Remark",
+  "number": "1.9.6",
+  "title": "",
+  "body": "If is an eigenvector corresponding to an eigenvalue then, for any we have the following. Thus, if is an eigenvector corresponding to an eigenvalue then so is any nonzero scalar multiple of . Geometrically, if we draw a straight line through the origin in the direction of an eigenvector, then any vector on this straight line will remain on the line after the linear map corresponding to (see ) is applied.  "
+},
+{
+  "id": "computing-eigenvector",
+  "level": "2",
+  "url": "sec-kernel-ch-poly-eigen.html#computing-eigenvector",
+  "type": "Note",
+  "number": "1.9.7",
+  "title": "",
+  "body": " Let and be an eigenvalue of . We descibe a method to find an eigenvector corresponding to .  Consider the following matrix and the linear map corresponding to . Suppose that . Thus we must have the following. Hence, we get that .  The above calculations show that any nonzero column vector in the kernel of will be an eigenvector corresponding to .  "
+},
+{
+  "id": "practice-kernel-ch-poly-eigen",
+  "level": "1",
+  "url": "practice-kernel-ch-poly-eigen.html",
+  "type": "Exercises",
+  "number": "1.10",
+  "title": "Exercises",
+  "body": "   Compute the kernel of the linear corresponding to the given matrix (see ). Furthermore, find all eigenvalues in and and corresponding eigenvectors.                         where, .     where, .               Consider the following matrix. Find .    Find such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.   "
+},
+{
+  "id": "exercise-46",
+  "level": "2",
+  "url": "practice-kernel-ch-poly-eigen.html#exercise-46",
+  "type": "Exercise",
+  "number": "1.10.1",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-47",
+  "level": "2",
+  "url": "practice-kernel-ch-poly-eigen.html#exercise-47",
+  "type": "Exercise",
+  "number": "1.10.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-48",
+  "level": "2",
+  "url": "practice-kernel-ch-poly-eigen.html#exercise-48",
+  "type": "Exercise",
+  "number": "1.10.3",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-49",
+  "level": "2",
+  "url": "practice-kernel-ch-poly-eigen.html#exercise-49",
+  "type": "Exercise",
+  "number": "1.10.4",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-50",
+  "level": "2",
+  "url": "practice-kernel-ch-poly-eigen.html#exercise-50",
+  "type": "Exercise",
+  "number": "1.10.5",
+  "title": "",
+  "body": "  where, .  "
+},
+{
+  "id": "exercise-51",
+  "level": "2",
+  "url": "practice-kernel-ch-poly-eigen.html#exercise-51",
+  "type": "Exercise",
+  "number": "1.10.6",
+  "title": "",
+  "body": "  where, .  "
+},
+{
+  "id": "exercise-52",
+  "level": "2",
+  "url": "practice-kernel-ch-poly-eigen.html#exercise-52",
+  "type": "Exercise",
+  "number": "1.10.7",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-53",
+  "level": "2",
+  "url": "practice-kernel-ch-poly-eigen.html#exercise-53",
+  "type": "Exercise",
+  "number": "1.10.8",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-54",
+  "level": "2",
+  "url": "practice-kernel-ch-poly-eigen.html#exercise-54",
+  "type": "Exercise",
+  "number": "1.10.9",
+  "title": "",
+  "body": " Consider the following matrix. Find .  "
+},
+{
+  "id": "exercise-55",
+  "level": "2",
+  "url": "practice-kernel-ch-poly-eigen.html#exercise-55",
+  "type": "Exercise",
+  "number": "1.10.10",
+  "title": "",
+  "body": " Find such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.  "
+},
+{
   "id": "sec-sage-echelon-form",
   "level": "1",
   "url": "sec-sage-echelon-form.html",
