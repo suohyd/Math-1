@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-diagonalization" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Diagonalization of a square matrix</title>
+  <introduction>
+    <p>
+        We introduce diagonalization of square matrices of small sizes in this section.
+    </p>
+  </introduction>
+  <definition xml:id="def-similar-matrices">
+    <statement>
+        <p>
+            Square matrices <m>A,B\in M_n(\K)</m> are said to be <term>similar</term> if there exists an invertible matrix <m>P\in M_n(\K)</m> such that <m>A=PBP^{-1}</m>.
+        </p>
+    </statement>
+  </definition>
+  <note>
+    <p>
+        If <m>A</m> similar to <m>B</m> then <m>B</m> is also similar to <m>A</m>.
+    </p>
+  </note>
+  <definition xml:id="def-diagonalizable-matrix">
+    <statement>
+        <p>
+            A square matrix <m>A\in M_n(\K)</m> is said to be <term>diagonalizable</term> if <m>A</m> similar to a diagonal matrix.
+        </p>
+    </statement>
+  </definition>
+  <definition xml:id="def-multiplicity-of-roots">
+    <statement>
+        <p>
+            Consider a nonzero polynomial <m>p(x)\in\K[x]</m>. Suppose that <m>p(x)</m> can be factored in <m>\K[x]</m> as follows.
+            <me>
+                p(x)=a(x-\lambda_1)^{n_1}(x-\lambda_2)^{n_2}\cdots(x-\lambda_r)^{n_r}
+            </me>
+            where, <m>a\in\K</m> is some nonzero element, <m>n_i</m> are some natural numbers, and <m>\lambda_i</m> are distinct elements of <m>\K</m>, i.e., <m>\lambda_i\neq\lambda_j</m> for <m>i\neq j</m>.
+            
+        </p>
+        <p>
+            We say that the <term>multiplicity of <m>\lambda_i</m></term> is <m>n_i</m>.
+        </p>
+    </statement>
+  </definition>
+  <definition xml:id="def-kernel-of-matrix">
+    <statement>
+        <p>
+            Suppose that <m>A\in M_n(\K)</m> is a square matrix. Let <m>T_A</m> be the linear map associated to <m>A</m>, i.e., <m>T_A\colon M_{n\times 1}(\K)\to M_{n\times 1}(\K)</m> is given by <m>T_A(v)=Av</m>. We define the <term>kernel of <m>A</m></term> to be the same as the kernel of the linear map <m>T_A</m>. 
+        </p>
+        <p>
+            We denote the kernel of <m>A</m> by <m>\ker(A)</m>.
+        </p>
+    </statement>
+  </definition>
+  <definition xml:id="def-dim-of-kernel">
+    <statement>
+        <p>
+            Suppose that <m>A\in M_n(\K)</m> is a square matrix. We define the <term>dimension of the kernel of <m>A</m></term> to be <m>n-{\rm rank}(A)</m>.
+        </p>
+        <p>
+            We denote the dimension of the kernel of <m>A</m> by <term><m>\dim\ker(A)</m></term>. Thus we have the following.
+            <md>
+                <mrow>\dim\left(\ker(A)\right) \amp=\text{ size of the matrix }A-\text{ rank of the matrix }A </mrow>
+                <mrow> \amp=n-{\rm rank}(A) </mrow>
+            </md>
+            
+        </p>
+    </statement>
+  </definition>
+  <remark>
+    <p>
+        The dimension of the kernel is defined in linear algebra using the concept of linear independence. The <xref ref="def-dim-of-kernel"/> is in fact  <sq>Rank-Nullity Theorem</sq>. Due to lack of time we take <xref ref="def-dim-of-kernel"/> as a working definition.
+    </p>
+  </remark>
+  <fact xml:id="fact-diagonalization-criterion">
+    <statement>
+        <p>
+            Let <m>A\in M_n(\K)</m> be a square matrix. Suppose that the characteristic polynomial of <m>A</m> has the following factorization with <m>\lambda_i\neq\lambda_j</m> for <m>i\neq j</m>.
+            <me>
+                \chi_A(x)=(x-\lambda_1)^{n_1}(x-\lambda_2)^{n_2}\cdots(x-\lambda_r)^{n_r}\in\K[x]
+            </me>
+            The matrix <m>A</m> is diagonalizable if and only if for <alert>every</alert> <m>1\leq i\leq r</m> we have the following.
+            <me>
+                \dim\left(\ker(\lambda_iI_n-A)\right)=n_i
+            </me>
+            
+        </p>
+        <p>
+            If <m>A</m> is diagonalizable then it is similar to the following diagonal matrix.
+            <me>
+                \begin{pmatrix}\lambda_1I_{n_1}\amp\amp\amp\amp\\\amp\lambda_2I_{n_2}\amp\amp\amp\amp\\\amp\amp\ddots\amp\amp\amp\\\amp\amp\amp\amp\lambda_rI_{n_r}\end{pmatrix}
+            </me>
+            where, each <m>\lambda_iI_{n_i}</m> is <m>n_i\times n_i</m> diagonal matrix with all diagonal entries <m>\lambda_i</m> and all other entries <m>0</m>. Furthermore, in the above matrix entries left blank are taken to be <m>0</m>.
+        </p>
+    </statement>
+  </fact>
+</section>
