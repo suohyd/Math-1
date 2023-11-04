@@ -44,7 +44,7 @@
   <definition xml:id="def-kernel-of-matrix">
     <statement>
         <p>
-            Suppose that <m>A\in M_n(\K)</m> is a square matrix. Let <m>T_A</m> be the linear map associated to <m>A</m>, i.e., <m>T_A\colon M_{n\times 1}(\K)\to M_{n\times 1}(\K)</m> is given by <m>T_A(v)=Av</m>. We define the <term>kernel of <m>A</m></term> to be the same as the kernel of the linear map <m>T_A</m>. 
+            Suppose that <m>A\in M_n(\K)</m> is a square matrix. Let <m>\ell_A</m> be the linear map associated to <m>A</m>, i.e., <m>\ell_A\colon M_{n\times 1}(\K)\to M_{n\times 1}(\K)</m> is given by <m>\ell_A(v)=Av</m>. We define the <term>kernel of <m>A</m></term> to be the same as the kernel of the linear map <m>\ell_A</m>. 
         </p>
         <p>
             We denote the kernel of <m>A</m> by <m>\ker(A)</m>.
