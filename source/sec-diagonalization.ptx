@@ -22,7 +22,7 @@
   <definition xml:id="def-diagonalizable-matrix">
     <statement>
         <p>
-            A square matrix <m>A\in M_n(\K)</m> is said to be <term>diagonalizable</term> if <m>A</m> similar to a diagonal matrix.
+            A square matrix <m>A\in M_n(\K)</m> is said to be <term>diagonalizable</term> if <m>A</m> similar to a diagonal matrix in <m>\K</m>.
         </p>
     </statement>
   </definition>
@@ -57,7 +57,7 @@
             Suppose that <m>A\in M_n(\K)</m> is a square matrix. We define the <term>dimension of the kernel of <m>A</m></term> to be <m>n-{\rm rank}(A)</m>.
         </p>
         <p>
-            We denote the dimension of the kernel of <m>A</m> by <term><m>\dim\ker(A)</m></term>. Thus we have the following.
+            We denote the dimension of the kernel of <m>A</m> by <term><m>\dim(\ker(A))</m></term>. Thus we have the following.
             <md>
                 <mrow>\dim\left(\ker(A)\right) \amp=\text{ size of the matrix }A-\text{ rank of the matrix }A </mrow>
                 <mrow> \amp=n-{\rm rank}(A) </mrow>
