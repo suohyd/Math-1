@@ -16,7 +16,7 @@
                     </li>
                     <li>
                         <p>
-                            If the map is linear then find its associated matrix as outlined in <xref ref="def-matrix-of-linear-map"/>.
+                            If the map is linear then find the matrix associated to it as outlined in <xref ref="def-matrix-of-linear-map"/>.
                         </p>
                     </li>
                     <li>
@@ -26,7 +26,7 @@
                     </li>
                     <li>
                         <p>
-                            If the map is linear and if its associated matrix, <m>[T]=A</m>, is invertible then find <m>\ell_{A^{-1}}</m>. Compute <m>T\circ\ell_{A^{-1}}</m> and <m>\ell_{A^{-1}}\circ T</m>.
+                            If the map is linear and if its associated matrix, <m>[T]=A</m>, is invertible then find the linear map associated to <m>A^{-1}</m>, <m>T_{A^{-1}}</m> (see <xref ref="linear-map-using-matrix"/>). Compute <m>T\circ T_{A^{-1}}</m> and <m>T_{A^{-1}}\circ T</m>.
                         </p>
                     </li>
                 </ol>
