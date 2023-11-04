@@ -745,7 +745,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "1.8",
   "title": "Exercises",
-  "body": "  A few exercises related to the concept of linear maps are listed below.     Consider the following maps. In each of the following cases do the following.   Check if the map defined is linear or not.    If the map is linear then find its associated matrix as outlined in .    Draw the images of standard basis vectors (see ).    If the map is linear and if its associated matrix, , is invertible then find . Compute and .       given by    given by    given by    given by where, and are real numbers.   given by    given by    given by    given by    given by     Assume that is a linear map and Find .   "
+  "body": "  A few exercises related to the concept of linear maps are listed below.     Consider the following maps. In each of the following cases do the following.   Check if the map defined is linear or not.    If the map is linear then find the matrix associated to it as outlined in .    Draw the images of standard basis vectors (see ).    If the map is linear and if its associated matrix, , is invertible then find the linear map associated to , (see ). Compute and .       given by    given by    given by    given by where, and are real numbers.   given by    given by    given by    given by    given by     Assume that is a linear map and Find .   "
 },
 {
   "id": "exercise-36",
@@ -916,7 +916,7 @@ var ptx_lunr_docs = [
   "type": "Exercises",
   "number": "1.10",
   "title": "Exercises",
-  "body": "   Compute the kernel of the linear corresponding to the given matrix (see ). Furthermore, find all eigenvalues in and and corresponding eigenvectors.                         where, .     where, .               Consider the following matrix. Find .    Find a matrix such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.   "
+  "body": "   Compute the kernel of the linear map corresponding to the given matrix (see ). Furthermore, find all eigenvalues in and and corresponding eigenvectors.                         where, .     where, .               Consider the following matrix. Find .    Find a matrix such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.   "
 },
 {
   "id": "exercise-46",
