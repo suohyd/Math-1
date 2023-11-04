@@ -2,7 +2,7 @@
     <exercisegroup>
         <introduction>
             <p>
-                Compute the kernel of the linear corresponding to the given matrix (see <xref ref="linear-map-using-matrix"/>). Furthermore, find all eigenvalues in <m>\R</m> and <m>\C</m> and corresponding eigenvectors.
+                Compute the kernel of the linear map corresponding to the given matrix (see <xref ref="linear-map-using-matrix"/>). Furthermore, find all eigenvalues in <m>\R</m> and <m>\C</m> and corresponding eigenvectors.
             </p>
         </introduction>
         <exercise>
