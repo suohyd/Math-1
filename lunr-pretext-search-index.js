@@ -1009,6 +1009,87 @@ var ptx_lunr_docs = [
   "body": " Find a matrix such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.  "
 },
 {
+  "id": "sec-diagonalization",
+  "level": "1",
+  "url": "sec-diagonalization.html",
+  "type": "Section",
+  "number": "1.11",
+  "title": "Diagonalization of a square matrix",
+  "body": " Diagonalization of a square matrix   We introduce diagonalization of square matrices of small sizes in this section.     Square matrices are said to be similar if there exists an invertible matrix such that .     If similar to then is also similar to .     A square matrix is said to be diagonalizable if similar to a diagonal matrix in .      Consider a nonzero polynomial . Suppose that can be factored in as follows. where, is some nonzero element, are some natural numbers, and are distinct elements of , i.e., for .  We say that the multiplicity of is .      Suppose that is a square matrix. Let be the linear map associated to , i.e., is given by . We define the kernel of to be the same as the kernel of the linear map .  We denote the kernel of by .      Suppose that is a square matrix. We define the dimension of the kernel of to be .  We denote the dimension of the kernel of by . Thus we have the following.      The dimension of the kernel is defined in linear algebra using the concept of linear independence. The is in fact Rank-Nullity Theorem . Due to lack of time we take as a working definition.     Let be a square matrix. Suppose that the characteristic polynomial of has the following factorization with for . The matrix is diagonalizable if and only if for every  we have the following.   If is diagonalizable then it is similar to the following diagonal matrix. where, each is diagonal matrix with all diagonal entries and all other entries . Furthermore, in the above matrix entries left blank are taken to be .    "
+},
+{
+  "id": "def-similar-matrices",
+  "level": "2",
+  "url": "sec-diagonalization.html#def-similar-matrices",
+  "type": "Definition",
+  "number": "1.11.1",
+  "title": "",
+  "body": "  Square matrices are said to be similar if there exists an invertible matrix such that .   "
+},
+{
+  "id": "note-8",
+  "level": "2",
+  "url": "sec-diagonalization.html#note-8",
+  "type": "Note",
+  "number": "1.11.2",
+  "title": "",
+  "body": " If similar to then is also similar to .  "
+},
+{
+  "id": "def-diagonalizable-matrix",
+  "level": "2",
+  "url": "sec-diagonalization.html#def-diagonalizable-matrix",
+  "type": "Definition",
+  "number": "1.11.3",
+  "title": "",
+  "body": "  A square matrix is said to be diagonalizable if similar to a diagonal matrix in .   "
+},
+{
+  "id": "def-multiplicity-of-roots",
+  "level": "2",
+  "url": "sec-diagonalization.html#def-multiplicity-of-roots",
+  "type": "Definition",
+  "number": "1.11.4",
+  "title": "",
+  "body": "  Consider a nonzero polynomial . Suppose that can be factored in as follows. where, is some nonzero element, are some natural numbers, and are distinct elements of , i.e., for .  We say that the multiplicity of is .   "
+},
+{
+  "id": "def-kernel-of-matrix",
+  "level": "2",
+  "url": "sec-diagonalization.html#def-kernel-of-matrix",
+  "type": "Definition",
+  "number": "1.11.5",
+  "title": "",
+  "body": "  Suppose that is a square matrix. Let be the linear map associated to , i.e., is given by . We define the kernel of to be the same as the kernel of the linear map .  We denote the kernel of by .   "
+},
+{
+  "id": "def-dim-of-kernel",
+  "level": "2",
+  "url": "sec-diagonalization.html#def-dim-of-kernel",
+  "type": "Definition",
+  "number": "1.11.6",
+  "title": "",
+  "body": "  Suppose that is a square matrix. We define the dimension of the kernel of to be .  We denote the dimension of the kernel of by . Thus we have the following.    "
+},
+{
+  "id": "remark-5",
+  "level": "2",
+  "url": "sec-diagonalization.html#remark-5",
+  "type": "Remark",
+  "number": "1.11.7",
+  "title": "",
+  "body": " The dimension of the kernel is defined in linear algebra using the concept of linear independence. The is in fact Rank-Nullity Theorem . Due to lack of time we take as a working definition.  "
+},
+{
+  "id": "fact-diagonalization-criterion",
+  "level": "2",
+  "url": "sec-diagonalization.html#fact-diagonalization-criterion",
+  "type": "Fact",
+  "number": "1.11.8",
+  "title": "",
+  "body": "  Let be a square matrix. Suppose that the characteristic polynomial of has the following factorization with for . The matrix is diagonalizable if and only if for every  we have the following.   If is diagonalizable then it is similar to the following diagonal matrix. where, each is diagonal matrix with all diagonal entries and all other entries . Furthermore, in the above matrix entries left blank are taken to be .   "
+},
+{
   "id": "sec-sage-echelon-form",
   "level": "1",
   "url": "sec-sage-echelon-form.html",
