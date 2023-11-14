@@ -1,0 +1,42 @@
+<exercises xml:id="practice-diagonalization">
+    <introduction>
+        <p>
+            Check whether the following matrices are diagonalizable.
+        </p>
+    </introduction>
+    <exercise>
+        <statement>
+            <p>
+                <m>\begin{pmatrix}0\amp 1\\-1\amp 0\end{pmatrix}\in M_2(\C)</m>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                <m>\begin{pmatrix}1\amp 1\amp 1\\1\amp 1\amp 1\\1\amp 1\amp 1\end{pmatrix}\in M_3(\C)</m>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                <m>\begin{pmatrix}1\amp i\\0\amp i\end{pmatrix}\in M_2(\C)</m>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                <m>\begin{pmatrix}2\amp 0\\1\amp 2\end{pmatrix}\in M_2(\C)</m>
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                <m>\begin{pmatrix}1\amp 1\amp 1\\-1\amp -1\amp -1\\1\amp 1\amp 1\\\end{pmatrix}\in M_3(\C)</m>.
+            </p>
+        </statement>
+    </exercise>
+</exercises>

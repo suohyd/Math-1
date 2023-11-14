@@ -19,6 +19,6 @@
   <xi:include href="sec-kernel-ch-poly-eigen.ptx" />
   <xi:include href="practice-kernel-ch-poly-eigen.ptx" />
   <xi:include href="sec-diagonalization.ptx" />
-
+  <xi:include href="practice-diagonalization.ptx" />
 
 </chapter>

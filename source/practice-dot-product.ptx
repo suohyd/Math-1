@@ -1,0 +1,114 @@
+<exercises xml:id="practice-dot-product">
+    <exercisegroup>
+        <introduction>
+            <p>
+                Given are two points <m>A</m> and <m>B</m>. Find the vector representation <m>\overrightarrow{AB}</m>. Furthermore, find <m>2\cdot\overrightarrow{OA}</m>, <m>-1\cdot\overrightarrow{OA}+3\cdot\overrightarrow{OB}</m>, and <m>\overrightarrow{OA}-\overrightarrow{OB}</m>.
+            </p>
+        </introduction>
+        <exercise>
+            <statement>
+                <p>
+                    <m>A=(1,0)</m> and <m>B=(0,1)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>A=(0,1,-2)</m> and <m>B=(0,1,-1)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>A=(a_1,a_2,a_3)</m> and <m>B=(-1,1,0)</m>
+                </p>
+            </statement>
+        </exercise>
+    </exercisegroup>
+    <exercisegroup>
+        <introduction>
+            <p>
+                Given are two points <m>A</m> and <m>B</m>. By considering vectors <m>\overrightarrow{OA}</m> and <m>\overrightarrow{OB}</m>, find their dot product and their respective lengths.
+            </p>
+        </introduction>
+        <exercise>
+         <statement>
+            <p>
+                <m>A=(2,3,1)</m> and <m>B=(-1,2,0)</m>
+            </p>
+        </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>A=(2,2)</m> and <m>B=(1,-1)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Let <m>A=(1,-1,a)\in\C^3</m>. Find <m>a\in\C</m> so that the length of <m>\overrightarrow{OA}</m> is <m>1</m>.
+                </p>
+            </statement>
+        </exercise>
+    </exercisegroup>
+    <exercisegroup>
+        <introduction>
+            <p>
+                Given are two points <m>A</m> and <m>B</m>. Consider vectors <m>\overrightarrow{OA}</m> and <m>\overrightarrow{OB}</m> to find the angle between them. Check whether they are perpendicular to each other or not.
+            </p>
+        </introduction>
+        <exercise>
+            <statement>
+                <p>
+                    <m>A=(2,1)</m> and <m>B=(1,1)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>A=(-1,2)</m> and <m>B=(-2,4)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>A=(1,-3,2)</m> and <m>B=(3,1,-4)</m>
+                </p>
+            </statement>
+        </exercise>
+    </exercisegroup>
+    <exercisegroup>
+        <introduction>
+            <p>
+                A point <m>A</m> is given. Find a point <m>B</m> so that the vectors <m>\overrightarrow{OA}</m> and <m>\overrightarrow{OB}</m> are perpendicular.
+            </p>
+        </introduction>
+        <exercise>
+            <statement>
+                <p>
+                    <m>A=(2,-1)</m>
+                </p>
+            </statement>
+        </exercise>
+            <exercise>
+            <statement>
+                <p>
+                    <m>A=(3,3,-1)</m>
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>A=(-1,-1,-1)</m>
+                </p>
+            </statement>
+        </exercise>
+    </exercisegroup>
+</exercises>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-analytic-geometry" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Related to Analytic Geometry</title>
+
+  <introduction>
+    <p> We list a few exercises related to analytic geometry. </p>
+  </introduction>
+  <xi:include href="practice-dot-product.ptx" />
+</chapter>
