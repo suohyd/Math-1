@@ -139,15 +139,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.2.4';
+eBookConfig.runestone_version = '7.2.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.4/prefix-runtime.5ecae37059e29af3.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.4/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.4/prefix-runestone.8b0ea7c4b75074bd.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.4/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.4/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.6/prefix-runtime.a3c8c7d41ccd4690.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.6/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.2.6/prefix-runestone.a8c8d2a8c39388a9.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.6/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.2.6/prefix-runestone.f64dcc3632d7a0c3.css">
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -196,7 +196,12 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-kernel-ch-poly-eigen.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Kernel, Characteristic polynomials, eigenvalues and eigenvectors</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-kernel-ch-poly-eigen.html" class="internal"><span class="codenumber">1.10</span> <span class="title">Exercises</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-diagonalization.html" class="internal"><span class="codenumber">1.11</span> <span class="title">Diagonalization of a square matrix</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-diagonalization.html" class="internal"><span class="codenumber">1.12</span> <span class="title">Exercises</span></a></div></li>
 </ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-analytic-geometry.html" class="internal"><span class="codenumber">2</span> <span class="title">Related to Analytic Geometry</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-dot-product.html" class="internal"><span class="codenumber">2</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-backmatter contains-active">
 <div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
@@ -212,15 +217,15 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-sage-rank-trace-det"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">A.2</span><span class="space"> </span><span class="title">Computing rank, trace, and determinant</span>
 </h2>
-<section class="introduction" id="introduction-13">We use online computer algebra system <a class="external" href="https://www.sagemath.org/" target="_blank">SageMath</a><a class="xref" id="fn-7" href="" data-knowl="./knowl/fn-7.html" title="Footnote A.2.1"><sup> 1 </sup></a> to compute the rank, the trace and the determinant of a given matrix. In the following example <code class="code-inline tex2jax_ignore">A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]])</code> represents <span class="process-math">\(3\times 4\)</span> matrix <span class="process-math">\(A\)</span> over <span class="process-math">\(\R\text{.}\)</span> The entries <code class="code-inline tex2jax_ignore">[1,2,0,-1]</code>, <code class="code-inline tex2jax_ignore">[1,6,0,1]</code>, and <code class="code-inline tex2jax_ignore">[1,-2,2,8]</code> represents the first, the second, and the third row of <span class="process-math">\(A\text{,}\)</span> respectively.</section><div class="para" id="p-192">We can compute the rank of a matrix.</div>
+<section class="introduction" id="introduction-19">We use online computer algebra system <a class="external" href="https://www.sagemath.org/" target="_blank">SageMath</a><a class="xref" id="fn-7" href="" data-knowl="./knowl/fn-7.html" title="Footnote A.2.1"><sup> 1 </sup></a> to compute the rank, the trace and the determinant of a given matrix. In the following example <code class="code-inline tex2jax_ignore">A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]])</code> represents <span class="process-math">\(3\times 4\)</span> matrix <span class="process-math">\(A\)</span> over <span class="process-math">\(\R\text{.}\)</span> The entries <code class="code-inline tex2jax_ignore">[1,2,0,-1]</code>, <code class="code-inline tex2jax_ignore">[1,6,0,1]</code>, and <code class="code-inline tex2jax_ignore">[1,-2,2,8]</code> represents the first, the second, and the third row of <span class="process-math">\(A\text{,}\)</span> respectively.</section><div class="para" id="p-215">We can compute the rank of a matrix.</div>
 <pre id="sage-4" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">sage: A=matrix(RR,[[1,2,0,-1],[1,6,0,1],[1,-2,2,8]])
 sage: A.rank()
 </script></pre>
-<div class="para" id="p-193">We can compute the trace of a matrix.</div>
+<div class="para" id="p-216">We can compute the trace of a matrix.</div>
 <pre id="sage-5" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">sage: A=matrix(RR,[[1,-1,1],[0,1,0],[0,0,-1]])
 sage: A.trace()
 </script></pre>
-<div class="para" id="p-194">We can compute the determinant of a matrix.</div>
+<div class="para" id="p-217">We can compute the determinant of a matrix.</div>
 <pre id="sage-6" class="ptx-sagecell sagecell-sage"><script type="text/x-sage">sage: A=matrix(RR,[[2,-1,0,0,0,0],[-1,2,-1,0,0,0],[0,-1,2,-1,0,0],[0,0,-1,2,-1,0],[0,0,0,-1,2,-1],[0,0,0,0,-1,2]])
 sage: A.det()
 </script></pre></section></div>

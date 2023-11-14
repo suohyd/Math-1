@@ -1090,6 +1090,177 @@ var ptx_lunr_docs = [
   "body": "  Let be a square matrix. Suppose that the characteristic polynomial of has the following factorization with for . The matrix is diagonalizable if and only if for every  we have the following.   If is diagonalizable then it is similar to the following diagonal matrix. where, each is diagonal matrix with all diagonal entries and all other entries . Furthermore, in the above matrix entries left blank are taken to be .   "
 },
 {
+  "id": "practice-diagonalization",
+  "level": "1",
+  "url": "practice-diagonalization.html",
+  "type": "Exercises",
+  "number": "1.12",
+  "title": "Exercises",
+  "body": "  Check whether the following matrices are diagonalizable.                         .   "
+},
+{
+  "id": "exercise-56",
+  "level": "2",
+  "url": "practice-diagonalization.html#exercise-56",
+  "type": "Exercise",
+  "number": "1.12.1",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-57",
+  "level": "2",
+  "url": "practice-diagonalization.html#exercise-57",
+  "type": "Exercise",
+  "number": "1.12.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-58",
+  "level": "2",
+  "url": "practice-diagonalization.html#exercise-58",
+  "type": "Exercise",
+  "number": "1.12.3",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-59",
+  "level": "2",
+  "url": "practice-diagonalization.html#exercise-59",
+  "type": "Exercise",
+  "number": "1.12.4",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-60",
+  "level": "2",
+  "url": "practice-diagonalization.html#exercise-60",
+  "type": "Exercise",
+  "number": "1.12.5",
+  "title": "",
+  "body": "  .  "
+},
+{
+  "id": "ch-analytic-geometry",
+  "level": "1",
+  "url": "ch-analytic-geometry.html",
+  "type": "Chapter",
+  "number": "2",
+  "title": "Related to Analytic Geometry",
+  "body": " Related to Analytic Geometry   We list a few exercises related to analytic geometry.      Given are two points and . Find the vector representation . Furthermore, find , , and .     and      and      and       Given are two points and . By considering vectors and , find their dot product and their respective lengths.     and      and     Let . Find so that the length of is .      Given are two points and . Consider vectors and to find the angle between them. Check whether they are perpendicular to each other or not.     and      and      and       A point is given. Find a point so that the vectors and are perpendicular.                    "
+},
+{
+  "id": "exercise-61",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-61",
+  "type": "Exercise",
+  "number": "2.1",
+  "title": "",
+  "body": "  and   "
+},
+{
+  "id": "exercise-62",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-62",
+  "type": "Exercise",
+  "number": "2.2",
+  "title": "",
+  "body": "  and   "
+},
+{
+  "id": "exercise-63",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-63",
+  "type": "Exercise",
+  "number": "2.3",
+  "title": "",
+  "body": "  and   "
+},
+{
+  "id": "exercise-64",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-64",
+  "type": "Exercise",
+  "number": "2.4",
+  "title": "",
+  "body": "  and   "
+},
+{
+  "id": "exercise-65",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-65",
+  "type": "Exercise",
+  "number": "2.5",
+  "title": "",
+  "body": "  and   "
+},
+{
+  "id": "exercise-66",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-66",
+  "type": "Exercise",
+  "number": "2.6",
+  "title": "",
+  "body": " Let . Find so that the length of is .  "
+},
+{
+  "id": "exercise-67",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-67",
+  "type": "Exercise",
+  "number": "2.7",
+  "title": "",
+  "body": "  and   "
+},
+{
+  "id": "exercise-68",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-68",
+  "type": "Exercise",
+  "number": "2.8",
+  "title": "",
+  "body": "  and   "
+},
+{
+  "id": "exercise-69",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-69",
+  "type": "Exercise",
+  "number": "2.9",
+  "title": "",
+  "body": "  and   "
+},
+{
+  "id": "exercise-70",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-70",
+  "type": "Exercise",
+  "number": "2.10",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-71",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-71",
+  "type": "Exercise",
+  "number": "2.11",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "exercise-72",
+  "level": "2",
+  "url": "practice-dot-product.html#exercise-72",
+  "type": "Exercise",
+  "number": "2.12",
+  "title": "",
+  "body": "    "
+},
+{
   "id": "sec-sage-echelon-form",
   "level": "1",
   "url": "sec-sage-echelon-form.html",
