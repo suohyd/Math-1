@@ -2,7 +2,7 @@
     <exercisegroup>
         <introduction>
             <p>
-                Given are two points <m>A</m> and <m>B</m>. Find the vector representation <m>\overrightarrow{AB}</m>. Furthermore, find <m>2\cdot\overrightarrow{OA}</m>, <m>-1\cdot\overrightarrow{OA}+3\cdot\overrightarrow{OB}</m>, and <m>\overrightarrow{OA}-\overrightarrow{OB}</m>.
+             Two points <m>A</m> and <m>B</m> are given. Find the vector representation <m>\overrightarrow{AB}</m>. Furthermore, find <m>2\cdot\overrightarrow{OA}</m>, <m>-1\cdot\overrightarrow{OA}+3\cdot\overrightarrow{OB}</m>, and <m>\overrightarrow{OA}-\overrightarrow{OB}</m>.
             </p>
         </introduction>
         <exercise>
@@ -30,7 +30,7 @@
     <exercisegroup>
         <introduction>
             <p>
-                Given are two points <m>A</m> and <m>B</m>. By considering vectors <m>\overrightarrow{OA}</m> and <m>\overrightarrow{OB}</m>, find their dot product and their respective lengths.
+                Two points <m>A</m> and <m>B</m> are given. By considering vectors <m>\overrightarrow{OA}</m> and <m>\overrightarrow{OB}</m>, find their dot product and their respective lengths.
             </p>
         </introduction>
         <exercise>
@@ -58,7 +58,7 @@
     <exercisegroup>
         <introduction>
             <p>
-                Given are two points <m>A</m> and <m>B</m>. Consider vectors <m>\overrightarrow{OA}</m> and <m>\overrightarrow{OB}</m> to find the angle between them. Check whether they are perpendicular to each other or not.
+                Two points <m>A</m> and <m>B</m> are given. Consider vectors <m>\overrightarrow{OA}</m> and <m>\overrightarrow{OB}</m> to find the angle between them. Check whether they are perpendicular to each other or not.
             </p>
         </introduction>
         <exercise>
