@@ -7,4 +7,5 @@
     <p> We list a few exercises related to analytic geometry. </p>
   </introduction>
   <xi:include href="practice-dot-product.ptx" />
+  <xi:include href="practice-lines-planes.ptx" />
 </chapter>
