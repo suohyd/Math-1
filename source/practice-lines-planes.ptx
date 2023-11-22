@@ -1,7 +1,58 @@
 <exercises xml:id="practice-lines-planes">
-    <introduction>
-        <p>
-            Determine a line passing through <m>P</m> in direction of <m>A</m>.
-        </p>
-    </introduction>
+    <exercisegroup>
+        <introduction>
+            <p>
+                Find an equation of a line passing through \(P\) and in the direction of \(D\). Draw the line.
+            </p>
+        </introduction>
+	    <exercise>
+            <statement>
+                <p>
+                    \(P=(3,1)\) and \(D=(5,-2)\)
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    \(P=(1,0)\) and \(D=(0,1)\)
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    \(P=(1,1,0)\) and \(D=(1,1,1)\) 
+                </p>
+            </statement>
+        </exercise>
+    </exercisegroup>
+    <exercisegroup>
+        <introduction>
+            <p>
+                Find a vector equation of line passing through points \(A\) and \(B\).
+            </p>
+        </introduction>
+        <exercise>
+            <statement>
+                <p>
+                    \(A=(1,-1)\) and \(B=(1,0)\)
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    \(A=(2,3)\) and \(B=(1,-1)\)
+                </p>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    \(A=(1,-1,-1)\) and \(B=(1,0,1)\)
+                </p>
+            </statement>
+        </exercise>
+    </exercisegroup>
 </exercises>
