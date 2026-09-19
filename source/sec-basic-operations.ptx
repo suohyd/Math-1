@@ -121,13 +121,43 @@
     </definition>
     <note xml:id="inverse-of-inverse">
       <p>
+        If inverse of the matrix exists then it is unique. Indeed, if <m>B,C\in M_n(\mathbb{K})</m> are two inverses of <m>A\in M_n(\mathbb{K})</m> then we have
+        <me>
+          B=BI_n=B(AC)=(BA)C=I_nC=C.
+        </me>
+      </p>
+      <p>
         Note that if <m>A\in M_n(\mathbb{K})</m> is invertible then the inverse of <m>A^{-1}\in M_n(\mathbb{K})</m> is <m>A</m>, i.e.,
         <me>
           \left(A^{-1}\right)^{-1}=A.
         </me>
-        
+      </p>
+      <p>
+        If <m>A,B\in M_n(\K)</m> are invertible then <m>AB\in M_n(\K)</m> is also invertible and
+        <me>
+          (AB)^{-1}=B^{-1}A^{-1}.
+        </me>
       </p>
     </note>
+    <lemma xml:id="lem-invertible-implies-no-zero-divisors">
+      <statement>
+        <p>
+          Suppose that <m>A\in M_n(\K)</m> is an invertible matrix. Then, for any <m>B\in M_n(\K)</m>, if <m>AB=0</m> or <m>BA=0</m> then <m>B=0</m>.
+        </p>
+        <p>
+          In other words, if <m>BA=0</m> (resp., <m>AB=0</m>) and <m>B\neq 0</m> then, <m>A</m> can not be invertible.
+        </p>
+      </statement>
+    </lemma>
+    <proof>
+      <p>
+        Suppose that <m>AB=0</m>. Then, multiplying both sides of the equation <m>AB=0</m> by <m>A^{-1}</m> we get
+        <me>
+          A^{-1}(AB)=A^{-1}0,\quad\text{i.e.,}\quad (A^{-1}A)B=0,\quad\text{i.e.,}\quad I_nB=0\implies B=0.
+        </me>
+        Similarly, one can show that if <m>BA=0</m> then <m>B=0</m>.
+      </p>
+    </proof>
     <definition xml:id="homogeneous-system">
       <title>(Coefficient matrix of a system of linear equations and homogeneous system of linear equations)</title>
       Consider a system of linear equations with <m>a_{ij},b_i\in\mathbb{K}</m> for every <m>1\leq i\leq m</m> and <m>1\leq j\leq n</m>.

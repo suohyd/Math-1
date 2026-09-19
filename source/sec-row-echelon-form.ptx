@@ -41,15 +41,37 @@
   </definition>
   <note xml:id="row-reduced-echelon-form-procedure">
     <title>Procedure to obtain a row reduced echelon form of a matrix</title>
-		Recall that given a matrix <m>A\in M_{m\times n}(\mathbb{K})</m>, by applying a sequence of elementary row operations, can be reduced to a <term>row reduced echelon form <m>E_A</m> of <m>A</m></term>. The matrix <m>E_A</m> has the following properties.
+		<p>
+      Recall that given a matrix <m>A\in M_{m\times n}(\mathbb{K})</m>, by applying a sequence of elementary row operations, can be reduced to a <term>row reduced echelon form <m>E_A</m> of <m>A</m></term>. The matrix <m>E_A</m> has the following properties.
+    </p>
 		<ol>
             <li>All zero rows occurs at the bottom of <m>E_A</m>.</li>
-			<li>If a row of <m>E_A</m> is nonzero then the first nonzero entry is <m>1</m>, it is called <term>pivot</term>.</li>
+			<li>If a row of <m>E_A</m> is nonzero then the first nonzero entry is <m>1</m>, it is called <term>pivot</term> or the <term>leading entry</term>.</li>
 			<li>In any two successive nonzero rows of <m>E_A</m>, the pivot in the lower row occurs to the right of the pivot in the higher row.</li>
 			<li>Each column of <m>E_A</m> that contains the pivot has zero everywhere else.</li>
 		</ol>
   </note>
   <p>The natural question arises: Does the sequence in which row operations are performed change the resulting row reduced echelon form of <m>A?</m> The answer is no!</p>
+  <definition xml:id="def-row-reduced-echelon-matrix">
+    <statement>
+      <p>
+        A matrix <m>R\in M_{m\times n}(\mathbb{K})</m> is said to be in <term>row reduced echelon matrix</term> if it satisfies all the properties listed in <xref ref="row-reduced-echelon-form-procedure"/>.
+      </p>
+    </statement>
+  </definition>
+  <lemma xml:id="lem-RREF-invertible-iff-identity">
+    <statement>
+      <p>
+        A row reduced echelon matrix of size <m>n</m> invertible if and only if it is the identity matrix <m>I_n</m>.
+      </p>
+    </statement>
+  </lemma>
+  <proof>
+    <p>
+      The identity matrix <m>I_n</m> is invertible, and it is a row reduced echelon matrix. Conversely, we show that if <m>R\in M_n(\K)</m> is row reduced echelon matrix which is invertible then, <m>R=I_n</m>. Equivalently, we can show that if <m>R\neq I_n</m>, then <m>R</m> can not be invertible. Indeed, if <m>R\neq I_n</m>, then, the last row, i.e., the <m>n</m>-th row of <m>R</m> must be zero row. This follows from the definition of row reduced echelon matrix. Consider the matrix <m>S=(S_{ij})\in M_n(\K)</m>, where <m>S_{ij}=0</m> if <m>j\neq n</m>, and <m>S_{in}=1</m> for any <m>i\in\{1,2,\ldots,n\}</m>. Then, <m>SR=0\in M_n(\K)</m>.
+      Indeed, <m>(SR)_{ij}=\sum_kS_{ik}R_{kj}</m>. As <m>S_{ik}=0</m> for <m>k\neq n</m>, we must have <m>(SR)_{ij}=S_{in}R_{nj}=R_{nj}</m>. However, as the <m>n</m>-th row of <m>R</m> is zero, we have <m>(SR)_{ij}=0</m>. Thus, <m>SR=0</m>, and hence <m>R</m> is not invertible, see <xref ref="lem-invertible-implies-no-zero-divisors"/>.
+    </p>
+  </proof>
   <fact xml:id="fact-uniqueness-of-echelon-form">
     <statement>
       <p>
