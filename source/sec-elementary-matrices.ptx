@@ -119,4 +119,48 @@
       Now assume that <m>A</m> is a product of elementary matrices. As each elementary matrix is invertible, <m>A</m> is invertible. Conversely, if <m>A</m> is invertible, then as the argument above implies, the row reduced echelon form of <m>A</m> is the identity matrix, and thus <m>A</m> is a product of elementary matrices.
     </p>
   </proof>
+  <remark>
+    <p>
+      The proof above illustrates that if the elementary row operations perform on an invertible matrix <m>A</m> to obtain the row reduced echelon form, are perform on the <m>I_n</m> in the same order, then we obtain the inverse of <m>A</m>.
+    </p>
+    <p>
+      For computation purpose we can form the block matrix <m>(A|I_n)</m>, and apply to this matrix elementary row operations to reduce <m>A</m> to the identity, then we get the block matrix<m>(I_n|A^{-1})</m>, and the inverse of <m>A</m>.
+    </p>
+  </remark>
+  <theorem xml:id="thm-invertible-unique-solution">
+    <statement>
+      <p>
+        Let <m>A\in M_n(\K)</m>. Following statements are equivalent.
+        <ol>
+          <li>
+            <p>
+              <m>A</m> is invertible;
+            </p>
+          </li>
+          <li>
+            <p>
+              The homogeneous system of linear equations <m>AX=0</m> has only trivial solution;
+            </p>
+          </li>
+          <li>
+            <p>
+              The system of linear equations <m>AX=Y</m> has a solution for all <m>Y\in M_{n\times 1}(\K)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      Let <m>A</m> be invertible matrix. Then its row reduced echelon form is <m>R=I_n</m>. As <m>AX=0</m> and <m>I_nX=0</m> have same solutions, we obtain that <m>AX=0</m> has only trivial solution. Conversely, if <m>AX=0</m> has only trivial solution then, the row reduced form of <m>A</m>, <m>R=I_n</m>. Indeed, if <m>R\neq I_n</m> then, the last row of <m>R</m> is zero, and in this case <m>RX=0</m> will have infinitely many solutions, see <xref ref="thm-solutions-of-linear-equations"/>.
+    </p>
+    <p>
+      If <m>A</m> is invertible then, the system <m>AX=Y</m> will have <m>X=A^{-1}Y</m> as a solution. Conversely, assume that <m>AX=Y</m> have a solution of all <m>Y</m>. In view of <xref ref="thm-invertible-matrix-row-echelon-form"/>, in order to show <m>A</m> is invertible it is enough to show that the row reduced echelon form <m>R</m> of <m>A</m> is the identity matrix. Consider the following system.
+      <me>
+        RX=\begin{pmatrix}0\\0\\\vdots\\1\end{pmatrix}
+      </me>
+      By the assumption, the above system of linear equations has a solution. In particular, the last row of <m>R</m> is can not be a zero row. Therefore, <m>R=I_n</m> and hence, <m>A</m> is invertible.
+    </p>
+  </proof>
 </section>

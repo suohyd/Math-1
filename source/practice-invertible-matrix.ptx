@@ -1,0 +1,41 @@
+<exercises xml:id="practice-invertible-matrix">
+    <exercise>
+        <statement>
+            <p>
+                Check whether the given matrices are invertible or not. If invertible then, find its inverse.
+                <me>
+                    \begin{pmatrix}1\amp2\\2\amp1\end{pmatrix};\quad\begin{pmatrix}1\amp a_{12}\amp a_{13}\\0\amp 1\amp a_{23}\\0\amp 0\amp 1\end{pmatrix};\quad\begin{pmatrix}1\amp 0\amp 0\amp 0\\1\amp 1\amp 0\amp 0\\1\amp 1\amp 1\amp 0\\1\amp 1\amp 1\amp 1\end{pmatrix}
+                </me>
+                
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Show that if <m>A\in M_n(\K)</m> is a nonzero matrix such that <m>A^3=0</m>, then <m>A</m> is not invertible.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Let <m>A\in M_n(\K)</m> be such that one of the rows of <m>A</m> is a zero row. Show that <m>A</m> is not invertible.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Find a <m>2\times 2</m> invertible matrix <m>A</m> such that <m>A^3=I_2</m>.
+            </p>
+        </statement>
+    </exercise>
+    <exercise>
+        <statement>
+            <p>
+                Show that there are infinitely many invertible matrices in <m>M_2(\K)</m> which are not of the form <m>\alpha\cdot I_2</m> (see <xref ref="scalar-times-matrix"/>) for <m>\alpha\in\K</m>.
+            </p>
+        </statement>
+    </exercise>
+</exercises>
