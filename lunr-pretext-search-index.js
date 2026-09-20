@@ -547,7 +547,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.5",
   "title": "Elementry matrices",
-  "body": " Elementry matrices   In this section we denote by either the set of real numbers, or the set of complex numbers, .     An matrix is called an elementary matrix if it can be obtained from the identity matrix by performing a single elementary row operation, as given in , on .      The following are examples of elementary matrices.    is an elementary matrix obtained from by interchanging the first and second rows of .     is an elementary matrix obtained from by adding three times the first row of to the second row of .     is an elementary matrix obtained from by multiplying the second row of by .         An elementary matrix obtained by interchanging the -th and -th rows of has the following form.   An elementary matrix obtained by multiplying the -th row of by a nonzero scalar has the following form.   An elementary matrix obtained by adding times the -th row of to the -th row of has the following form.       Suppose and is an elementary matrix. Then the product is obtained from by performing the same elementary row operation on as was performed on to obtain .     We only show the statement for the case when is obtained from by adding times the -th row of to the -th row of . The other two cases can be proved similarly. Let . Then, the product , where for and . This shows that is obtained from by adding times the -th row of to the -th row of .     Every elementary matrix is invertible, and the inverse of an elementary matrix is also an elementary matrix of the same kind.     We only show the statement for the case when is obtained from by adding times the -th row of to the -th row of . The other two cases can be proved similarly. Let is the elementary matrix obtained from by adding times the -th row of to the -th row of . Then,we have the following. A similar computation shows that . This shows that is the inverse of , and hence, is invertible.     A square matrix is invertible (see ) if and only if the row reduced echelon form of is the identity matrix .     Suppose that is invertible. The row reduced echelon form of is obtained from by performing a sequence of elementary row operations. By , there exist elementary matrices such that As is invertible, and the product is a product of invertible matrices (see ), the matrix is invertible, see . Therefore, is invertible. Since is a row reduced echelon matrix, it must be the identity matrix , see .  Conversely, suppose that the row reduced echelon form of is the identity matrix . Then, by , there exist elementary matrices such that As each is invertible (see ), the product is invertible, see . Therefore, , and , i.e., is invertible.   "
+  "body": " Elementry matrices   In this section we denote by either the set of real numbers, or the set of complex numbers, .     An matrix is called an elementary matrix if it can be obtained from the identity matrix by performing a single elementary row operation, as given in , on .      The following are examples of elementary matrices.    is an elementary matrix obtained from by interchanging the first and second rows of .     is an elementary matrix obtained from by adding three times the first row of to the second row of .     is an elementary matrix obtained from by multiplying the second row of by .         An elementary matrix obtained by interchanging the -th and -th rows of has the following form.   An elementary matrix obtained by multiplying the -th row of by a nonzero scalar has the following form.   An elementary matrix obtained by adding times the -th row of to the -th row of has the following form.       Suppose and is an elementary matrix. Then the product is obtained from by performing the same elementary row operation on as was performed on to obtain .     We only show the statement for the case when is obtained from by adding times the -th row of to the -th row of . The other two cases can be proved similarly. Let . Then, the product , where for and . This shows that is obtained from by adding times the -th row of to the -th row of .     Every elementary matrix is invertible, and the inverse of an elementary matrix is also an elementary matrix of the same kind.     We only show the statement for the case when is obtained from by adding times the -th row of to the -th row of . The other two cases can be proved similarly. Let is the elementary matrix obtained from by adding times the -th row of to the -th row of . Then,we have the following. A similar computation shows that . This shows that is the inverse of , and hence, is invertible.     A square matrix is invertible (see ) if and only if the row reduced echelon form of is the identity matrix if and only if is a product of elementary matrices.     Suppose that is invertible. The row reduced echelon form of is obtained from by performing a sequence of elementary row operations. By , there exist elementary matrices such that As is invertible, and the product is a product of invertible matrices (see ), the matrix is invertible, see . Therefore, is invertible. Since is a row reduced echelon matrix, it must be the identity matrix , see .  Conversely, suppose that the row reduced echelon form of is the identity matrix . Then, by , there exist elementary matrices such that As each is invertible (see ), the product is invertible, see . Therefore, , and , i.e., is invertible.  Now assume that is a product of elementary matrices. As each elementary matrix is invertible, is invertible. Conversely, if is invertible, then as the argument above implies, the row reduced echelon form of is the identity matrix, and thus is a product of elementary matrices.    The proof above illustrates that if the elementary row operations perform on an invertible matrix to obtain the row reduced echelon form, are perform on the in the same order, then we obtain the inverse of .  For computation purpose we can form the block matrix , and apply to this matrix elementary row operations to reduce to the identity, then we get the block matrix , and the inverse of .     Let . Following statements are equivalent.    is invertible;    The homogeneous system of linear equations has only trivial solution;    The system of linear equations has a solution for all .        Let be invertible matrix. Then its row reduced echelon form is . As and have same solutions, we obtain that has only trivial solution. Conversely, if has only trivial solution then, the row reduced form of , . Indeed, if then, the last row of is zero, and in this case will have infinitely many solutions, see .  If is invertible then, the system will have as a solution. Conversely, assume that have a solution of all . In view of , in order to show is invertible it is enough to show that the row reduced echelon form of is the identity matrix. Consider the following system. By the assumption, the above system of linear equations has a solution. In particular, the last row of is can not be a zero row. Therefore, and hence, is invertible.   "
 },
 {
   "id": "def-elementary-matrix",
@@ -619,7 +619,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "1.5.6",
   "title": "",
-  "body": "  A square matrix is invertible (see ) if and only if the row reduced echelon form of is the identity matrix .   "
+  "body": "  A square matrix is invertible (see ) if and only if the row reduced echelon form of is the identity matrix if and only if is a product of elementary matrices.   "
 },
 {
   "id": "sec-elementary-matrices-11",
@@ -628,14 +628,95 @@ var ptx_lunr_docs = [
   "type": "Proof",
   "number": "1.5.3",
   "title": "",
-  "body": " Suppose that is invertible. The row reduced echelon form of is obtained from by performing a sequence of elementary row operations. By , there exist elementary matrices such that As is invertible, and the product is a product of invertible matrices (see ), the matrix is invertible, see . Therefore, is invertible. Since is a row reduced echelon matrix, it must be the identity matrix , see .  Conversely, suppose that the row reduced echelon form of is the identity matrix . Then, by , there exist elementary matrices such that As each is invertible (see ), the product is invertible, see . Therefore, , and , i.e., is invertible.  "
+  "body": " Suppose that is invertible. The row reduced echelon form of is obtained from by performing a sequence of elementary row operations. By , there exist elementary matrices such that As is invertible, and the product is a product of invertible matrices (see ), the matrix is invertible, see . Therefore, is invertible. Since is a row reduced echelon matrix, it must be the identity matrix , see .  Conversely, suppose that the row reduced echelon form of is the identity matrix . Then, by , there exist elementary matrices such that As each is invertible (see ), the product is invertible, see . Therefore, , and , i.e., is invertible.  Now assume that is a product of elementary matrices. As each elementary matrix is invertible, is invertible. Conversely, if is invertible, then as the argument above implies, the row reduced echelon form of is the identity matrix, and thus is a product of elementary matrices.  "
+},
+{
+  "id": "sec-elementary-matrices-12",
+  "level": "2",
+  "url": "sec-elementary-matrices.html#sec-elementary-matrices-12",
+  "type": "Remark",
+  "number": "1.5.7",
+  "title": "",
+  "body": " The proof above illustrates that if the elementary row operations perform on an invertible matrix to obtain the row reduced echelon form, are perform on the in the same order, then we obtain the inverse of .  For computation purpose we can form the block matrix , and apply to this matrix elementary row operations to reduce to the identity, then we get the block matrix , and the inverse of .  "
+},
+{
+  "id": "thm-invertible-unique-solution",
+  "level": "2",
+  "url": "sec-elementary-matrices.html#thm-invertible-unique-solution",
+  "type": "Theorem",
+  "number": "1.5.8",
+  "title": "",
+  "body": "  Let . Following statements are equivalent.    is invertible;    The homogeneous system of linear equations has only trivial solution;    The system of linear equations has a solution for all .      "
+},
+{
+  "id": "sec-elementary-matrices-14",
+  "level": "2",
+  "url": "sec-elementary-matrices.html#sec-elementary-matrices-14",
+  "type": "Proof",
+  "number": "1.5.4",
+  "title": "",
+  "body": " Let be invertible matrix. Then its row reduced echelon form is . As and have same solutions, we obtain that has only trivial solution. Conversely, if has only trivial solution then, the row reduced form of , . Indeed, if then, the last row of is zero, and in this case will have infinitely many solutions, see .  If is invertible then, the system will have as a solution. Conversely, assume that have a solution of all . In view of , in order to show is invertible it is enough to show that the row reduced echelon form of is the identity matrix. Consider the following system. By the assumption, the above system of linear equations has a solution. In particular, the last row of is can not be a zero row. Therefore, and hence, is invertible.  "
+},
+{
+  "id": "practice-invertible-matrix",
+  "level": "1",
+  "url": "practice-invertible-matrix.html",
+  "type": "Exercises",
+  "number": "1.6",
+  "title": "Exercises",
+  "body": "   Check whether the given matrices are invertible or not. If invertible then, find its inverse.       Show that if is a nonzero matrix such that , then is not invertible.      Let be such that one of the rows of is a zero row. Show that is not invertible.      Find a invertible matrix such that .      Show that there are infinitely many invertible matrices in which are not of the form (see ) for .    "
+},
+{
+  "id": "practice-invertible-matrix-1",
+  "level": "2",
+  "url": "practice-invertible-matrix.html#practice-invertible-matrix-1",
+  "type": "Exercise",
+  "number": "1.6.1",
+  "title": "",
+  "body": "  Check whether the given matrices are invertible or not. If invertible then, find its inverse.    "
+},
+{
+  "id": "practice-invertible-matrix-2",
+  "level": "2",
+  "url": "practice-invertible-matrix.html#practice-invertible-matrix-2",
+  "type": "Exercise",
+  "number": "1.6.2",
+  "title": "",
+  "body": "  Show that if is a nonzero matrix such that , then is not invertible.   "
+},
+{
+  "id": "practice-invertible-matrix-3",
+  "level": "2",
+  "url": "practice-invertible-matrix.html#practice-invertible-matrix-3",
+  "type": "Exercise",
+  "number": "1.6.3",
+  "title": "",
+  "body": "  Let be such that one of the rows of is a zero row. Show that is not invertible.   "
+},
+{
+  "id": "practice-invertible-matrix-4",
+  "level": "2",
+  "url": "practice-invertible-matrix.html#practice-invertible-matrix-4",
+  "type": "Exercise",
+  "number": "1.6.4",
+  "title": "",
+  "body": "  Find a invertible matrix such that .   "
+},
+{
+  "id": "practice-invertible-matrix-5",
+  "level": "2",
+  "url": "practice-invertible-matrix.html#practice-invertible-matrix-5",
+  "type": "Exercise",
+  "number": "1.6.5",
+  "title": "",
+  "body": "  Show that there are infinitely many invertible matrices in which are not of the form (see ) for .   "
 },
 {
   "id": "sec-rank-trace-det",
   "level": "1",
   "url": "sec-rank-trace-det.html",
   "type": "Section",
-  "number": "1.6",
+  "number": "1.7",
   "title": "Some invariants attached to a matrix",
   "body": " Some invariants attached to a matrix   In this section we denote by either the set of real numbers, or the set of complex numbers, .     The rank of a matrix is the number of nonzero rows in the row reduced echelon form of .  We denote the rank of by .     It follows from that for a matrix , the rank of is equal to the number of pivots in the row reduced echelon form of , which in turn can be at most .     The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix is denoted by . If is given by then the trace of ,     We now define the determinant of a square matrix recursively. We will not give a general definition.   Given an matrix over , its determinant is denoted by     Apart from various explantions given in lectures one may see this YouTube video with excellent animations to get started with the concept of determinants.     The determinant of a matrix is denote by and it is equal to , i.e.,       Consider as follows. The determinant of is      In the formula of the determinant of observe the following.   Change of signs in consecutive terms.    First entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the first column of . The second entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the second column of . The third entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the third column of .      For the rest of this section we use a short notation to write a square matrix, viz., we write to denote the following matrix.    We stress that the determinant of a square matrix is an element of .     Properties of the determinant . Assume that .    Row linearity . Let be the -th row of . For we let . For any and any and any we get the following.   For and any , .   Row rearrangement . Let be the matrix obtained by interchanging the -th row of with the -th row of . Then    Alternating . If any two rows of are the same then .   Transpose . For any ,    Triangular matrices . If is an upper triangular (resp., lower triangular) matrix, i.e., for (resp., for ) then    Block form . Let . Let , , , and be the zero matrix. The determinant of is given by Similar result is true for lower triangular block matrices.   Multiplicative property . Let . We have     Invertibility. A matrix is invertible if and only if if and only if .      "
 },
@@ -644,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-rank-trace-det.html#def-rank",
   "type": "Definition",
-  "number": "1.6.1",
+  "number": "1.7.1",
   "title": "",
   "body": "  The rank of a matrix is the number of nonzero rows in the row reduced echelon form of .  We denote the rank of by .   "
 },
@@ -653,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-rank-trace-det.html#sec-rank-trace-det-4",
   "type": "Remark",
-  "number": "1.6.2",
+  "number": "1.7.2",
   "title": "",
   "body": " It follows from that for a matrix , the rank of is equal to the number of pivots in the row reduced echelon form of , which in turn can be at most .  "
 },
@@ -662,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-rank-trace-det.html#def-trace",
   "type": "Definition",
-  "number": "1.6.3",
+  "number": "1.7.3",
   "title": "",
   "body": "  The trace of a square matrix is the sum of all its diagonal entries. The trace of a square matrix is denoted by . If is given by then the trace of ,    "
 },
@@ -671,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-rank-trace-det.html#sec-rank-trace-det-7",
   "type": "Convention",
-  "number": "1.6.4",
+  "number": "1.7.4",
   "title": "",
   "body": " Given an matrix over , its determinant is denoted by   "
 },
@@ -680,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-rank-trace-det.html#sec-rank-trace-det-8",
   "type": "Note",
-  "number": "1.6.5",
+  "number": "1.7.5",
   "title": "",
   "body": " Apart from various explantions given in lectures one may see this YouTube video with excellent animations to get started with the concept of determinants.  "
 },
@@ -689,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-rank-trace-det.html#def-det-2",
   "type": "Definition",
-  "number": "1.6.6",
+  "number": "1.7.6",
   "title": "",
   "body": "  The determinant of a matrix is denote by and it is equal to , i.e.,    "
 },
@@ -698,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-rank-trace-det.html#def-det-3",
   "type": "Definition",
-  "number": "1.6.7",
+  "number": "1.7.7",
   "title": "",
   "body": "  Consider as follows. The determinant of is    "
 },
@@ -707,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-rank-trace-det.html#sec-rank-trace-det-11",
   "type": "Note",
-  "number": "1.6.8",
+  "number": "1.7.8",
   "title": "",
   "body": " In the formula of the determinant of observe the following.   Change of signs in consecutive terms.    First entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the first column of . The second entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the second column of . The third entry is obtained by multiplying by the determinant of matrix obtained by deleting the first row and the third column of .     "
 },
@@ -716,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-rank-trace-det.html#sec-rank-trace-det-13",
   "type": "Note",
-  "number": "1.6.9",
+  "number": "1.7.9",
   "title": "",
   "body": " We stress that the determinant of a square matrix is an element of .  "
 },
@@ -725,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-rank-trace-det.html#properties-of-det",
   "type": "Fact",
-  "number": "1.6.10",
+  "number": "1.7.10",
   "title": "",
   "body": "  Properties of the determinant . Assume that .    Row linearity . Let be the -th row of . For we let . For any and any and any we get the following.   For and any , .   Row rearrangement . Let be the matrix obtained by interchanging the -th row of with the -th row of . Then    Alternating . If any two rows of are the same then .   Transpose . For any ,    Triangular matrices . If is an upper triangular (resp., lower triangular) matrix, i.e., for (resp., for ) then    Block form . Let . Let , , , and be the zero matrix. The determinant of is given by Similar result is true for lower triangular block matrices.   Multiplicative property . Let . We have     Invertibility. A matrix is invertible if and only if if and only if .     "
 },
@@ -734,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "practice-rank-trace-det.html",
   "type": "Exercises",
-  "number": "1.7",
+  "number": "1.8",
   "title": "Exercises",
   "body": "   Find ranks of matrices in .      Given show that and that   Furthermore show that if is invertible then     Use the formula for -th entry of a product given in .      Consider any square matrix of size of your choice and find its determinant.      Show that the following matrix is invertible, and that .       Show that the determinant of the following matrix is . Find a condition on so that the determinant of the above matrix is nonzero.    "
 },
@@ -743,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-rank-trace-det.html#practice-rank-trace-det-1",
   "type": "Exercise",
-  "number": "1.7.1",
+  "number": "1.8.1",
   "title": "",
   "body": "  Find ranks of matrices in .   "
 },
@@ -752,7 +833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-rank-trace-det.html#practice-rank-trace-det-2",
   "type": "Exercise",
-  "number": "1.7.2",
+  "number": "1.8.2",
   "title": "",
   "body": "  Given show that and that   Furthermore show that if is invertible then     Use the formula for -th entry of a product given in .   "
 },
@@ -761,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-rank-trace-det.html#practice-rank-trace-det-3",
   "type": "Exercise",
-  "number": "1.7.3",
+  "number": "1.8.3",
   "title": "",
   "body": "  Consider any square matrix of size of your choice and find its determinant.   "
 },
@@ -770,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-rank-trace-det.html#practice-rank-trace-det-4",
   "type": "Exercise",
-  "number": "1.7.4",
+  "number": "1.8.4",
   "title": "",
   "body": "  Show that the following matrix is invertible, and that .    "
 },
@@ -779,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-rank-trace-det.html#practice-rank-trace-det-5",
   "type": "Exercise",
-  "number": "1.7.5",
+  "number": "1.8.5",
   "title": "",
   "body": "  Show that the determinant of the following matrix is . Find a condition on so that the determinant of the above matrix is nonzero.   "
 },
@@ -788,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-matrices-linear-maps.html",
   "type": "Section",
-  "number": "1.8",
+  "number": "1.9",
   "title": "Matrices and linear maps",
   "body": " Matrices and linear maps    Let . A function is said to be a linear map if it satisfies the following conditions.   For any and any ,     For any ,          Let . For each we consider the following column vector. where occurs in the -th row and all other entries are zero. We call the -th standard basis vector of .  We call the set of column vectors the standard basis .     Suppose that . Then we have the following.     Using , if is a linear map then, for any we get the following. Thus, a linear map is completely determined by column vectors .     We keep notations of . For a linear map we associate a matrix, denoted by , whose -th column vector is , for . Thus, if then, associated matrix will be      We remark that in , the matrix associated with a linear map is always taken to be with respect to the standard basis.    Let . Consider the following map. This map is a linear map. Note that if then, for any , we get the following. Furthermore, the matrix of the linear map, is the following.    Using and we get a one-one correspondence between the set of all matrices over , and the set of all linear maps from to . We note that in , the matrix associated with a linear map is always taken to be with respect to the standard basis ( ).    The map given by where, is the matrix associated to as in .    "
 },
@@ -797,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-linear-maps.html#def-linear-map",
   "type": "Definition",
-  "number": "1.8.1",
+  "number": "1.9.1",
   "title": "",
   "body": "  Let . A function is said to be a linear map if it satisfies the following conditions.   For any and any ,     For any ,       "
 },
@@ -806,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-linear-maps.html#def-standard-basis",
   "type": "Definition",
-  "number": "1.8.2",
+  "number": "1.9.2",
   "title": "",
   "body": "  Let . For each we consider the following column vector. where occurs in the -th row and all other entries are zero. We call the -th standard basis vector of .  We call the set of column vectors the standard basis .   "
 },
@@ -815,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-linear-maps.html#linear-combination",
   "type": "Observation",
-  "number": "1.8.3",
+  "number": "1.9.3",
   "title": "",
   "body": " Suppose that . Then we have the following.   "
 },
@@ -824,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-linear-maps.html#action-on-basis",
   "type": "Observation",
-  "number": "1.8.4",
+  "number": "1.9.4",
   "title": "",
   "body": " Using , if is a linear map then, for any we get the following. Thus, a linear map is completely determined by column vectors .  "
 },
@@ -833,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-linear-maps.html#def-matrix-of-linear-map",
   "type": "Definition",
-  "number": "1.8.5",
+  "number": "1.9.5",
   "title": "",
   "body": "  We keep notations of . For a linear map we associate a matrix, denoted by , whose -th column vector is , for . Thus, if then, associated matrix will be    "
 },
@@ -842,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-linear-maps.html#sec-matrices-linear-maps-7",
   "type": "Remark",
-  "number": "1.8.6",
+  "number": "1.9.6",
   "title": "",
   "body": " We remark that in , the matrix associated with a linear map is always taken to be with respect to the standard basis.  "
 },
@@ -851,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-linear-maps.html#linear-map-using-matrix",
   "type": "Remark",
-  "number": "1.8.7",
+  "number": "1.9.7",
   "title": "",
   "body": " Let . Consider the following map. This map is a linear map. Note that if then, for any , we get the following. Furthermore, the matrix of the linear map, is the following.   "
 },
@@ -860,7 +941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-matrices-linear-maps.html#thm-correspondence-between-matrices-linear-maps",
   "type": "Theorem",
-  "number": "1.8.8",
+  "number": "1.9.8",
   "title": "",
   "body": "  The map given by where, is the matrix associated to as in .   "
 },
@@ -869,7 +950,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "practice-matrices-linear-maps.html",
   "type": "Exercises",
-  "number": "1.9",
+  "number": "1.10",
   "title": "Exercises",
   "body": "  A few exercises related to the concept of linear maps are listed below.     Consider the following maps. In each of the following cases do the following.   Check if the map defined is linear or not.    If the map is linear then find the matrix associated to it as outlined in .    Draw the images of standard basis vectors (see ).    If the map is linear and if its associated matrix, , is invertible then find the linear map associated to , (see ). Compute and .        given by      given by      given by      given by where, and are real numbers.     given by      given by      given by      given by      given by       Assume that is a linear map and Find .    "
 },
@@ -878,7 +959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-matrices-linear-maps.html#practice-matrices-linear-maps-2-2",
   "type": "Exercise",
-  "number": "1.9.1",
+  "number": "1.10.1",
   "title": "",
   "body": "  given by   "
 },
@@ -887,7 +968,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-matrices-linear-maps.html#practice-matrices-linear-maps-2-3",
   "type": "Exercise",
-  "number": "1.9.2",
+  "number": "1.10.2",
   "title": "",
   "body": "  given by   "
 },
@@ -896,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-matrices-linear-maps.html#practice-matrices-linear-maps-2-4",
   "type": "Exercise",
-  "number": "1.9.3",
+  "number": "1.10.3",
   "title": "",
   "body": "  given by   "
 },
@@ -905,7 +986,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-matrices-linear-maps.html#practice-matrices-linear-maps-2-5",
   "type": "Exercise",
-  "number": "1.9.4",
+  "number": "1.10.4",
   "title": "",
   "body": "  given by where, and are real numbers.  "
 },
@@ -914,7 +995,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-matrices-linear-maps.html#practice-matrices-linear-maps-2-6",
   "type": "Exercise",
-  "number": "1.9.5",
+  "number": "1.10.5",
   "title": "",
   "body": "  given by   "
 },
@@ -923,7 +1004,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-matrices-linear-maps.html#practice-matrices-linear-maps-2-7",
   "type": "Exercise",
-  "number": "1.9.6",
+  "number": "1.10.6",
   "title": "",
   "body": "  given by   "
 },
@@ -932,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-matrices-linear-maps.html#practice-matrices-linear-maps-2-8",
   "type": "Exercise",
-  "number": "1.9.7",
+  "number": "1.10.7",
   "title": "",
   "body": "  given by   "
 },
@@ -941,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-matrices-linear-maps.html#practice-matrices-linear-maps-2-9",
   "type": "Exercise",
-  "number": "1.9.8",
+  "number": "1.10.8",
   "title": "",
   "body": "  given by   "
 },
@@ -950,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-matrices-linear-maps.html#practice-matrices-linear-maps-2-10",
   "type": "Exercise",
-  "number": "1.9.9",
+  "number": "1.10.9",
   "title": "",
   "body": "  given by   "
 },
@@ -959,7 +1040,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-matrices-linear-maps.html#practice-matrices-linear-maps-3",
   "type": "Exercise",
-  "number": "1.9.10",
+  "number": "1.10.10",
   "title": "",
   "body": "  Assume that is a linear map and Find .   "
 },
@@ -968,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-kernel-ch-poly-eigen.html",
   "type": "Section",
-  "number": "1.10",
+  "number": "1.11",
   "title": "Kernel, Characteristic polynomials, eigenvalues and eigenvectors",
   "body": " Kernel, Characteristic polynomials, eigenvalues and eigenvectors    Let be a linear map. The kernel of is the following set (more precisely a linear subspace).     The kernel of a linear map always contains .    Let be a square matrix. The characteristic polynomial of is where is a variable and is the identity matrix.      Let . A root of the characteristic polynomial of is called an eigenvalue of .      Let matrix and be an eigenvalue of . A nonzero is said to be an eigenvector corresponding to if .    If is an eigenvector corresponding to an eigenvalue then, for any we have the following. Thus, if is an eigenvector corresponding to an eigenvalue then so is any nonzero scalar multiple of . Geometrically, if we draw a straight line through the origin in the direction of an eigenvector, then any vector on this straight line will remain on the line after the linear map corresponding to (see ) is applied.    Let and be an eigenvalue of . We descibe a method to find an eigenvector corresponding to .  Consider the following matrix and the linear map corresponding to . Suppose that . Thus we must have the following. Hence, we get that .  The above calculations show that any nonzero column vector in the kernel of will be an eigenvector corresponding to .   "
 },
@@ -977,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-kernel-ch-poly-eigen.html#def-kernel",
   "type": "Definition",
-  "number": "1.10.1",
+  "number": "1.11.1",
   "title": "",
   "body": "  Let be a linear map. The kernel of is the following set (more precisely a linear subspace).    "
 },
@@ -986,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-kernel-ch-poly-eigen.html#sec-kernel-ch-poly-eigen-3",
   "type": "Note",
-  "number": "1.10.2",
+  "number": "1.11.2",
   "title": "",
   "body": "The kernel of a linear map always contains . "
 },
@@ -995,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-kernel-ch-poly-eigen.html#def-characteristic-polynomial",
   "type": "Definition",
-  "number": "1.10.3",
+  "number": "1.11.3",
   "title": "",
   "body": "  Let be a square matrix. The characteristic polynomial of is where is a variable and is the identity matrix.   "
 },
@@ -1004,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-kernel-ch-poly-eigen.html#def-eigenvalue",
   "type": "Definition",
-  "number": "1.10.4",
+  "number": "1.11.4",
   "title": "",
   "body": "  Let . A root of the characteristic polynomial of is called an eigenvalue of .   "
 },
@@ -1013,7 +1094,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-kernel-ch-poly-eigen.html#def-eigenvector",
   "type": "Definition",
-  "number": "1.10.5",
+  "number": "1.11.5",
   "title": "",
   "body": "  Let matrix and be an eigenvalue of . A nonzero is said to be an eigenvector corresponding to if .   "
 },
@@ -1022,7 +1103,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-kernel-ch-poly-eigen.html#sec-kernel-ch-poly-eigen-7",
   "type": "Remark",
-  "number": "1.10.6",
+  "number": "1.11.6",
   "title": "",
   "body": "If is an eigenvector corresponding to an eigenvalue then, for any we have the following. Thus, if is an eigenvector corresponding to an eigenvalue then so is any nonzero scalar multiple of . Geometrically, if we draw a straight line through the origin in the direction of an eigenvector, then any vector on this straight line will remain on the line after the linear map corresponding to (see ) is applied.  "
 },
@@ -1031,7 +1112,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-kernel-ch-poly-eigen.html#computing-eigenvector",
   "type": "Note",
-  "number": "1.10.7",
+  "number": "1.11.7",
   "title": "",
   "body": " Let and be an eigenvalue of . We descibe a method to find an eigenvector corresponding to .  Consider the following matrix and the linear map corresponding to . Suppose that . Thus we must have the following. Hence, we get that .  The above calculations show that any nonzero column vector in the kernel of will be an eigenvector corresponding to .  "
 },
@@ -1040,7 +1121,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "practice-kernel-ch-poly-eigen.html",
   "type": "Exercises",
-  "number": "1.11",
+  "number": "1.12",
   "title": "Exercises",
   "body": "   Compute the kernel of the linear map corresponding to the given matrix (see ). Furthermore, find all eigenvalues in and and corresponding eigenvectors.                                  where, .       where, .                     Consider the following matrix. Find .      Find a matrix such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.    "
 },
@@ -1049,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-kernel-ch-poly-eigen.html#practice-kernel-ch-poly-eigen-1-2",
   "type": "Exercise",
-  "number": "1.11.1",
+  "number": "1.12.1",
   "title": "",
   "body": "      "
 },
@@ -1058,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-kernel-ch-poly-eigen.html#practice-kernel-ch-poly-eigen-1-3",
   "type": "Exercise",
-  "number": "1.11.2",
+  "number": "1.12.2",
   "title": "",
   "body": "      "
 },
@@ -1067,7 +1148,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-kernel-ch-poly-eigen.html#practice-kernel-ch-poly-eigen-1-4",
   "type": "Exercise",
-  "number": "1.11.3",
+  "number": "1.12.3",
   "title": "",
   "body": "      "
 },
@@ -1076,7 +1157,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-kernel-ch-poly-eigen.html#practice-kernel-ch-poly-eigen-1-5",
   "type": "Exercise",
-  "number": "1.11.4",
+  "number": "1.12.4",
   "title": "",
   "body": "      "
 },
@@ -1085,7 +1166,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-kernel-ch-poly-eigen.html#practice-kernel-ch-poly-eigen-1-6",
   "type": "Exercise",
-  "number": "1.11.5",
+  "number": "1.12.5",
   "title": "",
   "body": "   where, .   "
 },
@@ -1094,7 +1175,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-kernel-ch-poly-eigen.html#practice-kernel-ch-poly-eigen-1-7",
   "type": "Exercise",
-  "number": "1.11.6",
+  "number": "1.12.6",
   "title": "",
   "body": "   where, .   "
 },
@@ -1103,7 +1184,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-kernel-ch-poly-eigen.html#practice-kernel-ch-poly-eigen-1-8",
   "type": "Exercise",
-  "number": "1.11.7",
+  "number": "1.12.7",
   "title": "",
   "body": "      "
 },
@@ -1112,7 +1193,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-kernel-ch-poly-eigen.html#practice-kernel-ch-poly-eigen-1-9",
   "type": "Exercise",
-  "number": "1.11.8",
+  "number": "1.12.8",
   "title": "",
   "body": "      "
 },
@@ -1121,7 +1202,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-kernel-ch-poly-eigen.html#practice-kernel-ch-poly-eigen-2",
   "type": "Exercise",
-  "number": "1.11.9",
+  "number": "1.12.9",
   "title": "",
   "body": "  Consider the following matrix. Find .   "
 },
@@ -1130,7 +1211,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-kernel-ch-poly-eigen.html#practice-kernel-ch-poly-eigen-3",
   "type": "Exercise",
-  "number": "1.11.10",
+  "number": "1.12.10",
   "title": "",
   "body": "  Find a matrix such that , , and . List all its eigenvalues in and find corresponding eigenvectors. Describe action of the linear map corresponding to geometrically.   "
 },
@@ -1139,7 +1220,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-diagonalization.html",
   "type": "Section",
-  "number": "1.12",
+  "number": "1.13",
   "title": "Diagonalization of a square matrix",
   "body": " Diagonalization of a square matrix   We introduce diagonalization of square matrices of small sizes in this section.     Square matrices are said to be similar if there exists an invertible matrix such that .     If similar to then is also similar to .     A square matrix is said to be diagonalizable if similar to a diagonal matrix in .      Consider a nonzero polynomial . Suppose that can be factored in as follows. where, is some nonzero element, are some natural numbers, and are distinct elements of , i.e., for .  We say that the multiplicity of is .      Suppose that is a square matrix. Let be the linear map associated to , i.e., is given by . We define the kernel of to be the same as the kernel of the linear map .  We denote the kernel of by .      Suppose that is a square matrix. We define the dimension of the kernel of to be .  We denote the dimension of the kernel of by . Thus we have the following.      The dimension of the kernel is defined in linear algebra using the concept of linear independence. The is in fact Rank-Nullity Theorem . Due to lack of time we take as a working definition.     Let be a square matrix. Suppose that the characteristic polynomial of has the following factorization with for . The matrix is diagonalizable if and only if for every  we have the following.   If is diagonalizable then it is similar to the following diagonal matrix. where, each is diagonal matrix with all diagonal entries and all other entries . Furthermore, in the above matrix entries left blank are taken to be .    "
 },
@@ -1148,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-diagonalization.html#def-similar-matrices",
   "type": "Definition",
-  "number": "1.12.1",
+  "number": "1.13.1",
   "title": "",
   "body": "  Square matrices are said to be similar if there exists an invertible matrix such that .   "
 },
@@ -1157,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-diagonalization.html#sec-diagonalization-4",
   "type": "Note",
-  "number": "1.12.2",
+  "number": "1.13.2",
   "title": "",
   "body": " If similar to then is also similar to .  "
 },
@@ -1166,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-diagonalization.html#def-diagonalizable-matrix",
   "type": "Definition",
-  "number": "1.12.3",
+  "number": "1.13.3",
   "title": "",
   "body": "  A square matrix is said to be diagonalizable if similar to a diagonal matrix in .   "
 },
@@ -1175,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-diagonalization.html#def-multiplicity-of-roots",
   "type": "Definition",
-  "number": "1.12.4",
+  "number": "1.13.4",
   "title": "",
   "body": "  Consider a nonzero polynomial . Suppose that can be factored in as follows. where, is some nonzero element, are some natural numbers, and are distinct elements of , i.e., for .  We say that the multiplicity of is .   "
 },
@@ -1184,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-diagonalization.html#def-kernel-of-matrix",
   "type": "Definition",
-  "number": "1.12.5",
+  "number": "1.13.5",
   "title": "",
   "body": "  Suppose that is a square matrix. Let be the linear map associated to , i.e., is given by . We define the kernel of to be the same as the kernel of the linear map .  We denote the kernel of by .   "
 },
@@ -1193,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-diagonalization.html#def-dim-of-kernel",
   "type": "Definition",
-  "number": "1.12.6",
+  "number": "1.13.6",
   "title": "",
   "body": "  Suppose that is a square matrix. We define the dimension of the kernel of to be .  We denote the dimension of the kernel of by . Thus we have the following.    "
 },
@@ -1202,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-diagonalization.html#sec-diagonalization-9",
   "type": "Remark",
-  "number": "1.12.7",
+  "number": "1.13.7",
   "title": "",
   "body": " The dimension of the kernel is defined in linear algebra using the concept of linear independence. The is in fact Rank-Nullity Theorem . Due to lack of time we take as a working definition.  "
 },
@@ -1211,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-diagonalization.html#fact-diagonalization-criterion",
   "type": "Fact",
-  "number": "1.12.8",
+  "number": "1.13.8",
   "title": "",
   "body": "  Let be a square matrix. Suppose that the characteristic polynomial of has the following factorization with for . The matrix is diagonalizable if and only if for every  we have the following.   If is diagonalizable then it is similar to the following diagonal matrix. where, each is diagonal matrix with all diagonal entries and all other entries . Furthermore, in the above matrix entries left blank are taken to be .   "
 },
@@ -1220,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "practice-diagonalization.html",
   "type": "Exercises",
-  "number": "1.13",
+  "number": "1.14",
   "title": "Exercises",
   "body": "  Check whether the following matrices are diagonalizable.                                  .    "
 },
@@ -1229,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-diagonalization.html#practice-diagonalization-2",
   "type": "Exercise",
-  "number": "1.13.1",
+  "number": "1.14.1",
   "title": "",
   "body": "      "
 },
@@ -1238,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-diagonalization.html#practice-diagonalization-3",
   "type": "Exercise",
-  "number": "1.13.2",
+  "number": "1.14.2",
   "title": "",
   "body": "      "
 },
@@ -1247,7 +1328,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-diagonalization.html#practice-diagonalization-4",
   "type": "Exercise",
-  "number": "1.13.3",
+  "number": "1.14.3",
   "title": "",
   "body": "      "
 },
@@ -1256,7 +1337,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-diagonalization.html#practice-diagonalization-5",
   "type": "Exercise",
-  "number": "1.13.4",
+  "number": "1.14.4",
   "title": "",
   "body": "      "
 },
@@ -1265,7 +1346,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "practice-diagonalization.html#practice-diagonalization-6",
   "type": "Exercise",
-  "number": "1.13.5",
+  "number": "1.14.5",
   "title": "",
   "body": "   .   "
 },
