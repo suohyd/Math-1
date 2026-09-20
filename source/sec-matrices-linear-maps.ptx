@@ -53,12 +53,14 @@
     </p>
   </observation>
   <observation xml:id="action-on-basis">
-    Using <xref ref="linear-combination"/>, if <m>T\colon M_{n\times 1}(\K)\to M_{m\times 1}(\K)</m> is a linear map then, for any <m>v=\begin{pmatrix}\alpha_1\\\alpha_2\\\vdots\\\alpha_n\end{pmatrix}</m> we get the following.
+    <p>
+      Using <xref ref="linear-combination"/>, if <m>T\colon M_{n\times 1}(\K)\to M_{m\times 1}(\K)</m> is a linear map then, for any <m>v=\begin{pmatrix}\alpha_1\\\alpha_2\\\vdots\\\alpha_n\end{pmatrix}</m> we get the following.
     <md>
       <mrow> T(v)\amp =T\begin{pmatrix}\alpha_1\\\alpha_2\\\vdots\\\alpha_n\end{pmatrix}</mrow>
       <mrow> \amp =\alpha_1\,T(e_1)+\alpha_2\,T(e_2)+\cdots+\alpha_n\,T(e_n)</mrow>
     </md>
     Thus, <alert>a linear map <m>T</m> is completely determined by column vectors <m>T(e_1),T(e_2),\ldots,T(e_n)</m></alert>.
+    </p>
   </observation>
   <definition xml:id="def-matrix-of-linear-map">
     <statement>
