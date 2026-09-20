@@ -175,14 +175,15 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-basic-operations.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-row-echelon-form.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Row reduced echelon form of a matrix</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-row-echelon-form.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-rank-trace-det.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Some invariants attached to a matrix</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-rank-trace-det.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-matrices-linear-maps.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Matrices and linear maps</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-matrices-linear-maps.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-kernel-ch-poly-eigen.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Kernel, Characteristic polynomials, eigenvalues and eigenvectors</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-kernel-ch-poly-eigen.html" class="internal"><span class="codenumber">1.10</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-diagonalization.html" class="internal"><span class="codenumber">1.11</span> <span class="title">Diagonalization of a square matrix</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-diagonalization.html" class="internal"><span class="codenumber">1.12</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-elementary-matrices.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Elementry matrices</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-rank-trace-det.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Some invariants attached to a matrix</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-rank-trace-det.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-matrices-linear-maps.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Matrices and linear maps</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-matrices-linear-maps.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-kernel-ch-poly-eigen.html" class="internal"><span class="codenumber">1.10</span> <span class="title">Kernel, Characteristic polynomials, eigenvalues and eigenvectors</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-kernel-ch-poly-eigen.html" class="internal"><span class="codenumber">1.11</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-diagonalization.html" class="internal"><span class="codenumber">1.12</span> <span class="title">Diagonalization of a square matrix</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="practice-diagonalization.html" class="internal"><span class="codenumber">1.13</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -204,26 +205,26 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-diagonalization"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.11</span><span class="space"> </span><span class="title">Diagonalization of a square matrix</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.12</span><span class="space"> </span><span class="title">Diagonalization of a square matrix</span>
 </h2>
 <section class="introduction" id="sec-diagonalization-2"><div class="para" id="sec-diagonalization-2-1">We introduce diagonalization of square matrices of small sizes in this section.<div class="autopermalink" data-description="Paragraph"><a href="#sec-diagonalization-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div></section><article class="definition definition-like" id="def-similar-matrices"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.11.1</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.12.1</span><span class="period">.</span>
 </h3>
 <div class="para" id="def-similar-matrices-1-1">Square matrices <span class="process-math">\(A,B\in M_n(\K)\)</span> are said to be <dfn class="terminology">similar</dfn> if there exists an invertible matrix <span class="process-math">\(P\in M_n(\K)\)</span> such that <span class="process-math">\(A=PBP^{-1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-similar-matrices-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.11.1"><a href="#def-similar-matrices" title="Copy permalink for Definition 1.11.1">🔗</a></div></article><article class="note remark-like" id="sec-diagonalization-4"><h3 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.11.2</span><span class="period">.</span>
+<div class="autopermalink" data-description="Definition 1.12.1"><a href="#def-similar-matrices" title="Copy permalink for Definition 1.12.1">🔗</a></div></article><article class="note remark-like" id="sec-diagonalization-4"><h3 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.12.2</span><span class="period">.</span>
 </h3>
 <div class="para" id="sec-diagonalization-4-1">If <span class="process-math">\(A\)</span> similar to <span class="process-math">\(B\)</span> then <span class="process-math">\(B\)</span> is also similar to <span class="process-math">\(A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-diagonalization-4-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Note 1.11.2"><a href="#sec-diagonalization-4" title="Copy permalink for Note 1.11.2">🔗</a></div></article><article class="definition definition-like" id="def-diagonalizable-matrix"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.11.3</span><span class="period">.</span>
+<div class="autopermalink" data-description="Note 1.12.2"><a href="#sec-diagonalization-4" title="Copy permalink for Note 1.12.2">🔗</a></div></article><article class="definition definition-like" id="def-diagonalizable-matrix"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.12.3</span><span class="period">.</span>
 </h3>
 <div class="para" id="def-diagonalizable-matrix-1-1">A square matrix <span class="process-math">\(A\in M_n(\K)\)</span> is said to be <dfn class="terminology">diagonalizable</dfn> if <span class="process-math">\(A\)</span> similar to a diagonal matrix in <span class="process-math">\(\K\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-diagonalizable-matrix-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.11.3"><a href="#def-diagonalizable-matrix" title="Copy permalink for Definition 1.11.3">🔗</a></div></article><article class="definition definition-like" id="def-multiplicity-of-roots"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.11.4</span><span class="period">.</span>
+<div class="autopermalink" data-description="Definition 1.12.3"><a href="#def-diagonalizable-matrix" title="Copy permalink for Definition 1.12.3">🔗</a></div></article><article class="definition definition-like" id="def-multiplicity-of-roots"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.12.4</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="def-multiplicity-of-roots-1-1">
 <div class="para">Consider a nonzero polynomial <span class="process-math">\(p(x)\in\K[x]\text{.}\)</span> Suppose that <span class="process-math">\(p(x)\)</span> can be factored in <span class="process-math">\(\K[x]\)</span> as follows.</div>
@@ -237,14 +238,14 @@ p(x)=a(x-\lambda_1)^{n_1}(x-\lambda_2)^{n_2}\cdots(x-\lambda_r)^{n_r}
 <div class="autopermalink" data-description="Paragraph"><a href="#def-multiplicity-of-roots-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="def-multiplicity-of-roots-1-2">We say that the <dfn class="terminology">multiplicity of <span class="process-math">\(\lambda_i\)</span></dfn> is <span class="process-math">\(n_i\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-multiplicity-of-roots-1-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.11.4"><a href="#def-multiplicity-of-roots" title="Copy permalink for Definition 1.11.4">🔗</a></div></article><article class="definition definition-like" id="def-kernel-of-matrix"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.11.5</span><span class="period">.</span>
+<div class="autopermalink" data-description="Definition 1.12.4"><a href="#def-multiplicity-of-roots" title="Copy permalink for Definition 1.12.4">🔗</a></div></article><article class="definition definition-like" id="def-kernel-of-matrix"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.12.5</span><span class="period">.</span>
 </h3>
 <div class="para" id="def-kernel-of-matrix-1-1">Suppose that <span class="process-math">\(A\in M_n(\K)\)</span> is a square matrix. Let <span class="process-math">\(\ell_A\)</span> be the linear map associated to <span class="process-math">\(A\text{,}\)</span> i.e., <span class="process-math">\(\ell_A\colon M_{n\times 1}(\K)\to M_{n\times 1}(\K)\)</span> is given by <span class="process-math">\(\ell_A(v)=Av\text{.}\)</span> We define the <dfn class="terminology">kernel of <span class="process-math">\(A\)</span></dfn> to be the same as the kernel of the linear map <span class="process-math">\(\ell_A\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-kernel-of-matrix-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="def-kernel-of-matrix-1-2">We denote the kernel of <span class="process-math">\(A\)</span> by <span class="process-math">\(\ker(A)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-kernel-of-matrix-1-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.11.5"><a href="#def-kernel-of-matrix" title="Copy permalink for Definition 1.11.5">🔗</a></div></article><article class="definition definition-like" id="def-dim-of-kernel"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.11.6</span><span class="period">.</span>
+<div class="autopermalink" data-description="Definition 1.12.5"><a href="#def-kernel-of-matrix" title="Copy permalink for Definition 1.12.5">🔗</a></div></article><article class="definition definition-like" id="def-dim-of-kernel"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.12.6</span><span class="period">.</span>
 </h3>
 <div class="para" id="def-dim-of-kernel-1-1">Suppose that <span class="process-math">\(A\in M_n(\K)\)</span> is a square matrix. We define the <dfn class="terminology">dimension of the kernel of <span class="process-math">\(A\)</span></dfn> to be <span class="process-math">\(n-{\rm rank}(A)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#def-dim-of-kernel-1-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="def-dim-of-kernel-1-2">
@@ -257,13 +258,13 @@ p(x)=a(x-\lambda_1)^{n_1}(x-\lambda_2)^{n_2}\cdots(x-\lambda_r)^{n_r}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#def-dim-of-kernel-1-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.11.6"><a href="#def-dim-of-kernel" title="Copy permalink for Definition 1.11.6">🔗</a></div></article><article class="remark remark-like" id="sec-diagonalization-9"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.11.7</span><span class="period">.</span>
+<div class="autopermalink" data-description="Definition 1.12.6"><a href="#def-dim-of-kernel" title="Copy permalink for Definition 1.12.6">🔗</a></div></article><article class="remark remark-like" id="sec-diagonalization-9"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.12.7</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-diagonalization-9-1">The dimension of the kernel is defined in linear algebra using the concept of linear independence. The <a href="sec-diagonalization.html#def-dim-of-kernel" class="xref" data-knowl="./knowl/xref/def-dim-of-kernel.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.11.6">Definition 1.11.6</a> is in fact  ‘Rank-Nullity Theorem’. Due to lack of time we take <a href="sec-diagonalization.html#def-dim-of-kernel" class="xref" data-knowl="./knowl/xref/def-dim-of-kernel.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.11.6">Definition 1.11.6</a> as a working definition.<div class="autopermalink" data-description="Paragraph"><a href="#sec-diagonalization-9-1" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-diagonalization-9-1">The dimension of the kernel is defined in linear algebra using the concept of linear independence. The <a href="sec-diagonalization.html#def-dim-of-kernel" class="xref" data-knowl="./knowl/xref/def-dim-of-kernel.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.12.6">Definition 1.12.6</a> is in fact  ‘Rank-Nullity Theorem’. Due to lack of time we take <a href="sec-diagonalization.html#def-dim-of-kernel" class="xref" data-knowl="./knowl/xref/def-dim-of-kernel.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 1.12.6">Definition 1.12.6</a> as a working definition.<div class="autopermalink" data-description="Paragraph"><a href="#sec-diagonalization-9-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Remark 1.11.7"><a href="#sec-diagonalization-9" title="Copy permalink for Remark 1.11.7">🔗</a></div></article><article class="fact theorem-like" id="fact-diagonalization-criterion"><h3 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.11.8</span><span class="period">.</span>
+<div class="autopermalink" data-description="Remark 1.12.7"><a href="#sec-diagonalization-9" title="Copy permalink for Remark 1.12.7">🔗</a></div></article><article class="fact theorem-like" id="fact-diagonalization-criterion"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">1.12.8</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="fact-diagonalization-criterion-1-1">
 <div class="para">Let <span class="process-math">\(A\in M_n(\K)\)</span> be a square matrix. Suppose that the characteristic polynomial of <span class="process-math">\(A\)</span> has the following factorization with <span class="process-math">\(\lambda_i\neq\lambda_j\)</span> for <span class="process-math">\(i\neq j\text{.}\)</span>
@@ -291,7 +292,7 @@ p(x)=a(x-\lambda_1)^{n_1}(x-\lambda_2)^{n_2}\cdots(x-\lambda_r)^{n_r}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#fact-diagonalization-criterion-1-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Fact 1.11.8"><a href="#fact-diagonalization-criterion" title="Copy permalink for Fact 1.11.8">🔗</a></div></article><div class="autopermalink" data-description="Section 1.11: Diagonalization of a square matrix"><a href="#sec-diagonalization" title="Copy permalink for Section 1.11: Diagonalization of a square matrix">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Fact 1.12.8"><a href="#fact-diagonalization-criterion" title="Copy permalink for Fact 1.12.8">🔗</a></div></article><div class="autopermalink" data-description="Section 1.12: Diagonalization of a square matrix"><a href="#sec-diagonalization" title="Copy permalink for Section 1.12: Diagonalization of a square matrix">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="practice-kernel-ch-poly-eigen.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="practice-diagonalization.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
