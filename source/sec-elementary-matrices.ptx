@@ -72,7 +72,7 @@
     <p>
       We only show the statement for the case when <m>E</m> is obtained from <m>I_m</m> by adding <m>\alpha\in\K</m> times the <m>j</m>-th row of <m>I_m</m> to the <m>i</m>-th row of <m>I_m</m>. The other two cases can be proved similarly. Let <m>A=(a_{kl})\in M_{m\times n}(\mathbb{K})</m>. Then, the product <m>EA=(b_{kl})\in M_{m\times n}(\mathbb{K})</m>, where
       <me>
-        b_{kl}=\sum_{r=1}^{m}E_{kr}a_{rl}=\begin{cases}\sum\delta_{kr}a_{kl}=a_{rl}\amp\text{if }k\neq i\\\sum(\delta_{ir}+\alpha\delta_{jr})a_{rl}=a_{il}+\alpha a_{jl}\amp\text{if }k=i\end{cases}
+        b_{kl}=\sum_{r=1}^{m}E_{kr}a_{rl}=\begin{cases}\sum\delta_{kr}a_{rl}=a_{kl}\amp\text{if }k\neq i\\\sum(\delta_{ir}+\alpha\delta_{jr})a_{rl}=a_{il}+\alpha a_{jl}\amp\text{if }k=i\end{cases}
       </me>
       for <m>1\leq k\leq m</m> and <m>1\leq l\leq n</m>. This shows that <m>EA</m> is obtained from <m>A</m> by adding <m>\alpha</m> times the <m>j</m>-th row of <m>A</m> to the <m>i</m>-th row of <m>A</m>.
     </p>
@@ -96,7 +96,7 @@
     <theorem xml:id="thm-invertible-matrix-row-echelon-form">
     <statement>
       <p>
-        A square matrix <m>A\in M_n(\K)</m> is invertible (see <xref ref="def-inverse-of-matrix"/>) if and only if the row reduced echelon form of <m>A</m> is the identity matrix <m>I_n</m>.
+        A square matrix <m>A\in M_n(\K)</m> is invertible (see <xref ref="def-inverse-of-matrix"/>) if and only if the row reduced echelon form of <m>A</m> is the identity matrix <m>I_n</m> if and only if <m>A</m> is a product of elementary matrices.
       </p>
     </statement>
   </theorem>
@@ -114,6 +114,9 @@
         E_kE_{k-1}\cdots E_2E_1A=I_n.
       </me>
       As each <m>E_i</m> is invertible (see <xref ref="prop-elementary-matrices-are-invertible"/>), the product <m>E_kE_{k-1}\cdots E_2E_1</m> is invertible, see <xref ref="inverse-of-inverse"/>. Therefore, <m>A=(E_kE_{k-1}\cdots E_2E_1)^{-1}</m>, and <m>A^{-1}=E_kE_2\cdots E_2E_1</m>, i.e., <m>A</m> is invertible.
+    </p>
+    <p>
+      Now assume that <m>A</m> is a product of elementary matrices. As each elementary matrix is invertible, <m>A</m> is invertible. Conversely, if <m>A</m> is invertible, then as the argument above implies, the row reduced echelon form of <m>A</m> is the identity matrix, and thus <m>A</m> is a product of elementary matrices.
     </p>
   </proof>
 </section>
