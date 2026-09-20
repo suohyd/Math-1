@@ -102,13 +102,6 @@
       </p>
     </statement>
   </theorem>
-  <theorem xml:id="thm-invertible-matrix-row-echelon-form">
-    <statement>
-      <p>
-        A square matrix <m>A\in M_n(\K)</m> is invertible (see <xref ref="def-inverse-of-matrix"/>) if and only if the row reduced echelon form of <m>A</m> is the identity matrix <m>I_n</m>.
-      </p>
-    </statement>
-  </theorem>
   
   
 </section>

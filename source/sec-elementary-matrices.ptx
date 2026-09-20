@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-elementary-matrices" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Elementry matrices</title>
+  <introduction>
+    <p>
+      In this section we denote by <m>\mathbb{K}</m> either the set of real numbers, <m>\mathbb{R}</m> or the set of complex numbers, <m>\mathbb{C}</m>.
+    </p>
+  </introduction>
+  <definition xml:id="def-elementary-matrix">
+    <statement>
+      <p>
+        An <m>n\times n</m> matrix <m>E</m> is called an <term>elementary matrix</term> if it can be obtained from the identity matrix <m>I_n</m> by performing a single elementary row operation, as given in <xref ref="def-elementary-row-operations"/>, on <m>I_n</m>.
+      </p>
+    </statement>
+  </definition>
+  <example>
+    <statement>
+      <p>
+        The following are examples of elementary matrices.
+        <ol>
+          <li>
+            <p>
+              <m>E_1=\begin{pmatrix}0\amp1\\1\amp0\end{pmatrix}</m> is an elementary matrix obtained from <m>I_2</m> by interchanging the first and second rows of <m>I_2</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>E_2=\begin{pmatrix}1\amp0\\3\amp1\end{pmatrix}</m> is an elementary matrix obtained from <m>I_2</m> by adding three times the first row of <m>I_2</m> to the second row of <m>I_2</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>E_3=\begin{pmatrix}1\amp0\\0\amp2\end{pmatrix}</m> is an elementary matrix obtained from <m>I_2</m> by multiplying the second row of <m>I_2</m> by <m>2</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </example>
+  <note xml:id="note-general-form-of-elementary-matrix">
+    <statement>
+      <p>
+        An <m>n\times n</m> elementary matrix obtained by interchanging the <m>i</m>-th and <m>j</m>-th rows of <m>I_n</m> has the following form.
+        <me>
+          E_{kl}=\begin{cases}\delta_{kl}\amp\text{if }k\neq i\text{ and }k\neq j\\\delta_{jl}\amp\text{if }k=i\\\delta_{il}\amp\text{if }k=j\end{cases}
+        </me>
+        
+      </p>
+      <p>
+        An <m>n\times n</m> elementary matrix obtained by multiplying the <m>i</m>-th row of <m>I_n</m> by a nonzero scalar <m>\alpha\in\K</m> has the following form.
+        <me>
+          E_{kl}=\begin{cases}\delta_{kl}\amp\text{if }k\neq i\\\alpha\delta_{il}\amp\text{if }k=i\end{cases}
+        </me>
+      </p>
+      <p>
+        An <m>n\times n</m> elementary matrix obtained by adding <m>\alpha\in\K</m> times the <m>j</m>-th row of <m>I_n</m> to the <m>i</m>-th row of <m>I_n</m> has the following form.
+        <me>
+          E_{kl}=\begin{cases}\delta_{kl}\amp\text{if }k\neq i\\\delta_{il}+\alpha\delta_{jl}\amp\text{if }k=i\end{cases}
+        </me>
+      </p>
+    </statement>
+  </note>
+  <lemma xml:id="lem-elemenatary-row-operations-as-left-multiplication-by-elementary-matrix">
+    <statement>
+      <p>
+        Suppose <m>A\in M_{m\times n}(\mathbb{K})</m> and <m>E\in M_m(\mathbb{K})</m> is an elementary matrix. Then the product <m>EA</m> is obtained from <m>A</m> by performing the same elementary row operation on <m>A</m> as was performed on <m>I_m</m> to obtain <m>E</m>.
+      </p>
+    </statement>
+  </lemma>
+  <proof>
+    <p>
+      We only show the statement for the case when <m>E</m> is obtained from <m>I_m</m> by adding <m>\alpha\in\K</m> times the <m>j</m>-th row of <m>I_m</m> to the <m>i</m>-th row of <m>I_m</m>. The other two cases can be proved similarly. Let <m>A=(a_{kl})\in M_{m\times n}(\mathbb{K})</m>. Then, the product <m>EA=(b_{kl})\in M_{m\times n}(\mathbb{K})</m>, where
+      <me>
+        b_{kl}=\sum_{r=1}^{m}E_{kr}a_{rl}=\begin{cases}\sum\delta_{kr}a_{kl}=a_{rl}\amp\text{if }k\neq i\\\sum(\delta_{ir}+\alpha\delta_{jr})a_{rl}=a_{il}+\alpha a_{jl}\amp\text{if }k=i\end{cases}
+      </me>
+      for <m>1\leq k\leq m</m> and <m>1\leq l\leq n</m>. This shows that <m>EA</m> is obtained from <m>A</m> by adding <m>\alpha</m> times the <m>j</m>-th row of <m>A</m> to the <m>i</m>-th row of <m>A</m>.
+    </p>
+  </proof>
+  <proposition xml:id="prop-elementary-matrices-are-invertible">
+    <statement>
+      <p>
+        Every elementary matrix is invertible, and the inverse of an elementary matrix is also an elementary matrix of the same kind. 
+      </p>
+    </statement>
+  </proposition>
+  <proof>
+    <p>
+      We only show the statement for the case when <m>E</m> is obtained from <m>I_n</m> by adding <m>\alpha\in\K</m> times the <m>j</m>-th row of <m>I_n</m> to the <m>i</m>-th row of <m>I_n</m>. The other two cases can be proved similarly. Let <m>E'=(E'_{kl})\in M_n(\mathbb{K})</m> is the elementary matrix obtained from <m>I_n</m> by adding <m>-\alpha</m> times the <m>j</m>-th row of <m>I_n</m> to the <m>i</m>-th row of <m>I_n</m>. Then,we have the following.
+      <me>
+        (EE')_{kl}=\sum_{r=1}^{n}E_{kr}E'_{rl}=\begin{cases}\sum\delta_{kr}E'_{rl}=\delta_{kl}\amp\text{if }k\neq i\\E'_{il}+\alpha E'_{jl}=(\delta_{il}-\alpha\delta_{jl})+\alpha\delta_{jl}=\delta_{il}\amp\text{if }k=i\end{cases}
+      </me>
+      A similar computation shows that <m>E'E=I_n</m>. This shows that <m>E'</m> is the inverse of <m>E</m>, and hence, <m>E</m> is invertible.
+    </p>
+  </proof>
+    <theorem xml:id="thm-invertible-matrix-row-echelon-form">
+    <statement>
+      <p>
+        A square matrix <m>A\in M_n(\K)</m> is invertible (see <xref ref="def-inverse-of-matrix"/>) if and only if the row reduced echelon form of <m>A</m> is the identity matrix <m>I_n</m>.
+      </p>
+    </statement>
+  </theorem>
+  <proof>
+    <p>
+      Suppose that <m>A</m> is invertible. The row reduced echelon form <m>R</m> of <m>A</m> is obtained from <m>A</m> by performing a sequence of elementary row operations. By <xref ref="lem-elemenatary-row-operations-as-left-multiplication-by-elementary-matrix"/>, there exist elementary matrices <m>E_1,E_2,\ldots,E_k\in M_n(\K)</m> such that
+      <me>
+        E_kE_{k-1}\cdots E_2E_1A=R.
+      </me>
+      As <m>A</m> is invertible, and the product <m>E_kE_{k-1}\cdots E_2E_1</m> is a product of invertible matrices (see <xref ref="prop-elementary-matrices-are-invertible"/>), the matrix <m>E_kE_{k-1}\cdots E_2E_1</m> is invertible, see <xref ref="inverse-of-inverse"/>. Therefore, <m>R</m> is invertible. Since <m>R</m> is a row reduced echelon matrix, it must be the identity matrix <m>I_n</m>, see <xref ref="lem-RREF-invertible-iff-identity"/>.
+    </p>
+    <p>
+      Conversely, suppose that the row reduced echelon form of <m>A</m> is the identity matrix <m>I_n</m>. Then, by <xref ref="lem-elemenatary-row-operations-as-left-multiplication-by-elementary-matrix"/>, there exist elementary matrices <m>E_1,E_2,\ldots,E_k\in M_n(\K)</m> such that
+      <me>
+        E_kE_{k-1}\cdots E_2E_1A=I_n.
+      </me>
+      As each <m>E_i</m> is invertible (see <xref ref="prop-elementary-matrices-are-invertible"/>), the product <m>E_kE_{k-1}\cdots E_2E_1</m> is invertible, see <xref ref="inverse-of-inverse"/>. Therefore, <m>A=(E_kE_{k-1}\cdots E_2E_1)^{-1}</m>, and <m>A^{-1}=E_kE_2\cdots E_2E_1</m>, i.e., <m>A</m> is invertible.
+    </p>
+  </proof>
+</section>
